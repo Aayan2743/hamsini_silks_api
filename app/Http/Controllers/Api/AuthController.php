@@ -18,6 +18,16 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 
 class AuthController extends Controller
 {
+
+    public function sample()
+    {
+        $samples = \App\Models\sapmle::all();
+        return response()->json([
+            'success' => true,
+            'data'    => $samples,
+        ]);
+    }
+
     // User Registration
     public function register(Request $request)
     {

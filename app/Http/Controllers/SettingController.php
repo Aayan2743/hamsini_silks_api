@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\app_setting;
+use App\Models\SocialMediaSetting;
 use App\Services\WebpService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -87,6 +88,48 @@ class SettingController extends Controller
             'success' => true,
             'message' => 'Settings updated',
             'data'    => $setting,
+        ]);
+    }
+
+    public function show_social_media()
+    {
+        $settings = SocialMediaSetting::first();
+
+        return response()->json([
+            'success' => true,
+            'data'    => $settings,
+        ]);
+    }
+
+    /**
+     * Create or Update Social Media Settings (single row)
+     */
+    public function store_social_media(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'linkedin'  => 'nullable|url',
+            'dribbble'  => 'nullable|url',
+            'instagram' => 'nullable|url',
+            'twitter'   => 'nullable|url',
+            'youtube'   => 'nullable|url',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'errors'  => $validator->errors()->first(),
+            ], 422);
+        }
+
+        $settings = SocialMediaSetting::updateOrCreate(
+            ['id' => 1], // 👈 enforce single row
+            $validator->validated()
+        );
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Social media settings saved successfully',
+            'data'    => $settings,
         ]);
     }
 }

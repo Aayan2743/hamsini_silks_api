@@ -4,14 +4,21 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\SettingsController;
 use App\Http\Controllers\BrandingController;
 use App\Http\Controllers\CardPrincingController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CouponController;
 use App\Http\Controllers\OrganizationSubscriptionController;
 use App\Http\Controllers\OrginazationController;
+use App\Http\Controllers\PaymentGatewayController;
+use App\Http\Controllers\ProductVariationController;
+use App\Http\Controllers\ProductVariationValueController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\WhatsappSettingController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('auth')->group(function () {
 
     // ================= AUTH =================
+    Route::get('sample', [AuthController::class, 'sample']);
     Route::post('admin-register', [AuthController::class, 'admin_register']);
     Route::post('admin-login', [AuthController::class, 'admin_login']);
     Route::post('user-register', [AuthController::class, 'register']);
@@ -33,6 +40,43 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
     Route::post('/update-profile', [AuthController::class, 'updateProfile']);
     Route::get('/app-logo-settings', [SettingController::class, 'show']);
     Route::post('/app-logo-settings', [SettingController::class, 'update']);
+
+    //===================== SOCIAL MEDIA SETTINGS =====================
+    Route::get('/social-media-settings', [SettingController::class, 'show_social_media']);
+    Route::post('/social-media-settings', [SettingController::class, 'store_social_media']);
+
+    //===================== PAYMENT GATEWAY SETTINGS =====================
+
+    Route::get('/payment-gateways', [PaymentGatewayController::class, 'show']);
+    Route::post('/payment-gateways', [PaymentGatewayController::class, 'store']);
+    Route::delete('/payment-gateways', [PaymentGatewayController::class, 'destroy']);
+
+    // Product Variations
+    Route::get('/get-variations', [ProductVariationController::class, 'index']);
+    Route::post('/add-variation', [ProductVariationController::class, 'store']);
+    Route::put('/update-variations/{id}', [ProductVariationController::class, 'update']);
+    Route::delete('/delete-variations/{id}', [ProductVariationController::class, 'destroy']);
+
+    // VARIATION VALUES
+    Route::post('/add-variation-value/{variationId}', [ProductVariationValueController::class, 'store']);
+    Route::put('/update-variation-value/{id}', [ProductVariationValueController::class, 'update']);
+    Route::delete('/delete-variation-value/{id}', [ProductVariationValueController::class, 'destroy']);
+
+    // Whats App Integration VALUES
+    Route::get('/whatsapp-settings', [WhatsappSettingController::class, 'show']);
+    Route::post('/whatsapp-settings', [WhatsappSettingController::class, 'store']);
+
+    // Coupon Management
+    Route::get('/cart/list-coupon', [CouponController::class, 'index']);
+    Route::post('/cart/create-coupon', [CouponController::class, 'store']);
+    Route::put('/cart/update-coupon/{id}', [CouponController::class, 'update']);
+    Route::delete('/cart/delete-coupon/{id}', [CouponController::class, 'destroy']);
+
+    // Category Management
+    Route::get('/list-category', [CategoryController::class, 'index']);
+    Route::post('/add-category', [CategoryController::class, 'store']);
+    Route::put('/update-category/{id}', [CategoryController::class, 'update']);
+    Route::delete('/delete-category/{id}', [CategoryController::class, 'destroy']);
 
 });
 

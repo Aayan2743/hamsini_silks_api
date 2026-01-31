@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('social_media_settings', function (Blueprint $table) {
+        Schema::create('product_variation_values', function (Blueprint $table) {
             $table->id();
-            $table->string('dribbble')->nullable()->after('linkedin');
-            $table->string('instagram')->nullable()->after('dribbble');
-            $table->string('twitter')->nullable()->after('instagram');
-            $table->string('youtube')->nullable()->after('twitter');
+            $table->unsignedBigInteger('variation_id');
+            $table->string('value')->nullable();
+            $table->string('color_code')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('social_media_settings');
+        Schema::dropIfExists('product_variation_values');
     }
 };
