@@ -1,14 +1,11 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
-use App\Http\Controllers\Api\SettingsController;
-use App\Http\Controllers\BrandingController;
-use App\Http\Controllers\CardPrincingController;
+use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CouponController;
-use App\Http\Controllers\OrganizationSubscriptionController;
-use App\Http\Controllers\OrginazationController;
 use App\Http\Controllers\PaymentGatewayController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductVariationController;
 use App\Http\Controllers\ProductVariationValueController;
 use App\Http\Controllers\SettingController;
@@ -29,6 +26,8 @@ Route::prefix('auth')->group(function () {
     Route::post('verify-otp', [AuthController::class, 'verifyOtp']);
     Route::post('reset-password', [AuthController::class, 'resetPassword']);
 
+    Route::get('/admin-dashboard/app-logo-settings', [SettingController::class, 'show']);
+
     Route::post('organization/forgot-password', [AuthController::class, 'OrgsendOtp']);
 
 });
@@ -38,7 +37,7 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
     // ================= AUTH =================
     Route::get('/profile', [AuthController::class, 'profile']);
     Route::post('/update-profile', [AuthController::class, 'updateProfile']);
-    Route::get('/app-logo-settings', [SettingController::class, 'show']);
+    // Route::get('/app-logo-settings', [SettingController::class, 'show']);
     Route::post('/app-logo-settings', [SettingController::class, 'update']);
 
     //===================== SOCIAL MEDIA SETTINGS =====================
@@ -75,57 +74,69 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
     // Category Management
     Route::get('/list-category', [CategoryController::class, 'index']);
     Route::post('/add-category', [CategoryController::class, 'store']);
-    Route::put('/update-category/{id}', [CategoryController::class, 'update']);
+    Route::post('/update-category/{id}', [CategoryController::class, 'update']);
     Route::delete('/delete-category/{id}', [CategoryController::class, 'destroy']);
 
-});
+    // Brand Management
+    Route::get('list-brand', [BrandController::class, 'index']);
+    Route::post('add-brand', [BrandController::class, 'store']);
+    Route::post('update-brand/{id}', [BrandController::class, 'update']);
+    Route::delete('delete-brand/{id}', [BrandController::class, 'destroy']);
 
-Route::get('/public/settings/brand', [BrandingController::class, 'show']);
-
-Route::get(
-    '/public/organizations/transactions',
-    [OrganizationSubscriptionController::class, 'transactions']);
-
-Route::get(
-    '/public/dashboard',
-    [OrganizationSubscriptionController::class, 'index']);
-
-Route::middleware(['api', 'jwt.auth'])->group(function () {
-    Route::get('/profile', [AuthController::class, 'profile']);
-    Route::post('/logout', [AuthController::class, 'logout']);
-
-    Route::post('/settings/profile', [SettingsController::class, 'updateProfile']);
-    Route::post('/settings/brand', [BrandingController::class, 'store']);
-    Route::get('/settings/brand', [BrandingController::class, 'show']);
-    Route::post('/settings/card-pricing', [CardPrincingController::class, 'store']);
-    Route::get('/settings/card-pricing', [CardPrincingController::class, 'show']);
-
-    Route::get('/organizations', [OrginazationController::class, 'index']);
-    Route::post('/organizations', [OrginazationController::class, 'store']);
-    Route::get('/organizations/{organization}', [OrginazationController::class, 'show']);
-
-    Route::put('/organizations/{organization}', [OrginazationController::class, 'update']);
-
-    Route::delete('/organizations/{organization}', [OrginazationController::class, 'destroy']);
-
-    Route::get('/organizations/{organization}/card-stats',
-        [OrginazationController::class, 'stats']);
-
-    Route::post(
-        '/organizations/{organization}/add-cards',
-        [OrganizationSubscriptionController::class, 'store']);
-
-    Route::get(
-        '/organizations/{organization}/subscription',
-        [OrganizationSubscriptionController::class, 'show']);
-
-    Route::get(
-        '/organizations/transactions',
-        [OrganizationSubscriptionController::class, 'transactions']);
-
-    // Orginazation Employeer Routes
-
-    Route::get('/settings-orginization', [OrginazationController::class, 'showOrginizationBrandSettings']);
-    Route::post('/organizations/brand-settings', [OrginazationController::class, 'save']);
+    // Product Management
+    Route::get('products', [ProductController::class, 'index']);
+    Route::post('create-product', [ProductController::class, 'store']);
+    Route::post('update-product/{id}', [ProductController::class, 'update']);
+    Route::delete('delete-product/{id}', [ProductController::class, 'destroy']);
 
 });
+
+// Route::get('/public/settings/brand', [BrandingController::class, 'show']);
+
+// Route::get(
+//     '/public/organizations/transactions',
+//     [OrganizationSubscriptionController::class, 'transactions']);
+
+// Route::get(
+//     '/public/dashboard',
+//     [OrganizationSubscriptionController::class, 'index']);
+
+// Route::middleware(['api', 'jwt.auth'])->group(function () {
+//     Route::get('/profile', [AuthController::class, 'profile']);
+//     Route::post('/logout', [AuthController::class, 'logout']);
+
+//     Route::post('/settings/profile', [SettingsController::class, 'updateProfile']);
+//     Route::post('/settings/brand', [BrandingController::class, 'store']);
+//     Route::get('/settings/brand', [BrandingController::class, 'show']);
+//     Route::post('/settings/card-pricing', [CardPrincingController::class, 'store']);
+//     Route::get('/settings/card-pricing', [CardPrincingController::class, 'show']);
+
+//     Route::get('/organizations', [OrginazationController::class, 'index']);
+//     Route::post('/organizations', [OrginazationController::class, 'store']);
+//     Route::get('/organizations/{organization}', [OrginazationController::class, 'show']);
+
+//     Route::put('/organizations/{organization}', [OrginazationController::class, 'update']);
+
+//     Route::delete('/organizations/{organization}', [OrginazationController::class, 'destroy']);
+
+//     Route::get('/organizations/{organization}/card-stats',
+//         [OrginazationController::class, 'stats']);
+
+//     Route::post(
+//         '/organizations/{organization}/add-cards',
+//         [OrganizationSubscriptionController::class, 'store']);
+
+//     Route::get(
+//         '/organizations/{organization}/subscription',
+//         [OrganizationSubscriptionController::class, 'show']);
+
+//     Route::get(
+//         '/organizations/transactions',
+//         [OrganizationSubscriptionController::class, 'transactions']);
+
+//     // Orginazation Employeer Routes
+
+//     Route::get('/settings-orginization', [OrginazationController::class, 'showOrginizationBrandSettings']);
+//     Route::post('/organizations/brand-settings', [OrginazationController::class, 'save']);
+
+// });

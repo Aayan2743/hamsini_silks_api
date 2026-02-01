@@ -5,12 +5,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    protected $fillable = [
-        'name',
-        'slug',
-        'parent_id',
-        'sort_order',
-        'is_active',
+    protected $guarded = [
+
     ];
 
     /* Parent category */

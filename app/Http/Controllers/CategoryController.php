@@ -2,9 +2,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Services\WebpService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Validator;
 
 class CategoryController extends Controller
 {
@@ -44,17 +46,40 @@ class CategoryController extends Controller
     /* ================= CREATE CATEGORY ================= */
     public function store(Request $request)
     {
-        $request->validate([
+
+        $validator = Validator::make($request->all(), [
             'name'      => 'required|string|max:255',
             'parent_id' => 'nullable|exists:categories,id',
             'image'     => 'nullable|image|max:2048',
         ]);
 
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'message' => $validator->errors()->first(),
+            ], 422);
+        }
+
         $imageName = null;
 
         if ($request->hasFile('image')) {
-            $imageName = time() . '_' . $request->image->getClientOriginalName();
-            $request->image->storeAs('categories', $imageName, 'public');
+
+            $file     = $request->file('image');
+            $baseName = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
+
+            // ✅ save only webp
+            $imageName = time() . '_' . Str::slug($baseName) . '.webp';
+
+            $src  = $file->getPathname();
+            $dest = storage_path('app/public/categories/' . $imageName);
+
+            // 🔥 convert + resize
+            WebpService::convert(
+                $src,
+                $dest,
+                60, // quality
+
+            );
         }
 
         Category::create([
@@ -75,21 +100,44 @@ class CategoryController extends Controller
     {
         $category = Category::findOrFail($id);
 
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'name'      => 'required|string|max:255',
             'parent_id' => 'nullable|exists:categories,id|not_in:' . $id,
             'image'     => 'nullable|image|max:2048',
         ]);
 
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'message' => $validator->errors()->first(),
+            ], 422);
+        }
+
         $imageName = $category->image;
 
         if ($request->hasFile('image')) {
+
+            // 🗑️ delete old image
             if ($category->image) {
                 Storage::disk('public')->delete('categories/' . $category->image);
             }
 
-            $imageName = time() . '_' . $request->image->getClientOriginalName();
-            $request->image->storeAs('categories', $imageName, 'public');
+            $file     = $request->file('image');
+            $baseName = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
+
+            // ✅ always save as webp
+            $imageName = time() . '_' . Str::slug($baseName) . '.webp';
+
+            $src  = $file->getPathname();
+            $dest = storage_path('app/public/categories/' . $imageName);
+
+            // 🔥 convert + resize
+            WebpService::convert(
+                $src,
+                $dest,
+                60, // quality
+
+            );
         }
 
         $category->update([
