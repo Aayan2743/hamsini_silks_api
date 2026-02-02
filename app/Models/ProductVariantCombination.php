@@ -5,14 +5,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProductVariantCombination extends Model
 {
-    protected $fillable = [
-        'product_id',
-        'sku',
-        'extra_price',
-        'quantity',
-        'low_quantity',
-        'created_at',
-        'updated_at',
+    protected $guarded = [
+
     ];
 
     public function product()

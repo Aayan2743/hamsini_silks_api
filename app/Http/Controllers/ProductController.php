@@ -13,7 +13,7 @@ class ProductController extends Controller
         $search  = $request->search;
         $perPage = $request->perPage ?? 10;
 
-        $products = Product::with(['category:id,name', 'brand:id,name'])
+        $products = Product::with(['category:id,name', 'brand:id,name','images'])
             ->when($search, fn($q) =>
                 $q->where('name', 'like', "%{$search}%")
             )
@@ -46,11 +46,11 @@ class ProductController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name'           => 'required|string|max:255',
-            'category_id'    => 'nullable|exists:categories,id',
+            'category_id'    => 'required|exists:categories,id',
             'brand_id'       => 'nullable|exists:brands,id',
-            'description'    => 'nullable|string',
-            'purchase_price' => 'nullable|numeric|min:0',
-            'base_price'     => 'nullable|numeric|min:0',
+            'description'    => 'required|string',
+            'purchase_price' => 'required|numeric|min:0',
+            'base_price'     => 'required|numeric|min:0',
             'discount'       => 'nullable|numeric|min:0',
             'status'         => 'nullable|in:draft,active,inactive',
         ]);
@@ -58,11 +58,11 @@ class ProductController extends Controller
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
-                'errors'  => $validator->errors(),
+                'errors'  => $validator->errors()->first(),
             ], 422);
         }
 
-        Product::create([
+        $product = Product::create([
             'name'           => $request->name,
             'slug'           => Str::slug($request->name),
             'category_id'    => $request->category_id,
@@ -77,6 +77,9 @@ class ProductController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Product created successfully',
+            'product' => [
+                'id' => $product->id,
+            ],
         ]);
     }
 
@@ -87,19 +90,19 @@ class ProductController extends Controller
 
         $validator = Validator::make($request->all(), [
             'name'           => 'required|string|max:255',
-            'category_id'    => 'nullable|exists:categories,id',
+            'category_id'    => 'required|exists:categories,id',
             'brand_id'       => 'nullable|exists:brands,id',
-            'description'    => 'nullable|string',
-            'purchase_price' => 'nullable|numeric|min:0',
-            'base_price'     => 'nullable|numeric|min:0',
+            'description'    => 'required|string',
+            'purchase_price' => 'required|numeric|min:0',
+            'base_price'     => 'required|numeric|min:0',
             'discount'       => 'nullable|numeric|min:0',
-            'status'         => 'required|in:draft,active,inactive',
+            'status'         => 'nullable|in:draft,active,inactive',
         ]);
 
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
-                'errors'  => $validator->errors(),
+                'errors'  => $validator->errors()->first(),
             ], 422);
         }
 
@@ -118,6 +121,9 @@ class ProductController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Product updated successfully',
+            'product' => [
+                'id' => $product->id,
+            ],
         ]);
     }
 
@@ -131,4 +137,39 @@ class ProductController extends Controller
             'message' => 'Product deleted successfully',
         ]);
     }
+
+    public function publish(Request $request, $id)
+    {
+        $product = Product::findOrFail($id);
+
+        // ⛔ Prevent double publish
+        if ($product->status === 'active') {
+            return response()->json([
+                'success' => false,
+                'message' => 'Product is already published',
+            ], 409);
+        }
+
+        if (! $product->variants()->exists()) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Add product variants before publishing',
+            ], 422);
+        }
+
+        // ✅ Publish
+        $product->update([
+            'status' => 'active',
+        ]);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Product published successfully',
+            'data'    => [
+                'id'     => $product->id,
+                'status' => $product->status,
+            ],
+        ]);
+    }
+
 }

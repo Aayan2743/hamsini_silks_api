@@ -29,6 +29,9 @@ class WebpService
             return false;
         }
 
+
+        
+
         // 🔥 RESIZE if width & height provided
         if ($width && $height) {
             $resized = imagecreatetruecolor($width, $height);

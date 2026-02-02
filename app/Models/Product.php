@@ -15,6 +15,12 @@ class Product extends Model
         return $this->hasMany(ProductImage::class);
     }
 
+    public function mainImage()
+    {
+        return $this->hasOne(\App\Models\ProductImage::class)
+            ->where('is_main', true);
+    }
+
     public function category()
     {
         return $this->belongsTo(Category::class);
@@ -37,5 +43,10 @@ class Product extends Model
     public function taxAffinity()
     {
         return $this->hasOne(ProductTaxAffinity::class);
+    }
+
+    public function videos()
+    {
+        return $this->hasMany(ProductVideo::class);
     }
 }

@@ -1,15 +1,41 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Models\ProductVariation;
 use App\Models\ProductVariationValue;
 use Illuminate\Http\Request;
 use Validator;
 
 class ProductVariationValueController extends Controller
 {
-    public function index()
+    public function indexddd()
     {
         return ProductVariationValue::with('variation')->get();
+    }
+
+    public function index()
+    {
+        $variations = ProductVariation::with('values')->get();
+
+        $data = $variations->map(function ($variation) {
+            return [
+                'id'     => $variation->id,
+                'name'   => $variation->name,
+                'type'   => $variation->type,
+                'values' => $variation->values->map(function ($val) {
+                    return [
+                        'id'         => $val->id,
+                        'value'      => $val->value,
+                        'color_code' => $val->color_code,
+                    ];
+                }),
+            ];
+        });
+
+        return response()->json([
+            'success' => true,
+            'data'    => $data,
+        ]);
     }
 
     public function store(Request $request, $variationId)

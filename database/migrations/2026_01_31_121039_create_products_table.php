@@ -25,7 +25,7 @@ return new class extends Migration
             $table->decimal('base_price', 10, 2)->nullable();
             $table->decimal('discount', 10, 2)->nullable();
 
-            $table->string('status')->default('draft');
+            $table->string('status')->nullable();
 
             $table->timestamps();
         });

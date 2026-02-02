@@ -7,13 +7,8 @@ class ProductSeoMeta extends Model
 {
     protected $table = 'product_seo_meta';
 
-    protected $fillable = [
-        'product_id',
-        'meta_title',
-        'meta_description',
-        'meta_tags',
-        'created_at',
-        'updated_at',
+    protected $guarded = [
+
     ];
 
     public function product()

@@ -6,6 +6,10 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CouponController;
 use App\Http\Controllers\PaymentGatewayController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductImageController;
+use App\Http\Controllers\ProductSeoMetaController;
+use App\Http\Controllers\ProductTaxAffinityController;
+use App\Http\Controllers\ProductVariantController;
 use App\Http\Controllers\ProductVariationController;
 use App\Http\Controllers\ProductVariationValueController;
 use App\Http\Controllers\SettingController;
@@ -26,7 +30,7 @@ Route::prefix('auth')->group(function () {
     Route::post('verify-otp', [AuthController::class, 'verifyOtp']);
     Route::post('reset-password', [AuthController::class, 'resetPassword']);
 
-    Route::get('/admin-dashboard/app-logo-settings', [SettingController::class, 'show']);
+    Route::get('app-logo-settings', [SettingController::class, 'show']);
 
     Route::post('organization/forgot-password', [AuthController::class, 'OrgsendOtp']);
 
@@ -37,7 +41,7 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
     // ================= AUTH =================
     Route::get('/profile', [AuthController::class, 'profile']);
     Route::post('/update-profile', [AuthController::class, 'updateProfile']);
-    // Route::get('/app-logo-settings', [SettingController::class, 'show']);
+    Route::get('/app-logo-settings', [SettingController::class, 'show']);
     Route::post('/app-logo-settings', [SettingController::class, 'update']);
 
     //===================== SOCIAL MEDIA SETTINGS =====================
@@ -57,6 +61,7 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
     Route::delete('/delete-variations/{id}', [ProductVariationController::class, 'destroy']);
 
     // VARIATION VALUES
+    Route::get('/get-variations', [ProductVariationValueController::class, 'index']);
     Route::post('/add-variation-value/{variationId}', [ProductVariationValueController::class, 'store']);
     Route::put('/update-variation-value/{id}', [ProductVariationValueController::class, 'update']);
     Route::delete('/delete-variation-value/{id}', [ProductVariationValueController::class, 'destroy']);
@@ -89,6 +94,24 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
     Route::post('update-product/{id}', [ProductController::class, 'update']);
     Route::delete('delete-product/{id}', [ProductController::class, 'destroy']);
 
+    // Product Gallery Management
+    Route::post('product/{product}/gallery', [ProductImageController::class, 'store']);
+    Route::post('product/{product}/gallery', [ProductImageController::class, 'update']);
+
+    // product variant routes
+    Route::post('product/create-variation/{product}', [ProductVariantController::class, 'store']);
+
+// Product SEO Meta Management
+
+    Route::post('product-seo-meta/{product}', [ProductSeoMetaController::class, 'store']);
+
+    // product Tax Affinity Management Routes
+
+    Route::post('product-tax-affinity/{product}/', [ProductTaxAffinityController::class, 'store']
+    );
+
+    // publish the product
+    Route::post('publish-product/{id}', [ProductController::class, 'publish']);
 });
 
 // Route::get('/public/settings/brand', [BrandingController::class, 'show']);
