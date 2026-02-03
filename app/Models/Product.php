@@ -49,4 +49,12 @@ class Product extends Model
     {
         return $this->hasMany(ProductVideo::class);
     }
+
+    public function variantCombinations()
+    {
+        return $this->hasMany(
+            ProductVariantCombination::class,
+            'product_id'
+        );
+    }
 }

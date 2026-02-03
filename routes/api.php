@@ -78,6 +78,7 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
 
     // Category Management
     Route::get('/list-category', [CategoryController::class, 'index']);
+    Route::get('/list-category-all', [CategoryController::class, 'index_all']);
     Route::post('/add-category', [CategoryController::class, 'store']);
     Route::post('/update-category/{id}', [CategoryController::class, 'update']);
     Route::delete('/delete-category/{id}', [CategoryController::class, 'destroy']);
@@ -90,6 +91,7 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
 
     // Product Management
     Route::get('products', [ProductController::class, 'index']);
+    Route::get('/product/fetch-products-by-id/{id}', [ProductController::class, 'fetchById']);
     Route::post('create-product', [ProductController::class, 'store']);
     Route::post('update-product/{id}', [ProductController::class, 'update']);
     Route::delete('delete-product/{id}', [ProductController::class, 'destroy']);
@@ -98,8 +100,15 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
     Route::post('product/{product}/gallery', [ProductImageController::class, 'store']);
     Route::post('product/{product}/gallery', [ProductImageController::class, 'update']);
 
+    // update product variations and variant combinations
+    Route::post('/product/{product}/images', [ProductImageController::class, 'addImages']);
+    Route::delete('/product/image/{image}', [ProductImageController::class, 'deleteImage']);
+    Route::post('/product/{product}/set-main-image', [ProductImageController::class, 'setMainImage']);
+    Route::post('/product/{product}/videos', [ProductImageController::class, 'updateVideos']);
+
     // product variant routes
     Route::post('product/create-variation/{product}', [ProductVariantController::class, 'store']);
+    Route::post('product/update-variation/{product}', [ProductVariantController::class, 'syncVariations']);
 
 // Product SEO Meta Management
 

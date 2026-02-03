@@ -114,7 +114,6 @@ class ProductImageController extends Controller
 
             // 🔥 Add new images (convert → WEBP)
             foreach ($request->file('images') as $index => $file) {
-                dd($index);
 
                 // 1️⃣ Temp store
                 $tempPath = $file->store('temp', 'public');
@@ -162,6 +161,118 @@ class ProductImageController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Product gallery updated successfully',
+        ]);
+    }
+
+    public function addImages(Request $request, Product $product)
+    {
+        $validator = Validator::make($request->all(), [
+            'images'   => 'required|array',
+            'images.*' => 'image|mimes:jpg,jpeg,png,webp|max:5120',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'errors'  => $validator->errors()->first(),
+            ], 422);
+        }
+
+        foreach ($request->file('images') as $file) {
+
+            // temp store
+            $tempPath = $file->store('temp', 'public');
+            $srcPath  = storage_path('app/public/' . $tempPath);
+
+            // webp destination
+            $fileName = Str::uuid() . '.webp';
+            $relative = 'products/images/' . $fileName;
+            $destPath = storage_path('app/public/' . $relative);
+
+            // convert
+            WebpService::convert($srcPath, $destPath, 70);
+
+            // cleanup
+            Storage::disk('public')->delete($tempPath);
+
+            // save
+            ProductImage::create([
+                'product_id' => $product->id,
+                'image_path' => $relative,
+                'is_primary' => false,
+            ]);
+        }
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Images added successfully',
+        ]);
+    }
+
+    public function deleteImage(ProductImage $image)
+    {
+        Storage::disk('public')->delete($image->image_path);
+        $image->delete();
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Image deleted successfully',
+        ]);
+    }
+
+    public function setMainImage(Request $request, Product $product)
+    {
+        $validator = Validator::make($request->all(), [
+            'image_id' => 'required|exists:product_images,id',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'errors'  => $validator->errors()->first(),
+            ], 422);
+        }
+
+        // reset old main
+        ProductImage::where('product_id', $product->id)
+            ->update(['is_primary' => false]);
+
+        // set new main
+        ProductImage::where('id', $request->image_id)
+            ->update(['is_primary' => true]);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Main image updated',
+        ]);
+    }
+
+    public function updateVideos(Request $request, Product $product)
+    {
+        $validator = Validator::make($request->all(), [
+            'video_urls'   => 'nullable|array',
+            'video_urls.*' => 'required|url',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'errors'  => $validator->errors()->first(),
+            ], 422);
+        }
+
+        ProductVideo::where('product_id', $product->id)->delete();
+
+        foreach ($request->video_urls ?? [] as $url) {
+            ProductVideo::create([
+                'product_id' => $product->id,
+                'video_url'  => $url,
+            ]);
+        }
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Videos updated successfully',
         ]);
     }
 }

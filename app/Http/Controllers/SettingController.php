@@ -25,8 +25,8 @@ class SettingController extends Controller
         $setting = app_setting::one();
 
         $validator = Validator::make($request->all(), [
-            'app_name'    => 'required|string|max:255',
-            'app_logo'    => 'required|image',
+            'app_name'    => 'nullable|string|max:255',
+            'app_logo'    => 'nullable|image',
             'app_favicon' => 'nullable|image',
         ]);
 
