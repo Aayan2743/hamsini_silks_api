@@ -39,4 +39,38 @@ class ProductSeoMetaController extends Controller
             'data'    => $seo,
         ], 200);
     }
+
+    public function update(Request $request, $productId)
+    {
+        /* ================= VALIDATION ================= */
+        $validator = Validator::make($request->all(), [
+            'meta_title'       => 'nullable|string|max:60',
+            'meta_description' => 'nullable|string|max:160',
+            'meta_tags'        => 'nullable|string', // comma-separated
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'status'  => false,
+                'message' => 'Validation error',
+                'errors'  => $validator->errors()->first(),
+            ], 422);
+        }
+
+        /* ================= UPDATE OR CREATE ================= */
+        $meta = ProductSeoMeta::updateOrCreate(
+            ['product_id' => $productId],
+            [
+                'meta_title'       => $request->meta_title,
+                'meta_description' => $request->meta_description,
+                'meta_tags'        => $request->meta_tags,
+            ]
+        );
+
+        return response()->json([
+            'status'  => true,
+            'message' => 'Product meta updated successfully',
+            'data'    => $meta,
+        ]);
+    }
 }

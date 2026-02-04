@@ -5,6 +5,7 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ProductController extends Controller
 {
@@ -14,17 +15,28 @@ class ProductController extends Controller
         $search  = $request->search;
         $perPage = $request->perPage ?? 10;
 
+        // $products = Product::with([
+        //     'category:id,name',
+        //     'brand:id,name',
+        //     'category.parent:id,name',
+        // ])
+        //     ->withMin('variantCombinations as min_price', 'extra_price')
+        //     ->withMin('variantCombinations as min_discount', 'discount')
+        //     ->when($search, fn($q) =>
+        //         $q->where('name', 'like', "%{$search}%")
+        //     )
+        //     ->orderBy('id', 'desc')
+        //     ->paginate($perPage);
+
         $products = Product::with([
-            'category:id,name',
+            'category:id,name,parent_id',
+            'category.parent:id,name',
             'brand:id,name',
         ])
-            ->withMin('variantCombinations as min_price', 'extra_price')
-            ->withMin('variantCombinations as min_discount', 'discount')
-            ->when($search, fn($q) =>
-                $q->where('name', 'like', "%{$search}%")
-            )
-            ->orderBy('id', 'desc')
-            ->paginate($perPage);
+        ->withMin('variantCombinations as min_price', 'extra_price')
+        ->withMin('variantCombinations as min_discount', 'discount')
+        ->orderBy('id', 'desc')
+        ->paginate($perPage);
 
         return response()->json([
             'data'       => $products->getCollection()->map(fn($p) => [
@@ -33,6 +45,7 @@ class ProductController extends Controller
                 'slug'          => $p->slug,
                 'category_id'   => $p->category_id,
                 'category_name' => $p->category?->name,
+                'category_main' => $p->category?->parent?->name,
                 'brand_id'      => $p->brand_id,
                 'brand_name'    => $p->brand?->name,
 
@@ -67,6 +80,7 @@ class ProductController extends Controller
             // 'variantCombinations.images',       // 🔥 REQUIRED
 
             'category:id,name,parent_id',
+            'category.parent:id,name',
             'brand:id,name',
             'images:id,product_id,image_path,is_primary',
             'videos:id,product_id,video_url',
@@ -95,6 +109,7 @@ class ProductController extends Controller
                     'id'        => $product->category->id,
                     'name'      => $product->category->name,
                     'parent_id' => $product->category->parent_id,
+                    'main_name' => $product->category->parent->name,
                 ]
                     : null,
 
@@ -294,6 +309,64 @@ class ProductController extends Controller
                 'id'     => $product->id,
                 'status' => $product->status,
             ],
+        ]);
+    }
+
+    public function upload(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'file' => 'required|file|mimes:xlsx,xls,csv',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'message' => 'Invalid file',
+                'errors'  => $validator->errors()->all(),
+            ], 422);
+        }
+
+        $rows = Excel::toArray([], $request->file('file'))[0];
+
+        $header = array_map('strtolower', $rows[0]);
+        unset($rows[0]);
+
+        $inserted = 0;
+        $errors   = [];
+
+        foreach ($rows as $index => $row) {
+            $data = array_combine($header, $row);
+
+            $rowValidator = Validator::make($data, [
+                'name'        => 'required|string|max:255',
+                'category_id' => 'required|integer',
+                'brand_id'    => 'nullable|integer',
+
+            ]);
+
+            if ($rowValidator->fails()) {
+                $errors[] = [
+                    'row'    => $index + 2,
+                    'errors' => $rowValidator->errors(),
+                ];
+                continue;
+            }
+
+            Product::create([
+                'name'        => $data['name'],
+                'slug'        => Str::slug($data['name']), // ✅ FIX
+                'category_id' => $data['category_id'],
+                'brand_id'    => $data['brand_id'] ?? null,
+                'description' => $data['description'] ?? '',
+
+            ]);
+
+            $inserted++;
+        }
+
+        return response()->json([
+            'success'  => true,
+            'inserted' => $inserted,
+            'errors'   => $errors,
         ]);
     }
 

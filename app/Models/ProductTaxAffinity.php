@@ -18,4 +18,5 @@ class ProductTaxAffinity extends Model
         'gst_percent'      => 'float',
         'affinity_percent' => 'float',
     ];
+
 }

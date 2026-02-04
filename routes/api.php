@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CouponController;
+use App\Http\Controllers\menuController;
 use App\Http\Controllers\PaymentGatewayController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductImageController;
@@ -96,6 +97,8 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
     Route::post('update-product/{id}', [ProductController::class, 'update']);
     Route::delete('delete-product/{id}', [ProductController::class, 'destroy']);
 
+    Route::post('/product/bulk-upload', [ProductController::class, 'upload']);
+
     // Product Gallery Management
     Route::post('product/{product}/gallery', [ProductImageController::class, 'store']);
     Route::post('product/{product}/gallery', [ProductImageController::class, 'update']);
@@ -113,62 +116,19 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
 // Product SEO Meta Management
 
     Route::post('product-seo-meta/{product}', [ProductSeoMetaController::class, 'store']);
+    Route::post('product-seo-meta/update-meta/{product}', [ProductSeoMetaController::class, 'update']);
 
     // product Tax Affinity Management Routes
 
-    Route::post('product-tax-affinity/{product}/', [ProductTaxAffinityController::class, 'store']
-    );
+    Route::post('product-tax-affinity/{product}/', [ProductTaxAffinityController::class, 'store']);
+    Route::post('product-tax-affinity/update-tax/{product}', [ProductTaxAffinityController::class, 'update']);
 
     // publish the product
     Route::post('publish-product/{id}', [ProductController::class, 'publish']);
 });
 
-// Route::get('/public/settings/brand', [BrandingController::class, 'show']);
+Route::prefix('ecom')->group(function () {
+    Route::get('menu', [menuController::class, 'menu']);
+    Route::get('products', [menuController::class, 'products']);
 
-// Route::get(
-//     '/public/organizations/transactions',
-//     [OrganizationSubscriptionController::class, 'transactions']);
-
-// Route::get(
-//     '/public/dashboard',
-//     [OrganizationSubscriptionController::class, 'index']);
-
-// Route::middleware(['api', 'jwt.auth'])->group(function () {
-//     Route::get('/profile', [AuthController::class, 'profile']);
-//     Route::post('/logout', [AuthController::class, 'logout']);
-
-//     Route::post('/settings/profile', [SettingsController::class, 'updateProfile']);
-//     Route::post('/settings/brand', [BrandingController::class, 'store']);
-//     Route::get('/settings/brand', [BrandingController::class, 'show']);
-//     Route::post('/settings/card-pricing', [CardPrincingController::class, 'store']);
-//     Route::get('/settings/card-pricing', [CardPrincingController::class, 'show']);
-
-//     Route::get('/organizations', [OrginazationController::class, 'index']);
-//     Route::post('/organizations', [OrginazationController::class, 'store']);
-//     Route::get('/organizations/{organization}', [OrginazationController::class, 'show']);
-
-//     Route::put('/organizations/{organization}', [OrginazationController::class, 'update']);
-
-//     Route::delete('/organizations/{organization}', [OrginazationController::class, 'destroy']);
-
-//     Route::get('/organizations/{organization}/card-stats',
-//         [OrginazationController::class, 'stats']);
-
-//     Route::post(
-//         '/organizations/{organization}/add-cards',
-//         [OrganizationSubscriptionController::class, 'store']);
-
-//     Route::get(
-//         '/organizations/{organization}/subscription',
-//         [OrganizationSubscriptionController::class, 'show']);
-
-//     Route::get(
-//         '/organizations/transactions',
-//         [OrganizationSubscriptionController::class, 'transactions']);
-
-//     // Orginazation Employeer Routes
-
-//     Route::get('/settings-orginization', [OrginazationController::class, 'showOrginizationBrandSettings']);
-//     Route::post('/organizations/brand-settings', [OrginazationController::class, 'save']);
-
-// });
+});
