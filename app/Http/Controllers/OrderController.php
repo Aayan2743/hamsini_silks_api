@@ -73,21 +73,93 @@ class OrderController extends Controller
     /* ================= GET USER ORDERS ================= */
     public function index(Request $request)
     {
+        $orders = Order::with([
+            'items.product.images', // 👈 include product images
+        ])
+            ->where('user_id', auth()->id())
+            ->latest()
+            ->get();
+
+        // Optional: add full image_url
+        $orders->each(function ($order) {
+            $order->items->each(function ($item) {
+                if ($item->product && $item->product->images) {
+                    $item->product->images->each(function ($img) {
+                        $img->image_url = asset('storage/' . $img->image_path);
+                    });
+                }
+            });
+        });
+
         return response()->json([
             'success' => true,
-            'data'    => Order::with('items')
-                ->where('user_id', auth()->id())
-                ->latest()
-                ->get(),
+            'data'    => $orders,
         ]);
     }
 
     /* ================= SHOW ORDER ================= */
+
     public function show($id)
     {
+        $order = Order::with([
+            'items.product.images', // 👈 THIS is the key line
+        ])->findOrFail($id);
+
+        // (optional) append full image URL
+        $order->items->each(function ($item) {
+            if ($item->product && $item->product->images) {
+                $item->product->images->each(function ($img) {
+                    $img->image_url = asset('storage/' . $img->image_path);
+                });
+            }
+        });
+
         return response()->json([
             'success' => true,
-            'data'    => Order::with('items')->findOrFail($id),
+            'data'    => $order,
+        ]);
+    }
+
+    public function getMyOrderDetails(Request $request, $id)
+    {
+        $user = $request->user();
+
+        $order = Order::where('id', $id)
+            ->where('user_id', $user->id)
+            ->with([
+                'items.product:id,name',
+            ])
+            ->first();
+
+        if (! $order) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Order not found',
+            ], 404);
+        }
+
+        return response()->json([
+            'success' => true,
+            'data'    => [
+                'id'              => $order->id,
+                'order_status'    => $order->order_status,
+                'subtotal'        => $order->subtotal,
+                'discount_amount' => $order->discount ?? 0,
+                'total_amount'    => $order->total_amount,
+                'createdAt'       => $order->created_at,
+
+                'items'           => $order->items->map(function ($item) {
+                    return [
+                        'id'       => $item->id,
+                        'quantity' => $item->quantity,
+                        'price'    => $item->price,
+
+                        'product'  => [
+                            'name' => $item->product?->name,
+                        ],
+                    ];
+                }),
+            ],
         ]);
     }
 
