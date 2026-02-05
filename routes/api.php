@@ -158,7 +158,7 @@ Route::prefix('user-dashboard')->middleware(['api', 'jwt.auth'])->group(function
 
     Route::get('/cart/get-address', [AddressController::class, 'index']);
     Route::post('/cart/add-address', [AddressController::class, 'store']);
-    Route::put('/cart/update-address/{id}', [AddressController::class, 'update']);
+    Route::post('/cart/update-address/{id}', [AddressController::class, 'update']);
     Route::delete('/cart/delete-address/{id}', [AddressController::class, 'destroy']);
     Route::post('/cart/set-default-address/{id}', [AddressController::class, 'setDefault']);
 
