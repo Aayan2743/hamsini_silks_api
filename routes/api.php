@@ -1,10 +1,13 @@
 <?php
 
+use App\Http\Controllers\AddressController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CouponController;
 use App\Http\Controllers\menuController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PaymentGatewayController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductImageController;
@@ -34,6 +37,11 @@ Route::prefix('auth')->group(function () {
     Route::get('app-logo-settings', [SettingController::class, 'show']);
 
     Route::post('organization/forgot-password', [AuthController::class, 'OrgsendOtp']);
+
+    Route::get(
+        '/razorpay-key',
+        [CartController::class, 'razorpayKey']
+    );
 
 });
 
@@ -130,5 +138,41 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
 Route::prefix('ecom')->group(function () {
     Route::get('menu', [menuController::class, 'menu']);
     Route::get('products', [menuController::class, 'products']);
+    Route::get('products-main', [menuController::class, 'products_main']);
 
+    // app settion globel
+    Route::get('/app-logo-settings', [SettingController::class, 'show']);
+    Route::get('/list-brand', [BrandController::class, 'index_no_pagination']);
+
+});
+
+Route::prefix('user-dashboard')->middleware(['api', 'jwt.auth'])->group(function () {
+
+    // Cart Functionalities
+
+    Route::post('/cart/sync', [CartController::class, 'sync']);
+    Route::get('/cart', [CartController::class, 'get']);
+    Route::delete('/cart/clear', [CartController::class, 'clear']);
+
+    // address functionalies
+
+    Route::get('/cart/get-address', [AddressController::class, 'index']);
+    Route::post('/cart/add-address', [AddressController::class, 'store']);
+    Route::put('/cart/update-address/{id}', [AddressController::class, 'update']);
+    Route::delete('/cart/delete-address/{id}', [AddressController::class, 'destroy']);
+    Route::post('/cart/set-default-address/{id}', [AddressController::class, 'setDefault']);
+
+    // payent
+    Route::post('/cart/create-order', [CartController::class, 'createOrder']);
+    Route::post('/cart/verify-payment', [CartController::class, 'verifyPayment']);
+    Route::post('/cart/save-order', [CartController::class, 'saveOrder']);
+
+    // coupen check
+    Route::post('/cart/apply-coupon', [CouponController::class, 'apply']);
+
+    // order item save
+    Route::post('/orders', [OrderController::class, 'store']);
+    Route::get('/orders', [OrderController::class, 'index']);
+    Route::get('/orders/{id}', [OrderController::class, 'show']);
+    Route::delete('/orders/{id}', [OrderController::class, 'destroy']);
 });

@@ -38,6 +38,13 @@ class BrandController extends Controller
         ]);
     }
 
+    public function index_no_pagination(Request $request)
+    {
+        $brands = Brand::all();
+        return response()->json(['brands' => $brands]);
+
+    }
+
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [

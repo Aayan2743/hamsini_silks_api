@@ -33,10 +33,10 @@ class ProductController extends Controller
             'category.parent:id,name',
             'brand:id,name',
         ])
-        ->withMin('variantCombinations as min_price', 'extra_price')
-        ->withMin('variantCombinations as min_discount', 'discount')
-        ->orderBy('id', 'desc')
-        ->paginate($perPage);
+            ->withMin('variantCombinations as min_price', 'extra_price')
+            ->withMin('variantCombinations as min_discount', 'discount')
+            ->orderBy('id', 'desc')
+            ->paginate($perPage);
 
         return response()->json([
             'data'       => $products->getCollection()->map(fn($p) => [
@@ -69,15 +69,6 @@ class ProductController extends Controller
     public function fetchById($id)
     {
         $product = Product::with([
-            // 'category',
-            // 'brand:id,name',
-            // 'images:id,product_id,image_path,is_primary',
-            // 'variantCombinations:id,product_id,sku,purchase_price,extra_price,discount,quantity,low_quantity',
-            // 'seo',
-            // 'taxAffinity',
-            // 'videos',
-            // 'variantCombinations.values.value', // 🔥 REQUIRED
-            // 'variantCombinations.images',       // 🔥 REQUIRED
 
             'category:id,name,parent_id',
             'category.parent:id,name',
@@ -109,7 +100,7 @@ class ProductController extends Controller
                     'id'        => $product->category->id,
                     'name'      => $product->category->name,
                     'parent_id' => $product->category->parent_id,
-                    'main_name' => $product->category->parent->name,
+                    'main_name' => $product->category?->parent?->name,
                 ]
                     : null,
 
