@@ -11,7 +11,7 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'user_id'                     => 'required|exists:users,id',
+            // 'user_id'                     => 'required|exists:users,id',
             'address_id'                  => 'required|exists:addresses,id',
 
             'payment.method'              => 'required|string',
@@ -38,9 +38,11 @@ class OrderController extends Controller
             ], 422);
         }
 
+        $user_id = auth()->user()->id;
+
         // ✅ Create Order
         $order = Order::create([
-            'user_id'             => $request->user_id,
+            'user_id'             => $user_id,
             'address_id'          => $request->address_id,
             'payment_method'      => $request->payment['method'],
             'razorpay_order_id'   => $request->payment['razorpay_order_id'] ?? null,

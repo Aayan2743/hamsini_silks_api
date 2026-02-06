@@ -79,7 +79,7 @@ class CartController extends Controller
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
-                'message' => 'Invalid amount',
+                'message' => $validator->errors()->first(),
             ], 422);
         }
 
@@ -144,6 +144,7 @@ class CartController extends Controller
     /* ================= SAVE ORDER AFTER PAYMENT ================= */
     public function saveOrder(Request $request)
     {
+
         $validator = Validator::make($request->all(), [
             'address_id'     => 'required|integer',
             'items'          => 'required|array|min:1',
@@ -156,7 +157,7 @@ class CartController extends Controller
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
-                'errors'  => $validator->errors(),
+                'errors'  => $validator->errors()->first(),
             ], 422);
         }
 

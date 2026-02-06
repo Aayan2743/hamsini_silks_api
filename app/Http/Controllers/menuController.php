@@ -9,7 +9,13 @@ use Illuminate\Support\Str;
 
 class menuController extends Controller
 {
-
+/**
+ * @OA\Get(
+ *   path="/api/menu",
+ *   summary="Menu",
+ *   @OA\Response(response=200, description="OK")
+ * )
+ */
     public function menu()
     {
         $categories = Category::whereNull('parent_id')
