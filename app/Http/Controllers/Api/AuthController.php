@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
-use Str;
+use Illuminate\Support\Str;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
 class AuthController extends Controller
@@ -307,96 +307,72 @@ class AuthController extends Controller
         ]);
     }
 
-    public function updateProfile(Request $request)
+    public function update(Request $request)
     {
-        $user = Auth::user();
+        $user = $request->user();
 
+        /* ================= VALIDATION ================= */
         $validator = Validator::make($request->all(), [
-            'name'     => 'required | string | max: 255',
-            // 'email'    => 'required | email | unique: users, email, ' . $user->id,
-            // 'phone'    => 'nullable | digits: 10 | unique: users, phone, ' . $user->id,'email' => 'required|email|unique:users,email,' . $user->id,
-
-            'email'    => 'required|email|unique:users,email,' . $user->id,
-            'phone'    => 'nullable|digits:10|unique:users,phone,' . $user->id,
-
-            'password' => 'nullable | min: 6',
-            'avatar'   => 'nullable | image | max: 4048',
+            'name'          => 'required|string|max:255',
+            'email'         => 'nullable|email|max:255|unique:users,email,' . $user->id,
+            'profile_image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:4096',
         ]);
 
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
-                'errors'  => $validator->errors()->first(),
+                'message' => $validator->errors()->first(),
             ], 422);
         }
 
-        // ================= BASIC INFO =================
+        /* ================= UPDATE TEXT FIELDS ================= */
         $user->name  = $request->name;
-        $user->email = $request->email;
-        $user->phone = $request->phone;
+        $user->email = $request->email ?? $user->email;
 
-        // ================= PASSWORD =================
-        if ($request->filled('password')) {
-            $user->password = Hash::make($request->password);
-        }
+        /* ================= IMAGE → WEBP ================= */
+        if ($request->hasFile('profile_image')) {
 
-        // ================= AVATAR =================
-        // if ($request->hasFile('avatar')) {
+            $file = $request->file('profile_image');
 
-        //     if ($user->avatar && Storage::disk('')->exists($user->avatar)) {
-        //         Storage::disk('')->delete($user->avatar);
-        //     }
+            // 👉 temp source path
+            $srcPath = $file->getRealPath();
 
-        //     $file = $request->file('avatar');
-        //     // generate filename
-        //     $fileName = Str::uuid() . '.';
+            // 👉 destination path (storage/app/public/avatars)
+            $fileName = Str::uuid() . '.webp';
+            $destPath = storage_path('app/public/avatars/' . $fileName);
 
-        //     // final path
-        //     $relativePath = '/' . $fileName;
-        //     $absolutePath = storage_path('app/public/avatars/' . $fileName);
+            // 👉 convert + resize (300x300 optional)
+            WebpService::convert(
+                $srcPath,
+                $destPath,
+                70,  // quality
+                300, // width
+                300  // height
+            );
 
-        //     WebpService::convert(
-        //         $file->getRealPath(),
-        //         $absolutePath,
-        //         75
-        //     );
-
-        //     $user->avatar = $relativePath;
-        // }
-
-        if ($request->hasFile('avatar')) {
-
-            // delete old avatar
+            // 👉 delete old avatar
             if ($user->avatar && Storage::disk('public')->exists($user->avatar)) {
                 Storage::disk('public')->delete($user->avatar);
             }
 
-            $file = $request->file('avatar');
-
-            // ✅ filename WITH .webp
-            $fileName = Str::uuid() . '.webp';
-
-            // ✅ paths
-            $relativePath = 'avatars/' . $fileName;
-            $absolutePath = storage_path('app/public/' . $relativePath);
-
-            // convert to WEBP
-            WebpService::convert(
-                $file->getRealPath(),
-                $absolutePath,
-                75
-            );
-
-            // save in DB
-            $user->avatar = $relativePath;
+            // 👉 save relative path
+            $user->avatar = 'avatars/' . $fileName;
         }
 
         $user->save();
 
+        /* ================= RESPONSE ================= */
         return response()->json([
             'success' => true,
-            'message' => 'Profile updated successfully',
-            'user'    => $user,
+            'user'    => [
+                'id'     => $user->id,
+                'name'   => $user->name,
+                'email'  => $user->email,
+                'phone'  => $user->phone,
+                'avatar' => $user->avatar
+                    ? asset('storage/' . $user->avatar)
+                    : null,
+            ],
         ]);
     }
 

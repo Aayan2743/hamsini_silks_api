@@ -18,6 +18,7 @@ use App\Http\Controllers\ProductVariationController;
 use App\Http\Controllers\ProductVariationValueController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\WhatsappSettingController;
+use App\Http\Controllers\WishlistController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('auth')->group(function () {
@@ -174,5 +175,15 @@ Route::prefix('user-dashboard')->middleware(['api', 'jwt.auth'])->group(function
     Route::post('/orders', [OrderController::class, 'store']);
     Route::get('/orders', [OrderController::class, 'index']);
     Route::get('/orders/{id}', [OrderController::class, 'show']);
+    Route::get('/get-my-orders/{id}', [OrderController::class, 'getMyOrderDetails']);
     Route::delete('/orders/{id}', [OrderController::class, 'destroy']);
+
+    // profile update
+    Route::post('/update-profile', [AuthController::class, 'update']);
+
+    // whishlist toggle
+
+    Route::get('/get-wishlist', [WishlistController::class, 'index']);
+    Route::post('/wishlist-toggle', [WishlistController::class, 'toggle']);
+
 });
