@@ -9,6 +9,15 @@ class ProductImage extends Model
 
     ];
 
+    protected $appends = ['image_url'];
+
+    protected $hidden = ['image_path'];
+
+    public function getImageUrlAttribute()
+    {
+        return asset('storage/' . $this->image_path);
+    }
+
     protected $casts = [
         'is_primary' => 'boolean',
     ];

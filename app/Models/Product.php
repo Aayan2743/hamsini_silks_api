@@ -57,4 +57,13 @@ class Product extends Model
             'product_id'
         );
     }
+
+    public function getImagesListAttribute()
+    {
+        return $this->images->map(fn($img) => [
+            'id'        => $img->id,
+            'is_main'   => (bool) $img->is_main,
+            'image_url' => $img->image_url, // comes from ProductImage accessor
+        ]);
+    }
 }

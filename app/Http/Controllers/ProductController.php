@@ -15,23 +15,11 @@ class ProductController extends Controller
         $search  = $request->search;
         $perPage = $request->perPage ?? 10;
 
-        // $products = Product::with([
-        //     'category:id,name',
-        //     'brand:id,name',
-        //     'category.parent:id,name',
-        // ])
-        //     ->withMin('variantCombinations as min_price', 'extra_price')
-        //     ->withMin('variantCombinations as min_discount', 'discount')
-        //     ->when($search, fn($q) =>
-        //         $q->where('name', 'like', "%{$search}%")
-        //     )
-        //     ->orderBy('id', 'desc')
-        //     ->paginate($perPage);
-
         $products = Product::with([
             'category:id,name,parent_id',
             'category.parent:id,name',
             'brand:id,name',
+            'images:id,product_id,image_path,is_primary',
         ])
             ->withMin('variantCombinations as min_price', 'extra_price')
             ->withMin('variantCombinations as min_discount', 'discount')
@@ -56,6 +44,13 @@ class ProductController extends Controller
                     0,
                     ($p->min_price ?? 0) - ($p->min_discount ?? 0)
                 ),
+                'image_url'     => optional(
+                    $p->images->firstWhere('is_primary', true) ?? $p->images->first()
+                )->image_path
+                    ? asset('storage/' . optional(
+                    $p->images->firstWhere('is_primary', true) ?? $p->images->first()
+                )->image_path)
+                    : null,
 
                 'status'        => $p->status,
             ]),
@@ -85,6 +80,7 @@ class ProductController extends Controller
 
             'seo',
             'taxAffinity',
+
         ])
             ->findOrFail($id);
 
@@ -274,7 +270,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
 
         // ⛔ Prevent double publish
-        if ($product->status === 'active') {
+        if ($product->status === 'Published') {
             return response()->json([
                 'success' => false,
                 'message' => 'Product is already published',
@@ -290,7 +286,7 @@ class ProductController extends Controller
 
         // ✅ Publish
         $product->update([
-            'status' => 'active',
+            'status' => 'Published',
         ]);
 
         return response()->json([

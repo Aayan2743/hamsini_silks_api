@@ -63,7 +63,7 @@ class ProductTaxAffinityController extends Controller
             'affinity_enabled' => 'required|boolean',
             'affinity_percent' => 'nullable|numeric|min:0|max:100',
 
-            'status'           => 'required|in:published,draft',
+            'status'           => 'required|in:Published,draft',
         ]);
 
         if ($validator->fails()) {

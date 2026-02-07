@@ -64,7 +64,7 @@ class menuController extends Controller
         ]);
     }
 
-    public function products(Request $request)
+    public function products2(Request $request)
     {
         $query = Product::where('status', 'active')
             ->with([
@@ -130,9 +130,76 @@ class menuController extends Controller
         ]);
     }
 
+    public function products(Request $request)
+    {
+        $query = Product::where('status', 'Published')
+            ->with([
+                'category:id,name,slug,parent_id',
+                'images:id,product_id,image_path,is_primary',
+                'videos:id,product_id,video_url',
+                'variantCombinations.values.variation:id,name',
+            ]);
+
+        /* ================= CATEGORY FILTER ================= */
+        if ($request->filled('category')) {
+            $category = Category::where('slug', $request->category)->first();
+
+            if ($category) {
+                if ($category->parent_id) {
+                    $query->where('category_id', $category->id);
+                } else {
+                    $subIds = Category::where('parent_id', $category->id)->pluck('id');
+                    $query->whereIn('category_id', $subIds);
+                }
+            }
+        }
+
+        /* ================= SLUG FILTER ================= */
+        if ($request->filled('slug')) {
+            $query->where('slug', $request->slug);
+        }
+
+        /* ================= COLOR + PRICE FILTER ================= */
+        if (
+            $request->filled('colors') ||
+            $request->filled('min_price') ||
+            $request->filled('max_price')
+        ) {
+            $colorIds = $request->filled('colors')
+                ? explode(',', $request->colors)
+                : [];
+
+            $min = $request->min_price ?? 0;
+            $max = $request->max_price ?? PHP_INT_MAX;
+
+            $query->whereHas('variantCombinations', function ($q) use ($colorIds, $min, $max) {
+                $q->whereBetween('extra_price', [$min, $max]);
+
+                if (! empty($colorIds)) {
+                    $q->whereHas('values', function ($qq) use ($colorIds) {
+                        $qq->whereIn(
+                            'product_variant_combination_values.variation_value_id',
+                            $colorIds
+                        );
+                    });
+                }
+            });
+        }
+
+        $products = $query->paginate(12);
+
+        // ❌ NO TRANSFORM
+        // ❌ NO RESPONSE CHANGE
+
+        return response()->json([
+            'success' => true,
+            'data'    => $products,
+        ]);
+    }
+
     public function products_main_w(Request $request)
     {
-        $query = Product::where('status', 'active')
+        $query = Product::where('status', 'Published')
             ->with([
                 'category:id,name,slug,parent_id',
                 'images:id,product_id,image_path,is_primary',
@@ -226,7 +293,7 @@ class menuController extends Controller
             'sort'      => $request->sort ?? $request->sortBy,
         ]);
 
-        $query = Product::where('status', 'active')
+        $query = Product::where('status', 'Published')
             ->with([
                 'category:id,name,slug,parent_id',
                 'images:id,product_id,image_path,is_primary',
