@@ -175,4 +175,85 @@ class OrderController extends Controller
             'message' => 'Order deleted',
         ]);
     }
+
+    public function allorders(Request $request)
+    {
+        $search  = $request->search;
+        $perPage = $request->perPage ?? 10;
+
+        $orders = Order::with([
+            'items.product.images',
+            'user:id,name,phone,email',
+        ])
+            ->when($search, function ($q) use ($search) {
+                $q->where('id', 'like', "%{$search}%")
+                    ->orWhereHas('items.product', function ($p) use ($search) {
+                        $p->where('name', 'like', "%{$search}%");
+                    })
+                    ->orWhereHas('user', function ($u) use ($search) {
+                        $u->where('name', 'like', "%{$search}%")
+                            ->orWhere('phone', 'like', "%{$search}%");
+                    });
+            })
+            ->latest()
+            ->paginate($perPage);
+
+        return response()->json([
+            'success'    => true,
+            'data'       => $orders->items(),
+            'pagination' => [
+                'total'       => $orders->total(),
+                'currentPage' => $orders->currentPage(),
+                'totalPages'  => $orders->lastPage(),
+                'perPage'     => $orders->perPage(),
+            ],
+        ]);
+    }
+
+    public function allorders_show($id)
+    {
+        $order = Order::with([
+            'items.product.images',
+            'user:id,name,phone,email',
+        ])
+            ->find($id);
+
+        if (! $order) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Order not found',
+            ], 404);
+        }
+
+        return response()->json([
+            'success' => true,
+            'data'    => $order,
+        ]);
+    }
+
+    public function updateStatus(Request $request, $id)
+    {
+        $request->validate([
+            'status'      => 'required|string',
+            'tracking_id' => 'nullable|string',
+        ]);
+
+        $order = Order::findOrFail($id);
+
+        if ($request->status === 'shipping' && ! $request->tracking_id) {
+            return response()->json([
+                'message' => 'Tracking ID required',
+            ], 422);
+        }
+
+        $order->status      = $request->status;
+        $order->tracking_id = $request->tracking_id;
+        $order->save();
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Order status updated',
+        ]);
+    }
+
 }

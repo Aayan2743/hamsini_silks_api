@@ -134,6 +134,11 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
 
     // publish the product
     Route::post('publish-product/{id}', [ProductController::class, 'publish']);
+
+    Route::get('/orders', [OrderController::class, 'allorders']);
+    Route::get('/orders-details/{id}', [OrderController::class, 'allorders_show']);
+    Route::post('/orders/{id}/status', [OrderController::class, 'updateStatus']);
+
 });
 
 Route::prefix('ecom')->group(function () {
@@ -173,7 +178,7 @@ Route::prefix('user-dashboard')->middleware(['api', 'jwt.auth'])->group(function
 
     // order item save
     Route::post('/orders', [OrderController::class, 'store']);
-    Route::get('/orders', [OrderController::class, 'index']);
+    Route::get('/orders  ', [OrderController::class, 'index']);
     Route::get('/orders/{id}', [OrderController::class, 'show']);
     Route::get('/get-my-orders/{id}', [OrderController::class, 'getMyOrderDetails']);
     Route::delete('/orders/{id}', [OrderController::class, 'destroy']);

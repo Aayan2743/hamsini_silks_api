@@ -16,10 +16,16 @@ class Order extends Model
         'coupon_code',
         'total_amount',
         'status',
+        'tracking_id',
     ];
 
     public function items()
     {
         return $this->hasMany(OrderItem::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }

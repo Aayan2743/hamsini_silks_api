@@ -9,6 +9,8 @@ class ProductVariantCombination extends Model
 
     ];
 
+    protected $appends = ['amount'];
+
     public function product()
     {
         return $this->belongsTo(Product::class);
@@ -50,5 +52,14 @@ class ProductVariantCombination extends Model
             ProductVariantImage::class,
             'variant_combination_id'
         );
+    }
+
+    // ✅ amount = selling_price (single quantity)
+    public function getAmountAttribute()
+    {
+        $price    = (float) ($this->extra_price ?? 0);
+        $discount = (float) ($this->discount ?? 0);
+
+        return max(0, $price - $discount);
     }
 }
