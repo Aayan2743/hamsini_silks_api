@@ -14,9 +14,10 @@ endpoints:
       subgroupDescription: ''
       title: 'Handles the API request and renders the Swagger documentation view.'
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -37,7 +38,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -54,9 +58,10 @@ endpoints:
       subgroupDescription: ''
       title: 'Handles the OAuth2 callback and retrieves the required file for the redirect.'
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -83,480 +88,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - GET
-    uri: api/auth/sample
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        custom: []
-        status: 500
-        content: '{"success":false,"error":"SERVER_ERROR","message":"SQLSTATE[42S02]: Base table or view not found: 1146 Table ''hamsini_db.sapmles'' doesn''t exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: hamsini_db, SQL: select * from `sapmles`)"}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - POST
-    uri: api/auth/admin-register
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      name:
-        custom: []
-        name: name
-        description: 'Must not be greater than 255 characters.'
-        required: true
-        example: vmqeopfuudtdsufvyvddq
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      email:
-        custom: []
-        name: email
-        description: 'Must be a valid email address.'
-        required: true
-        example: kunde.eloisa@example.com
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      password:
-        custom: []
-        name: password
-        description: 'Must be at least 6 characters.'
-        required: true
-        example: '4[*UyPJ"}6'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      phone:
-        custom: []
-        name: phone
-        description: 'Must be 10 digits.'
-        required: true
-        example: '8107987494'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanBodyParameters:
-      name: vmqeopfuudtdsufvyvddq
-      email: kunde.eloisa@example.com
-      password: '4[*UyPJ"}6'
-      phone: '8107987494'
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - POST
-    uri: api/auth/admin-login
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      username:
-        custom: []
-        name: username
-        description: ''
-        required: true
-        example: consequatur
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      password:
-        custom: []
-        name: password
-        description: 'email OR phone.'
-        required: true
-        example: 'O[2UZ5ij-e/dl4m{o,'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanBodyParameters:
-      username: consequatur
-      password: 'O[2UZ5ij-e/dl4m{o,'
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - POST
-    uri: api/auth/user-register
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      name:
-        custom: []
-        name: name
-        description: 'Must not be greater than 255 characters.'
-        required: true
-        example: vmqeopfuudtdsufvyvddq
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      email:
-        custom: []
-        name: email
-        description: 'Must be a valid email address.'
-        required: true
-        example: kunde.eloisa@example.com
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      password:
-        custom: []
-        name: password
-        description: 'Must be at least 6 characters.'
-        required: true
-        example: '4[*UyPJ"}6'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      phone:
-        custom: []
-        name: phone
-        description: 'Must be 10 digits.'
-        required: true
-        example: '8107987494'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanBodyParameters:
-      name: vmqeopfuudtdsufvyvddq
-      email: kunde.eloisa@example.com
-      password: '4[*UyPJ"}6'
-      phone: '8107987494'
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - POST
-    uri: api/auth/user-login
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      login:
-        custom: []
-        name: login
-        description: ''
-        required: true
-        example: consequatur
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      password:
-        custom: []
-        name: password
-        description: 'email OR phone.'
-        required: true
-        example: 'O[2UZ5ij-e/dl4m{o,'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanBodyParameters:
-      login: consequatur
-      password: 'O[2UZ5ij-e/dl4m{o,'
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - POST
-    uri: api/auth/forgot-password
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      email:
-        custom: []
-        name: email
-        description: 'Must be a valid email address. The <code> email</code> of an existing record in the  users table.'
-        required: true
-        example: qkunze@example.com
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanBodyParameters:
-      email: qkunze@example.com
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - POST
-    uri: api/auth/verify-otp
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      email:
-        custom: []
-        name: email
-        description: 'Must be a valid email address.'
-        required: true
-        example: qkunze@example.com
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      otp:
-        custom: []
-        name: otp
-        description: ''
-        required: true
-        example: consequatur
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanBodyParameters:
-      email: qkunze@example.com
-      otp: consequatur
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - POST
-    uri: api/auth/reset-password
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      email:
-        custom: []
-        name: email
-        description: 'Must be a valid email address.'
-        required: true
-        example: qkunze@example.com
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      otp:
-        custom: []
-        name: otp
-        description: ''
-        required: true
-        example: consequatur
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      password:
-        custom: []
-        name: password
-        description: 'Must be at least  6 characters.'
-        required: true
-        example: '[2UZ5ij-e/dl4'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanBodyParameters:
-      email: qkunze@example.com
-      otp: consequatur
-      password: '[2UZ5ij-e/dl4'
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -573,9 +108,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -589,14 +125,17 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"success":true,"data":{"id":1,"app_name":"Hamsini-Silk123","app_logo":"settings\/cdca641d-490b-46cc-9178-84ff435171e3.webp","app_favicon":"settings\/139b24ac-2532-4321-82f5-4f810c0ee53d.webp","created_at":"2026-02-03T07:03:27.000000Z","updated_at":"2026-02-03T11:03:18.000000Z","app_logo_url":"http:\/\/localhost\/storage\/settings\/cdca641d-490b-46cc-9178-84ff435171e3.webp","app_favicon_url":"http:\/\/localhost\/storage\/settings\/139b24ac-2532-4321-82f5-4f810c0ee53d.webp"}}'
+        content: '{"success":true,"data":{"id":1,"app_name":"Hamsini-Silks","app_logo":"settings\/c79651c9-a33b-4e7c-b1f1-30893ee1f11e.webp","app_favicon":"settings\/6f432dfb-f718-4a89-b00e-bcd255216a1a.webp","created_at":"2026-02-03T07:03:27.000000Z","updated_at":"2026-02-07T12:07:50.000000Z","app_logo_url":"http:\/\/localhost\/storage\/settings\/c79651c9-a33b-4e7c-b1f1-30893ee1f11e.webp","app_favicon_url":"http:\/\/localhost\/storage\/settings\/6f432dfb-f718-4a89-b00e-bcd255216a1a.webp"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -604,7 +143,7 @@ endpoints:
     custom: []
     httpMethods:
       - GET
-    uri: api/admin-dashboard/profile
+    uri: api/admin-dashboard/app-logo-settings
     metadata:
       custom: []
       groupName: Endpoints
@@ -613,9 +152,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -636,138 +176,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - POST
-    uri: api/admin-dashboard/update-profile
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: multipart/form-data
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      name:
-        custom: []
-        name: name
-        description: 'Must not be greater than  255 characters.'
-        required: true
-        example: vmqeopfuudtdsufvyvddq
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      email:
-        custom: []
-        name: email
-        description: |-
-          'email'    => 'required | email | unique: users, email, ' . $user->id,
-          'phone'    => 'nullable | digits: 10 | unique: users, phone, ' . $user->id,'email' => 'required|email|unique:users,email,' . $user->id,.
-        required: false
-        example: null
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      phone:
-        custom: []
-        name: phone
-        description: ''
-        required: false
-        example: null
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      password:
-        custom: []
-        name: password
-        description: 'Must be at least  6 characters.'
-        required: false
-        example: OP>@;4
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: true
-        deprecated: false
-      avatar:
-        custom: []
-        name: avatar
-        description: 'Must be an image. Must not be greater than  4048 kilobytes.'
-        required: false
-        example: null
-        type: file
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: true
-        deprecated: false
-    cleanBodyParameters:
-      name: vmqeopfuudtdsufvyvddq
-      password: OP>@;4
-    fileParameters:
-      avatar: null
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - GET
-    uri: api/admin-dashboard/app-logo-settings
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        custom: []
-        status: 401
-        content: '{"success":false,"error":"HTTP_ERROR","message":"Token not provided"}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-    responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -784,9 +196,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: multipart/form-data
       Accept: application/json
     urlParameters: []
@@ -834,7 +247,10 @@ endpoints:
       app_favicon: null
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -851,9 +267,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -874,7 +291,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -891,9 +311,10 @@ endpoints:
       subgroupDescription: ''
       title: 'Create or Update Social Media Settings (single row)'
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -965,7 +386,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -982,9 +406,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -1005,7 +430,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1022,9 +450,10 @@ endpoints:
       subgroupDescription: ''
       title: 'CREATE or UPDATE (single row)'
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -1059,7 +488,7 @@ endpoints:
         name: razorpay_enabled
         description: ''
         required: false
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -1145,7 +574,7 @@ endpoints:
     cleanBodyParameters:
       razorpay_key: consequatur
       razorpay_secret: consequatur
-      razorpay_enabled: false
+      razorpay_enabled: true
       cashfree_app_id: consequatur
       cashfree_secret: consequatur
       cashfree_enabled: false
@@ -1156,7 +585,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1173,9 +605,10 @@ endpoints:
       subgroupDescription: ''
       title: 'DELETE settings (optional)'
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -1187,7 +620,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1204,9 +640,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -1227,7 +664,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1244,9 +684,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -1270,7 +711,7 @@ endpoints:
         name: type
         description: ''
         required: true
-        example: text
+        example: color
         type: string
         enumValues:
           - text
@@ -1280,11 +721,14 @@ endpoints:
         deprecated: false
     cleanBodyParameters:
       name: vmqeopfuudtdsufvyvddq
-      type: text
+      type: color
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1301,9 +745,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -1339,7 +784,7 @@ endpoints:
         name: type
         description: ''
         required: true
-        example: color
+        example: text
         type: string
         enumValues:
           - text
@@ -1349,11 +794,14 @@ endpoints:
         deprecated: false
     cleanBodyParameters:
       name: vmqeopfuudtdsufvyvddq
-      type: color
+      type: text
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1370,9 +818,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -1396,7 +845,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1413,9 +865,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -1463,7 +916,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1480,9 +936,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -1530,7 +987,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1547,9 +1007,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -1573,7 +1034,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1590,9 +1054,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -1613,7 +1078,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1630,9 +1098,10 @@ endpoints:
       subgroupDescription: ''
       title: 'SAVE (create or update)'
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -1656,7 +1125,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1673,9 +1145,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -1696,7 +1169,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1713,9 +1189,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -1785,7 +1262,7 @@ endpoints:
         name: expiry_date
         description: 'Must be a valid date.'
         required: false
-        example: '2026-02-06T06:50:05'
+        example: '2026-02-09T13:23:43'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1796,7 +1273,7 @@ endpoints:
         name: is_active
         description: ''
         required: false
-        example: true
+        example: false
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -1808,12 +1285,15 @@ endpoints:
       value: 1
       min_order: 45
       max_discount: 46
-      expiry_date: '2026-02-06T06:50:05'
-      is_active: true
+      expiry_date: '2026-02-09T13:23:43'
+      is_active: false
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1830,9 +1310,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -1868,7 +1349,7 @@ endpoints:
         name: type
         description: ''
         required: true
-        example: flat
+        example: percent
         type: string
         enumValues:
           - percent
@@ -1914,7 +1395,7 @@ endpoints:
         name: expiry_date
         description: 'Must be a valid date.'
         required: false
-        example: '2026-02-06T06:50:05'
+        example: '2026-02-09T13:23:43'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1932,16 +1413,19 @@ endpoints:
         nullable: false
         deprecated: false
     cleanBodyParameters:
-      type: flat
+      type: percent
       value: 73
       min_order: 45
       max_discount: 56
-      expiry_date: '2026-02-06T06:50:05'
+      expiry_date: '2026-02-09T13:23:43'
       is_active: true
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -1958,9 +1442,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -1984,7 +1469,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2001,9 +1489,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -2024,7 +1513,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2041,9 +1533,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -2064,7 +1557,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2081,9 +1577,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: multipart/form-data
       Accept: application/json
     urlParameters: []
@@ -2130,7 +1627,10 @@ endpoints:
       image: null
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2147,9 +1647,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: multipart/form-data
       Accept: application/json
     urlParameters:
@@ -2208,7 +1709,10 @@ endpoints:
       image: null
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2225,9 +1729,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -2251,7 +1756,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2268,9 +1776,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -2291,7 +1800,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2308,9 +1820,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: multipart/form-data
       Accept: application/json
     urlParameters: []
@@ -2360,7 +1873,10 @@ endpoints:
       image: null
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2377,9 +1893,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: multipart/form-data
       Accept: application/json
     urlParameters:
@@ -2441,7 +1958,10 @@ endpoints:
       image: null
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2458,9 +1978,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -2484,7 +2005,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2501,9 +2025,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -2524,7 +2049,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2541,9 +2069,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -2576,7 +2105,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2593,9 +2125,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -2685,7 +2218,7 @@ endpoints:
         name: status
         description: ''
         required: false
-        example: inactive
+        example: draft
         type: string
         enumValues:
           - draft
@@ -2701,11 +2234,14 @@ endpoints:
       purchase_price: 12
       base_price: 66
       discount: 13
-      status: inactive
+      status: draft
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2722,9 +2258,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -2846,7 +2383,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2863,9 +2403,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -2889,7 +2430,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2906,9 +2450,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: multipart/form-data
       Accept: application/json
     urlParameters: []
@@ -2932,7 +2477,10 @@ endpoints:
       file: null
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -2949,9 +2497,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: multipart/form-data
       Accept: application/json
     urlParameters:
@@ -3015,7 +2564,10 @@ endpoints:
         - null
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3032,9 +2584,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: multipart/form-data
       Accept: application/json
     urlParameters:
@@ -3072,7 +2625,10 @@ endpoints:
         - null
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3089,9 +2645,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -3115,7 +2672,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3132,9 +2692,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -3170,7 +2731,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3187,9 +2751,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -3227,7 +2792,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3244,9 +2812,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: multipart/form-data
       Accept: application/json
     urlParameters:
@@ -3372,7 +2941,10 @@ endpoints:
           - null
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3389,9 +2961,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: multipart/form-data
       Accept: application/json
     urlParameters:
@@ -3555,7 +3128,10 @@ endpoints:
             - null
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3572,9 +3148,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -3634,7 +3211,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3651,9 +3231,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -3713,7 +3294,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3730,9 +3314,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -3757,7 +3342,7 @@ endpoints:
         name: gst_enabled
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -3792,7 +3377,7 @@ endpoints:
         name: affinity_enabled
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -3810,15 +3395,18 @@ endpoints:
         nullable: true
         deprecated: false
     cleanBodyParameters:
-      gst_enabled: false
+      gst_enabled: true
       gst_type: exclusive
       gst_percent: 21
-      affinity_enabled: false
+      affinity_enabled: true
       affinity_percent: 13
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3835,9 +3423,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -3873,7 +3462,7 @@ endpoints:
         name: gst_type
         description: 'This field is required when <code>gst_enabled</code> is <code>true</code>.'
         required: false
-        example: inclusive
+        example: exclusive
         type: string
         enumValues:
           - inclusive
@@ -3897,7 +3486,7 @@ endpoints:
         name: affinity_enabled
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -3919,25 +3508,28 @@ endpoints:
         name: status
         description: ''
         required: true
-        example: draft
+        example: Published
         type: string
         enumValues:
-          - published
+          - Published
           - draft
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanBodyParameters:
       gst_enabled: true
-      gst_type: inclusive
+      gst_type: exclusive
       gst_percent: 21
-      affinity_enabled: true
+      affinity_enabled: false
       affinity_percent: 13
-      status: draft
+      status: Published
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3954,9 +3546,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -3980,7 +3573,181 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/admin-dashboard/orders
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"success":false,"error":"HTTP_ERROR","message":"Token not provided"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/admin-dashboard/orders-details/{id}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the orders detail.'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: consequatur
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"success":false,"error":"HTTP_ERROR","message":"Token not provided"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: 'api/admin-dashboard/orders/{id}/status'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the order.'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: consequatur
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      status:
+        custom: []
+        name: status
+        description: ''
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      tracking_id:
+        custom: []
+        name: tracking_id
+        description: ''
+        required: false
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      status: consequatur
+      tracking_id: consequatur
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -3997,9 +3764,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4013,14 +3781,17 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '[{"key":"silk-sarees","label":"Silk Sarees","items":["Banarasi Silk","Kanchipuram Jacquard","Kanchipuram Traditional","Soft Silks"]},{"key":"silk-sarees-casual","label":"Silk Sarees Casual","items":["Chiniya Silk","Georgette Sarees","Kadhi Tussar Silk"]},{"key":"silk-cotton","label":"Silk Cotton","items":["Chanderi Silk Cotton","Patola Silk Cotton"]},{"key":"fancy-sarees","label":"Fancy Sarees","items":["Assam Sarees","Banarasi Sarees","Kota Sarees"]},{"key":"cotton-sarees","label":"Cotton Sarees","items":["Bengal Cotton","Ikkat Cotton","Kanchi Cotton"]},{"key":"materials","label":"Materials","items":["Dress Materials","Running Materials"]}]'
+        content: '[{"key":"silk-sarees","label":"Silk Sarees","items":["Banarasi Silk","Kanchipuram Jacquard","Kanchipuram Traditional","Soft Silks"]},{"key":"silk-sarees-casual","label":"Silk Sarees Casual","items":["Chiniya Silk","Georgette Sarees","Kadhi Tussar Silk"]},{"key":"silk-cotton","label":"Silk Cotton","items":["Chanderi Silk Cotton","Patola Silk Cotton"]},{"key":"fancy-sarees","label":"Fancy Sarees","items":["Assam Sarees","Banarasi Sarees","Kota Sarees"]},{"key":"cotton-sarees","label":"Cotton Sarees","items":["Bengal Cotton","Ikkat Cotton","Kanchi Cotton"]},{"key":"materials","label":"Materials","items":["Dress Materials","Running Materials"]},{"key":"rrrrrr","label":"rrrrrr","items":[]},{"key":"dell","label":"dell","items":["deel1"]}]'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4037,9 +3808,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4053,14 +3825,17 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"success":true,"data":{"current_page":1,"data":[{"id":13,"name":"Peacock Blue Patola Silk Cotton Saree","slug":"peacock-blue-patola-silk-cotton-saree","category_id":17,"brand_id":null,"description":"\ud83d\ude9a Free Shipping Domestic Free standard shipping on orders over 10,000 INR\n\ud83d\udd12 This site has implemented secure payment protocols to protect your financial information\n\u26a0\ufe0f Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","purchase_price":null,"base_price":null,"discount":"0.00","status":"active","created_at":"2026-02-04T09:46:09.000000Z","updated_at":"2026-02-04T10:07:43.000000Z","category":{"id":17,"name":"Kanchipuram Traditional","slug":"kanchipuram-traditional","parent_id":9},"images":[{"id":13,"product_id":13,"image_path":"products\/images\/ed6c6e97-970f-47a8-98be-bf8f0910dd69.webp","is_primary":true}],"videos":[{"id":17,"product_id":13,"video_url":"http:\/\/localhost:5173\/products"}],"variant_combinations":[{"id":11,"product_id":13,"sku":"9JSR058100","purchase_price":"4510.00","extra_price":"4410.00","discount":"10.00","quantity":100,"low_quantity":1,"created_at":"2026-02-04T09:47:35.000000Z","updated_at":"2026-02-04T09:47:35.000000Z","values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-04T06:56:11.000000Z","pivot":{"variant_combination_id":11,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]}]},{"id":14,"name":"Soft Silk Saree2","slug":"soft-silk-saree2","category_id":15,"brand_id":null,"description":"\ud83d\ude9a Free Shipping Domestic Free standard shipping on orders over 10,000 INR\n\ud83d\udd12 This site has implemented secure payment protocols to protect your financial information\n\u26a0\ufe0f Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"active","created_at":"2026-02-04T10:02:38.000000Z","updated_at":"2026-02-04T10:03:19.000000Z","category":{"id":15,"name":"Soft Silks","slug":"soft-silks","parent_id":9},"images":[{"id":14,"product_id":14,"image_path":"products\/images\/b2ef2354-cda9-4e2a-90e4-d73567e1b123.webp","is_primary":true}],"videos":[],"variant_combinations":[{"id":12,"product_id":14,"sku":"ssss","purchase_price":"5490.00","extra_price":"6960.00","discount":"10.00","quantity":120,"low_quantity":1,"created_at":"2026-02-04T10:03:05.000000Z","updated_at":"2026-02-04T10:03:05.000000Z","values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-04T06:56:12.000000Z","pivot":{"variant_combination_id":12,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]},{"id":15,"name":"saree4","slug":"saree4","category_id":17,"brand_id":null,"description":"Discover the timeless beauty of Traditional Kanchipuram Sarees, crafted with rich silks and intricate designs. Perfect for weddings and festive occasions, each saree reflects heritage and culture.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"active","created_at":"2026-02-04T10:40:32.000000Z","updated_at":"2026-02-04T10:41:56.000000Z","category":{"id":17,"name":"Kanchipuram Traditional","slug":"kanchipuram-traditional","parent_id":9},"images":[{"id":15,"product_id":15,"image_path":"products\/images\/553f28e5-7b4d-44c0-9ba7-ccba237f5431.webp","is_primary":true}],"videos":[{"id":18,"product_id":15,"video_url":"http:\/\/localhost:5173\/products"}],"variant_combinations":[{"id":13,"product_id":15,"sku":"ssss","purchase_price":"1500.00","extra_price":"1600.00","discount":"10.00","quantity":11,"low_quantity":1,"created_at":"2026-02-04T10:41:35.000000Z","updated_at":"2026-02-04T10:41:35.000000Z","values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-04T06:56:12.000000Z","pivot":{"variant_combination_id":13,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]},{"id":14,"product_id":15,"sku":"dddd","purchase_price":"1600.00","extra_price":"1700.00","discount":"0.00","quantity":12,"low_quantity":1,"created_at":"2026-02-04T10:41:37.000000Z","updated_at":"2026-02-04T10:41:37.000000Z","values":[{"id":6,"variation_id":1,"value":"Blue","color_code":"#3460e5","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-04T06:56:12.000000Z","pivot":{"variant_combination_id":14,"variation_value_id":6},"variation":{"id":1,"name":"Color"}}]}]},{"id":16,"name":"saree5","slug":"saree5","category_id":20,"brand_id":null,"description":"Discover the timeless beauty of Traditional Kanchipuram Sarees, crafted with rich silks and intricate designs. Perfect for weddings and festive occasions, each saree reflects heritage and culture.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"active","created_at":"2026-02-04T10:43:00.000000Z","updated_at":"2026-02-04T10:43:41.000000Z","category":{"id":20,"name":"Chiniya Silk","slug":"chiniya-silk","parent_id":10},"images":[{"id":16,"product_id":16,"image_path":"products\/images\/89aa9a2f-5abe-44a2-bc93-bc99e7e30604.webp","is_primary":true}],"videos":[],"variant_combinations":[{"id":15,"product_id":16,"sku":"dddd","purchase_price":"1750.00","extra_price":"1850.00","discount":"0.00","quantity":120,"low_quantity":1,"created_at":"2026-02-04T10:43:25.000000Z","updated_at":"2026-02-04T10:43:25.000000Z","values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-04T06:56:12.000000Z","pivot":{"variant_combination_id":15,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]},{"id":17,"name":"saree23","slug":"saree23","category_id":15,"brand_id":null,"description":"sdsdsdfsdf","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"active","created_at":"2026-02-04T11:41:37.000000Z","updated_at":"2026-02-04T11:42:32.000000Z","category":{"id":15,"name":"Soft Silks","slug":"soft-silks","parent_id":9},"images":[{"id":17,"product_id":17,"image_path":"products\/images\/1776779a-005d-4ca6-a4f7-587771250a7a.webp","is_primary":true}],"videos":[],"variant_combinations":[{"id":16,"product_id":17,"sku":"ddd1","purchase_price":"1200.00","extra_price":"1300.00","discount":"0.00","quantity":123,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-04T06:56:11.000000Z","pivot":{"variant_combination_id":16,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]},{"id":17,"product_id":17,"sku":"dddd","purchase_price":"1300.00","extra_price":"1400.00","discount":"0.00","quantity":141,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","values":[{"id":1,"variation_id":1,"value":"Black","color_code":"#000000","created_at":"2026-02-03T09:46:07.000000Z","updated_at":"2026-02-04T06:56:11.000000Z","pivot":{"variant_combination_id":17,"variation_value_id":1},"variation":{"id":1,"name":"Color"}}]},{"id":18,"product_id":17,"sku":"dddd","purchase_price":"1400.00","extra_price":"1500.00","discount":"0.00","quantity":151,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-04T06:56:12.000000Z","pivot":{"variant_combination_id":18,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]}],"first_page_url":"http:\/\/localhost\/api\/ecom\/products?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/api\/ecom\/products?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost\/api\/ecom\/products?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost\/api\/ecom\/products","per_page":12,"prev_page_url":null,"to":5,"total":5}}'
+        content: '{"success":true,"data":{"current_page":1,"data":[{"id":13,"name":"Peacock Blue Patola Silk Cotton Saree","slug":"peacock-blue-patola-silk-cotton-saree","category_id":17,"brand_id":null,"description":"\ud83d\ude9a Free Shipping Domestic Free standard shipping on orders over 10,000 INR\n\ud83d\udd12 This site has implemented secure payment protocols to protect your financial information\n\u26a0\ufe0f Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","purchase_price":null,"base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-04T09:46:09.000000Z","updated_at":"2026-02-04T10:07:43.000000Z","category":{"id":17,"name":"Kanchipuram Traditional","slug":"kanchipuram-traditional","parent_id":9},"images":[{"id":13,"product_id":13,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/ed6c6e97-970f-47a8-98be-bf8f0910dd69.webp"}],"videos":[{"id":17,"product_id":13,"video_url":"http:\/\/localhost:5173\/products"}],"variant_combinations":[{"id":11,"product_id":13,"sku":"9JSR058100","purchase_price":"4510.00","extra_price":"4410.00","discount":"10.00","quantity":100,"low_quantity":1,"created_at":"2026-02-04T09:47:35.000000Z","updated_at":"2026-02-04T09:47:35.000000Z","amount":4400,"values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-07T12:08:41.000000Z","pivot":{"variant_combination_id":11,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]}]},{"id":14,"name":"Soft Silk Saree2","slug":"soft-silk-saree2","category_id":15,"brand_id":null,"description":"\ud83d\ude9a Free Shipping Domestic Free standard shipping on orders over 10,000 INR\n\ud83d\udd12 This site has implemented secure payment protocols to protect your financial information\n\u26a0\ufe0f Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-04T10:02:38.000000Z","updated_at":"2026-02-04T10:03:19.000000Z","category":{"id":15,"name":"Soft Silks","slug":"soft-silks","parent_id":9},"images":[{"id":14,"product_id":14,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/b2ef2354-cda9-4e2a-90e4-d73567e1b123.webp"}],"videos":[],"variant_combinations":[{"id":12,"product_id":14,"sku":"ssss","purchase_price":"5490.00","extra_price":"6960.00","discount":"10.00","quantity":120,"low_quantity":1,"created_at":"2026-02-04T10:03:05.000000Z","updated_at":"2026-02-04T10:03:05.000000Z","amount":6950,"values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-07T12:08:42.000000Z","pivot":{"variant_combination_id":12,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]},{"id":15,"name":"saree4","slug":"saree4","category_id":17,"brand_id":null,"description":"Discover the timeless beauty of Traditional Kanchipuram Sarees, crafted with rich silks and intricate designs. Perfect for weddings and festive occasions, each saree reflects heritage and culture.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-04T10:40:32.000000Z","updated_at":"2026-02-04T10:41:56.000000Z","category":{"id":17,"name":"Kanchipuram Traditional","slug":"kanchipuram-traditional","parent_id":9},"images":[{"id":15,"product_id":15,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/553f28e5-7b4d-44c0-9ba7-ccba237f5431.webp"}],"videos":[{"id":18,"product_id":15,"video_url":"http:\/\/localhost:5173\/products"}],"variant_combinations":[{"id":13,"product_id":15,"sku":"ssss","purchase_price":"1500.00","extra_price":"1600.00","discount":"10.00","quantity":11,"low_quantity":1,"created_at":"2026-02-04T10:41:35.000000Z","updated_at":"2026-02-04T10:41:35.000000Z","amount":1590,"values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-07T12:08:42.000000Z","pivot":{"variant_combination_id":13,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]},{"id":14,"product_id":15,"sku":"dddd","purchase_price":"1600.00","extra_price":"1700.00","discount":"0.00","quantity":12,"low_quantity":1,"created_at":"2026-02-04T10:41:37.000000Z","updated_at":"2026-02-04T10:41:37.000000Z","amount":1700,"values":[{"id":6,"variation_id":1,"value":"Blue","color_code":"#3460e5","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-07T12:08:43.000000Z","pivot":{"variant_combination_id":14,"variation_value_id":6},"variation":{"id":1,"name":"Color"}}]}]},{"id":16,"name":"saree5","slug":"saree5","category_id":20,"brand_id":null,"description":"Discover the timeless beauty of Traditional Kanchipuram Sarees, crafted with rich silks and intricate designs. Perfect for weddings and festive occasions, each saree reflects heritage and culture.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-04T10:43:00.000000Z","updated_at":"2026-02-04T10:43:41.000000Z","category":{"id":20,"name":"Chiniya Silk","slug":"chiniya-silk","parent_id":10},"images":[{"id":16,"product_id":16,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/89aa9a2f-5abe-44a2-bc93-bc99e7e30604.webp"}],"videos":[],"variant_combinations":[{"id":15,"product_id":16,"sku":"dddd","purchase_price":"1750.00","extra_price":"1850.00","discount":"0.00","quantity":120,"low_quantity":1,"created_at":"2026-02-04T10:43:25.000000Z","updated_at":"2026-02-04T10:43:25.000000Z","amount":1850,"values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-07T12:08:42.000000Z","pivot":{"variant_combination_id":15,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]},{"id":17,"name":"saree23","slug":"saree23","category_id":15,"brand_id":null,"description":"sdsdsdfsdf","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-04T11:41:37.000000Z","updated_at":"2026-02-04T11:42:32.000000Z","category":{"id":15,"name":"Soft Silks","slug":"soft-silks","parent_id":9},"images":[{"id":17,"product_id":17,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/1776779a-005d-4ca6-a4f7-587771250a7a.webp"}],"videos":[],"variant_combinations":[{"id":16,"product_id":17,"sku":"ddd1","purchase_price":"1200.00","extra_price":"1300.00","discount":"0.00","quantity":123,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","amount":1300,"values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-07T12:08:41.000000Z","pivot":{"variant_combination_id":16,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]},{"id":17,"product_id":17,"sku":"dddd","purchase_price":"1300.00","extra_price":"1400.00","discount":"0.00","quantity":141,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","amount":1400,"values":[{"id":1,"variation_id":1,"value":"Black","color_code":"#000000","created_at":"2026-02-03T09:46:07.000000Z","updated_at":"2026-02-07T12:08:40.000000Z","pivot":{"variant_combination_id":17,"variation_value_id":1},"variation":{"id":1,"name":"Color"}}]},{"id":18,"product_id":17,"sku":"dddd","purchase_price":"1400.00","extra_price":"1500.00","discount":"0.00","quantity":151,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","amount":1500,"values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-07T12:08:42.000000Z","pivot":{"variant_combination_id":18,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]},{"id":18,"name":"Sample","slug":"sample","category_id":27,"brand_id":null,"description":"Cotton saree","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-07T06:24:41.000000Z","updated_at":"2026-02-07T06:30:21.000000Z","category":{"id":27,"name":"Bengal Cotton","slug":"bengal-cotton","parent_id":13},"images":[{"id":18,"product_id":18,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/b234ff16-d349-4bf3-a7d1-06bbb957bc23.webp"}],"videos":[{"id":19,"product_id":18,"video_url":"http:\/\/localhost:5174\/products"}],"variant_combinations":[{"id":19,"product_id":18,"sku":"sku","purchase_price":"1300.00","extra_price":"1400.00","discount":"0.00","quantity":123,"low_quantity":1,"created_at":"2026-02-07T06:26:36.000000Z","updated_at":"2026-02-07T06:26:36.000000Z","amount":1400,"values":[{"id":1,"variation_id":1,"value":"Black","color_code":"#000000","created_at":"2026-02-03T09:46:07.000000Z","updated_at":"2026-02-07T12:08:40.000000Z","pivot":{"variant_combination_id":19,"variation_value_id":1},"variation":{"id":1,"name":"Color"}}]},{"id":20,"product_id":18,"sku":"sku","purchase_price":"1200.00","extra_price":"1500.00","discount":"0.00","quantity":122,"low_quantity":1,"created_at":"2026-02-07T06:26:39.000000Z","updated_at":"2026-02-07T06:26:39.000000Z","amount":1500,"values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-07T12:08:41.000000Z","pivot":{"variant_combination_id":20,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]}]},{"id":19,"name":"sadasd","slug":"sadasd","category_id":27,"brand_id":null,"description":"asdasd","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-07T11:17:58.000000Z","updated_at":"2026-02-07T11:18:28.000000Z","category":{"id":27,"name":"Bengal Cotton","slug":"bengal-cotton","parent_id":13},"images":[{"id":19,"product_id":19,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/a3817ea5-e400-4745-b7f4-9d7edf84c1f7.webp"}],"videos":[{"id":20,"product_id":19,"video_url":"http:\/\/localhost:5175\/products"}],"variant_combinations":[{"id":21,"product_id":19,"sku":"1","purchase_price":"111.00","extra_price":"11.00","discount":"1.00","quantity":1,"low_quantity":1,"created_at":"2026-02-07T11:18:18.000000Z","updated_at":"2026-02-07T11:18:18.000000Z","amount":10,"values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-07T12:08:41.000000Z","pivot":{"variant_combination_id":21,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]}]},{"id":20,"name":"Sareee123","slug":"sareee123","category_id":15,"brand_id":null,"description":"Descritopm","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-07T11:58:31.000000Z","updated_at":"2026-02-07T12:05:02.000000Z","category":{"id":15,"name":"Soft Silks","slug":"soft-silks","parent_id":9},"images":[{"id":20,"product_id":20,"is_primary":false,"image_url":"http:\/\/localhost\/storage\/products\/images\/417369e7-e306-4587-9fb8-ee0d2fc407a4.webp"},{"id":21,"product_id":20,"is_primary":false,"image_url":"http:\/\/localhost\/storage\/products\/images\/4f314af9-fcb6-4af2-897b-c93b90d84b0f.webp"}],"videos":[{"id":21,"product_id":20,"video_url":"http:\/\/localhost:5176\/products"}],"variant_combinations":[{"id":22,"product_id":20,"sku":"sku","purchase_price":"1500.00","extra_price":"1800.00","discount":"10.00","quantity":120,"low_quantity":10,"created_at":"2026-02-07T12:03:43.000000Z","updated_at":"2026-02-07T12:03:43.000000Z","amount":1790,"values":[{"id":1,"variation_id":1,"value":"Black","color_code":"#000000","created_at":"2026-02-03T09:46:07.000000Z","updated_at":"2026-02-07T12:08:40.000000Z","pivot":{"variant_combination_id":22,"variation_value_id":1},"variation":{"id":1,"name":"Color"}}]},{"id":23,"product_id":20,"sku":"dddd","purchase_price":"1800.00","extra_price":"2000.00","discount":"10.00","quantity":120,"low_quantity":11,"created_at":"2026-02-07T12:03:43.000000Z","updated_at":"2026-02-07T12:03:43.000000Z","amount":1990,"values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-07T12:08:41.000000Z","pivot":{"variant_combination_id":23,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]}]}],"first_page_url":"http:\/\/localhost\/api\/ecom\/products?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/api\/ecom\/products?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost\/api\/ecom\/products?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost\/api\/ecom\/products","per_page":12,"prev_page_url":null,"to":8,"total":8}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4077,9 +3852,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4093,14 +3869,17 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"success":true,"data":{"current_page":1,"data":[{"id":13,"name":"Peacock Blue Patola Silk Cotton Saree","slug":"peacock-blue-patola-silk-cotton-saree","category_id":17,"brand_id":null,"description":"\ud83d\ude9a Free Shipping Domestic Free standard shipping on orders over 10,000 INR\n\ud83d\udd12 This site has implemented secure payment protocols to protect your financial information\n\u26a0\ufe0f Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","purchase_price":null,"base_price":null,"discount":"0.00","status":"active","created_at":"2026-02-04T09:46:09.000000Z","updated_at":"2026-02-04T10:07:43.000000Z","min_variant_price":"4410.00","category":{"id":17,"name":"Kanchipuram Traditional","slug":"kanchipuram-traditional","parent_id":9},"images":[{"id":13,"product_id":13,"image_path":"products\/images\/ed6c6e97-970f-47a8-98be-bf8f0910dd69.webp","is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/ed6c6e97-970f-47a8-98be-bf8f0910dd69.webp"}],"videos":[{"id":17,"product_id":13,"video_url":"http:\/\/localhost:5173\/products"}],"variant_combinations":[{"id":11,"product_id":13,"sku":"9JSR058100","purchase_price":"4510.00","extra_price":"4410.00","discount":"10.00","quantity":100,"low_quantity":1,"created_at":"2026-02-04T09:47:35.000000Z","updated_at":"2026-02-04T09:47:35.000000Z","values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-04T06:56:11.000000Z","pivot":{"variant_combination_id":11,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]}]},{"id":14,"name":"Soft Silk Saree2","slug":"soft-silk-saree2","category_id":15,"brand_id":null,"description":"\ud83d\ude9a Free Shipping Domestic Free standard shipping on orders over 10,000 INR\n\ud83d\udd12 This site has implemented secure payment protocols to protect your financial information\n\u26a0\ufe0f Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"active","created_at":"2026-02-04T10:02:38.000000Z","updated_at":"2026-02-04T10:03:19.000000Z","min_variant_price":"6960.00","category":{"id":15,"name":"Soft Silks","slug":"soft-silks","parent_id":9},"images":[{"id":14,"product_id":14,"image_path":"products\/images\/b2ef2354-cda9-4e2a-90e4-d73567e1b123.webp","is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/b2ef2354-cda9-4e2a-90e4-d73567e1b123.webp"}],"videos":[],"variant_combinations":[{"id":12,"product_id":14,"sku":"ssss","purchase_price":"5490.00","extra_price":"6960.00","discount":"10.00","quantity":120,"low_quantity":1,"created_at":"2026-02-04T10:03:05.000000Z","updated_at":"2026-02-04T10:03:05.000000Z","values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-04T06:56:12.000000Z","pivot":{"variant_combination_id":12,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]},{"id":15,"name":"saree4","slug":"saree4","category_id":17,"brand_id":null,"description":"Discover the timeless beauty of Traditional Kanchipuram Sarees, crafted with rich silks and intricate designs. Perfect for weddings and festive occasions, each saree reflects heritage and culture.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"active","created_at":"2026-02-04T10:40:32.000000Z","updated_at":"2026-02-04T10:41:56.000000Z","min_variant_price":"1600.00","category":{"id":17,"name":"Kanchipuram Traditional","slug":"kanchipuram-traditional","parent_id":9},"images":[{"id":15,"product_id":15,"image_path":"products\/images\/553f28e5-7b4d-44c0-9ba7-ccba237f5431.webp","is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/553f28e5-7b4d-44c0-9ba7-ccba237f5431.webp"}],"videos":[{"id":18,"product_id":15,"video_url":"http:\/\/localhost:5173\/products"}],"variant_combinations":[{"id":13,"product_id":15,"sku":"ssss","purchase_price":"1500.00","extra_price":"1600.00","discount":"10.00","quantity":11,"low_quantity":1,"created_at":"2026-02-04T10:41:35.000000Z","updated_at":"2026-02-04T10:41:35.000000Z","values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-04T06:56:12.000000Z","pivot":{"variant_combination_id":13,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]},{"id":14,"product_id":15,"sku":"dddd","purchase_price":"1600.00","extra_price":"1700.00","discount":"0.00","quantity":12,"low_quantity":1,"created_at":"2026-02-04T10:41:37.000000Z","updated_at":"2026-02-04T10:41:37.000000Z","values":[{"id":6,"variation_id":1,"value":"Blue","color_code":"#3460e5","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-04T06:56:12.000000Z","pivot":{"variant_combination_id":14,"variation_value_id":6},"variation":{"id":1,"name":"Color"}}]}]},{"id":16,"name":"saree5","slug":"saree5","category_id":20,"brand_id":null,"description":"Discover the timeless beauty of Traditional Kanchipuram Sarees, crafted with rich silks and intricate designs. Perfect for weddings and festive occasions, each saree reflects heritage and culture.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"active","created_at":"2026-02-04T10:43:00.000000Z","updated_at":"2026-02-04T10:43:41.000000Z","min_variant_price":"1850.00","category":{"id":20,"name":"Chiniya Silk","slug":"chiniya-silk","parent_id":10},"images":[{"id":16,"product_id":16,"image_path":"products\/images\/89aa9a2f-5abe-44a2-bc93-bc99e7e30604.webp","is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/89aa9a2f-5abe-44a2-bc93-bc99e7e30604.webp"}],"videos":[],"variant_combinations":[{"id":15,"product_id":16,"sku":"dddd","purchase_price":"1750.00","extra_price":"1850.00","discount":"0.00","quantity":120,"low_quantity":1,"created_at":"2026-02-04T10:43:25.000000Z","updated_at":"2026-02-04T10:43:25.000000Z","values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-04T06:56:12.000000Z","pivot":{"variant_combination_id":15,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]},{"id":17,"name":"saree23","slug":"saree23","category_id":15,"brand_id":null,"description":"sdsdsdfsdf","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"active","created_at":"2026-02-04T11:41:37.000000Z","updated_at":"2026-02-04T11:42:32.000000Z","min_variant_price":"1300.00","category":{"id":15,"name":"Soft Silks","slug":"soft-silks","parent_id":9},"images":[{"id":17,"product_id":17,"image_path":"products\/images\/1776779a-005d-4ca6-a4f7-587771250a7a.webp","is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/1776779a-005d-4ca6-a4f7-587771250a7a.webp"}],"videos":[],"variant_combinations":[{"id":16,"product_id":17,"sku":"ddd1","purchase_price":"1200.00","extra_price":"1300.00","discount":"0.00","quantity":123,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-04T06:56:11.000000Z","pivot":{"variant_combination_id":16,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]},{"id":17,"product_id":17,"sku":"dddd","purchase_price":"1300.00","extra_price":"1400.00","discount":"0.00","quantity":141,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","values":[{"id":1,"variation_id":1,"value":"Black","color_code":"#000000","created_at":"2026-02-03T09:46:07.000000Z","updated_at":"2026-02-04T06:56:11.000000Z","pivot":{"variant_combination_id":17,"variation_value_id":1},"variation":{"id":1,"name":"Color"}}]},{"id":18,"product_id":17,"sku":"dddd","purchase_price":"1400.00","extra_price":"1500.00","discount":"0.00","quantity":151,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-04T06:56:12.000000Z","pivot":{"variant_combination_id":18,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]}],"first_page_url":"http:\/\/localhost\/api\/ecom\/products-main?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/api\/ecom\/products-main?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost\/api\/ecom\/products-main?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost\/api\/ecom\/products-main","per_page":12,"prev_page_url":null,"to":5,"total":5}}'
+        content: '{"success":true,"data":{"current_page":1,"data":[{"id":13,"name":"Peacock Blue Patola Silk Cotton Saree","slug":"peacock-blue-patola-silk-cotton-saree","category_id":17,"brand_id":null,"description":"\ud83d\ude9a Free Shipping Domestic Free standard shipping on orders over 10,000 INR\n\ud83d\udd12 This site has implemented secure payment protocols to protect your financial information\n\u26a0\ufe0f Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","purchase_price":null,"base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-04T09:46:09.000000Z","updated_at":"2026-02-04T10:07:43.000000Z","min_variant_price":"4410.00","category":{"id":17,"name":"Kanchipuram Traditional","slug":"kanchipuram-traditional","parent_id":9},"images":[{"id":13,"product_id":13,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/ed6c6e97-970f-47a8-98be-bf8f0910dd69.webp"}],"videos":[{"id":17,"product_id":13,"video_url":"http:\/\/localhost:5173\/products"}],"variant_combinations":[{"id":11,"product_id":13,"sku":"9JSR058100","purchase_price":"4510.00","extra_price":"4410.00","discount":"10.00","quantity":100,"low_quantity":1,"created_at":"2026-02-04T09:47:35.000000Z","updated_at":"2026-02-04T09:47:35.000000Z","amount":4400,"values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-07T12:08:41.000000Z","pivot":{"variant_combination_id":11,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]}]},{"id":14,"name":"Soft Silk Saree2","slug":"soft-silk-saree2","category_id":15,"brand_id":null,"description":"\ud83d\ude9a Free Shipping Domestic Free standard shipping on orders over 10,000 INR\n\ud83d\udd12 This site has implemented secure payment protocols to protect your financial information\n\u26a0\ufe0f Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-04T10:02:38.000000Z","updated_at":"2026-02-04T10:03:19.000000Z","min_variant_price":"6960.00","category":{"id":15,"name":"Soft Silks","slug":"soft-silks","parent_id":9},"images":[{"id":14,"product_id":14,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/b2ef2354-cda9-4e2a-90e4-d73567e1b123.webp"}],"videos":[],"variant_combinations":[{"id":12,"product_id":14,"sku":"ssss","purchase_price":"5490.00","extra_price":"6960.00","discount":"10.00","quantity":120,"low_quantity":1,"created_at":"2026-02-04T10:03:05.000000Z","updated_at":"2026-02-04T10:03:05.000000Z","amount":6950,"values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-07T12:08:42.000000Z","pivot":{"variant_combination_id":12,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]},{"id":15,"name":"saree4","slug":"saree4","category_id":17,"brand_id":null,"description":"Discover the timeless beauty of Traditional Kanchipuram Sarees, crafted with rich silks and intricate designs. Perfect for weddings and festive occasions, each saree reflects heritage and culture.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-04T10:40:32.000000Z","updated_at":"2026-02-04T10:41:56.000000Z","min_variant_price":"1600.00","category":{"id":17,"name":"Kanchipuram Traditional","slug":"kanchipuram-traditional","parent_id":9},"images":[{"id":15,"product_id":15,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/553f28e5-7b4d-44c0-9ba7-ccba237f5431.webp"}],"videos":[{"id":18,"product_id":15,"video_url":"http:\/\/localhost:5173\/products"}],"variant_combinations":[{"id":13,"product_id":15,"sku":"ssss","purchase_price":"1500.00","extra_price":"1600.00","discount":"10.00","quantity":11,"low_quantity":1,"created_at":"2026-02-04T10:41:35.000000Z","updated_at":"2026-02-04T10:41:35.000000Z","amount":1590,"values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-07T12:08:42.000000Z","pivot":{"variant_combination_id":13,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]},{"id":14,"product_id":15,"sku":"dddd","purchase_price":"1600.00","extra_price":"1700.00","discount":"0.00","quantity":12,"low_quantity":1,"created_at":"2026-02-04T10:41:37.000000Z","updated_at":"2026-02-04T10:41:37.000000Z","amount":1700,"values":[{"id":6,"variation_id":1,"value":"Blue","color_code":"#3460e5","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-07T12:08:43.000000Z","pivot":{"variant_combination_id":14,"variation_value_id":6},"variation":{"id":1,"name":"Color"}}]}]},{"id":16,"name":"saree5","slug":"saree5","category_id":20,"brand_id":null,"description":"Discover the timeless beauty of Traditional Kanchipuram Sarees, crafted with rich silks and intricate designs. Perfect for weddings and festive occasions, each saree reflects heritage and culture.","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-04T10:43:00.000000Z","updated_at":"2026-02-04T10:43:41.000000Z","min_variant_price":"1850.00","category":{"id":20,"name":"Chiniya Silk","slug":"chiniya-silk","parent_id":10},"images":[{"id":16,"product_id":16,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/89aa9a2f-5abe-44a2-bc93-bc99e7e30604.webp"}],"videos":[],"variant_combinations":[{"id":15,"product_id":16,"sku":"dddd","purchase_price":"1750.00","extra_price":"1850.00","discount":"0.00","quantity":120,"low_quantity":1,"created_at":"2026-02-04T10:43:25.000000Z","updated_at":"2026-02-04T10:43:25.000000Z","amount":1850,"values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-07T12:08:42.000000Z","pivot":{"variant_combination_id":15,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]},{"id":17,"name":"saree23","slug":"saree23","category_id":15,"brand_id":null,"description":"sdsdsdfsdf","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-04T11:41:37.000000Z","updated_at":"2026-02-04T11:42:32.000000Z","min_variant_price":"1300.00","category":{"id":15,"name":"Soft Silks","slug":"soft-silks","parent_id":9},"images":[{"id":17,"product_id":17,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/1776779a-005d-4ca6-a4f7-587771250a7a.webp"}],"videos":[],"variant_combinations":[{"id":16,"product_id":17,"sku":"ddd1","purchase_price":"1200.00","extra_price":"1300.00","discount":"0.00","quantity":123,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","amount":1300,"values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-07T12:08:41.000000Z","pivot":{"variant_combination_id":16,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]},{"id":17,"product_id":17,"sku":"dddd","purchase_price":"1300.00","extra_price":"1400.00","discount":"0.00","quantity":141,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","amount":1400,"values":[{"id":1,"variation_id":1,"value":"Black","color_code":"#000000","created_at":"2026-02-03T09:46:07.000000Z","updated_at":"2026-02-07T12:08:40.000000Z","pivot":{"variant_combination_id":17,"variation_value_id":1},"variation":{"id":1,"name":"Color"}}]},{"id":18,"product_id":17,"sku":"dddd","purchase_price":"1400.00","extra_price":"1500.00","discount":"0.00","quantity":151,"low_quantity":1,"created_at":"2026-02-04T11:42:18.000000Z","updated_at":"2026-02-04T11:42:18.000000Z","amount":1500,"values":[{"id":5,"variation_id":1,"value":"Green","color_code":"#44d70f","created_at":"2026-02-04T06:56:12.000000Z","updated_at":"2026-02-07T12:08:42.000000Z","pivot":{"variant_combination_id":18,"variation_value_id":5},"variation":{"id":1,"name":"Color"}}]}]},{"id":18,"name":"Sample","slug":"sample","category_id":27,"brand_id":null,"description":"Cotton saree","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-07T06:24:41.000000Z","updated_at":"2026-02-07T06:30:21.000000Z","min_variant_price":"1400.00","category":{"id":27,"name":"Bengal Cotton","slug":"bengal-cotton","parent_id":13},"images":[{"id":18,"product_id":18,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/b234ff16-d349-4bf3-a7d1-06bbb957bc23.webp"}],"videos":[{"id":19,"product_id":18,"video_url":"http:\/\/localhost:5174\/products"}],"variant_combinations":[{"id":19,"product_id":18,"sku":"sku","purchase_price":"1300.00","extra_price":"1400.00","discount":"0.00","quantity":123,"low_quantity":1,"created_at":"2026-02-07T06:26:36.000000Z","updated_at":"2026-02-07T06:26:36.000000Z","amount":1400,"values":[{"id":1,"variation_id":1,"value":"Black","color_code":"#000000","created_at":"2026-02-03T09:46:07.000000Z","updated_at":"2026-02-07T12:08:40.000000Z","pivot":{"variant_combination_id":19,"variation_value_id":1},"variation":{"id":1,"name":"Color"}}]},{"id":20,"product_id":18,"sku":"sku","purchase_price":"1200.00","extra_price":"1500.00","discount":"0.00","quantity":122,"low_quantity":1,"created_at":"2026-02-07T06:26:39.000000Z","updated_at":"2026-02-07T06:26:39.000000Z","amount":1500,"values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-07T12:08:41.000000Z","pivot":{"variant_combination_id":20,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]}]},{"id":19,"name":"sadasd","slug":"sadasd","category_id":27,"brand_id":null,"description":"asdasd","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-07T11:17:58.000000Z","updated_at":"2026-02-07T11:18:28.000000Z","min_variant_price":"11.00","category":{"id":27,"name":"Bengal Cotton","slug":"bengal-cotton","parent_id":13},"images":[{"id":19,"product_id":19,"is_primary":true,"image_url":"http:\/\/localhost\/storage\/products\/images\/a3817ea5-e400-4745-b7f4-9d7edf84c1f7.webp"}],"videos":[{"id":20,"product_id":19,"video_url":"http:\/\/localhost:5175\/products"}],"variant_combinations":[{"id":21,"product_id":19,"sku":"1","purchase_price":"111.00","extra_price":"11.00","discount":"1.00","quantity":1,"low_quantity":1,"created_at":"2026-02-07T11:18:18.000000Z","updated_at":"2026-02-07T11:18:18.000000Z","amount":10,"values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-07T12:08:41.000000Z","pivot":{"variant_combination_id":21,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]}]},{"id":20,"name":"Sareee123","slug":"sareee123","category_id":15,"brand_id":null,"description":"Descritopm","purchase_price":"0.00","base_price":null,"discount":"0.00","status":"Published","created_at":"2026-02-07T11:58:31.000000Z","updated_at":"2026-02-07T12:05:02.000000Z","min_variant_price":"1800.00","category":{"id":15,"name":"Soft Silks","slug":"soft-silks","parent_id":9},"images":[{"id":20,"product_id":20,"is_primary":false,"image_url":"http:\/\/localhost\/storage\/products\/images\/417369e7-e306-4587-9fb8-ee0d2fc407a4.webp"},{"id":21,"product_id":20,"is_primary":false,"image_url":"http:\/\/localhost\/storage\/products\/images\/4f314af9-fcb6-4af2-897b-c93b90d84b0f.webp"}],"videos":[{"id":21,"product_id":20,"video_url":"http:\/\/localhost:5176\/products"}],"variant_combinations":[{"id":22,"product_id":20,"sku":"sku","purchase_price":"1500.00","extra_price":"1800.00","discount":"10.00","quantity":120,"low_quantity":10,"created_at":"2026-02-07T12:03:43.000000Z","updated_at":"2026-02-07T12:03:43.000000Z","amount":1790,"values":[{"id":1,"variation_id":1,"value":"Black","color_code":"#000000","created_at":"2026-02-03T09:46:07.000000Z","updated_at":"2026-02-07T12:08:40.000000Z","pivot":{"variant_combination_id":22,"variation_value_id":1},"variation":{"id":1,"name":"Color"}}]},{"id":23,"product_id":20,"sku":"dddd","purchase_price":"1800.00","extra_price":"2000.00","discount":"10.00","quantity":120,"low_quantity":11,"created_at":"2026-02-07T12:03:43.000000Z","updated_at":"2026-02-07T12:03:43.000000Z","amount":1990,"values":[{"id":4,"variation_id":1,"value":"Red","color_code":"#eb0f0f","created_at":"2026-02-04T06:56:11.000000Z","updated_at":"2026-02-07T12:08:41.000000Z","pivot":{"variant_combination_id":23,"variation_value_id":4},"variation":{"id":1,"name":"Color"}}]}]}],"first_page_url":"http:\/\/localhost\/api\/ecom\/products-main?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/api\/ecom\/products-main?page=1","links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost\/api\/ecom\/products-main?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"next_page_url":null,"path":"http:\/\/localhost\/api\/ecom\/products-main","per_page":12,"prev_page_url":null,"to":8,"total":8}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4117,9 +3896,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4133,14 +3913,17 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"success":true,"data":{"id":1,"app_name":"Hamsini-Silk123","app_logo":"settings\/cdca641d-490b-46cc-9178-84ff435171e3.webp","app_favicon":"settings\/139b24ac-2532-4321-82f5-4f810c0ee53d.webp","created_at":"2026-02-03T07:03:27.000000Z","updated_at":"2026-02-03T11:03:18.000000Z","app_logo_url":"http:\/\/localhost\/storage\/settings\/cdca641d-490b-46cc-9178-84ff435171e3.webp","app_favicon_url":"http:\/\/localhost\/storage\/settings\/139b24ac-2532-4321-82f5-4f810c0ee53d.webp"}}'
+        content: '{"success":true,"data":{"id":1,"app_name":"Hamsini-Silks","app_logo":"settings\/c79651c9-a33b-4e7c-b1f1-30893ee1f11e.webp","app_favicon":"settings\/6f432dfb-f718-4a89-b00e-bcd255216a1a.webp","created_at":"2026-02-03T07:03:27.000000Z","updated_at":"2026-02-07T12:07:50.000000Z","app_logo_url":"http:\/\/localhost\/storage\/settings\/c79651c9-a33b-4e7c-b1f1-30893ee1f11e.webp","app_favicon_url":"http:\/\/localhost\/storage\/settings\/6f432dfb-f718-4a89-b00e-bcd255216a1a.webp"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4157,9 +3940,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4180,7 +3964,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4197,9 +3984,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4211,7 +3999,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4228,9 +4019,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4251,7 +4043,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4268,9 +4063,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4282,7 +4078,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4299,9 +4098,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4322,7 +4122,10 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4339,9 +4142,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4437,7 +4241,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4454,9 +4261,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -4564,7 +4372,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4581,9 +4392,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -4607,7 +4419,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4624,9 +4439,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -4650,7 +4466,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4667,9 +4486,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4693,7 +4513,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4710,9 +4533,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4760,7 +4584,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4777,9 +4604,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4863,7 +4691,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4880,9 +4711,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4918,7 +4750,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -4935,9 +4770,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -4945,21 +4781,10 @@ endpoints:
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
-      user_id:
-        custom: []
-        name: user_id
-        description: 'The <code>id</code> of an existing record in the users table.'
-        required: true
-        example: consequatur
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
       address_id:
         custom: []
         name: address_id
-        description: 'The <code>id</code> of an existing record in the addresses table.'
+        description: "'user_id'                     => 'required|exists:users,id',. The <code>id</code> of an existing record in the addresses table."
         required: true
         example: consequatur
         type: string
@@ -5134,7 +4959,6 @@ endpoints:
         nullable: false
         deprecated: false
     cleanBodyParameters:
-      user_id: consequatur
       address_id: consequatur
       payment:
         method: consequatur
@@ -5155,47 +4979,10 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - GET
-    uri: api/user-dashboard/orders
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        custom: []
-        status: 401
-        content: '{"success":false,"error":"HTTP_ERROR","message":"Token not provided"}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-    responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -5212,9 +4999,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -5247,7 +5035,66 @@ endpoints:
           access-control-allow-origin: '*'
         description: null
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/user-dashboard/get-my-orders/{id}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the get my order.'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: consequatur
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"success":false,"error":"HTTP_ERROR","message":"Token not provided"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null
@@ -5264,9 +5111,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       deprecated: false
     headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -5290,7 +5138,101 @@ endpoints:
     fileParameters: []
     responses: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/user-dashboard/get-wishlist
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"success":false,"error":"HTTP_ERROR","message":"Token not provided"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/user-dashboard/wishlist-toggle
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      product_id:
+        custom: []
+        name: product_id
+        description: 'The <code>id</code> of an existing record in the products table.'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      product_id: consequatur
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 3V5EgbkvZcDPa166h8fd4ae
     controller: null
     method: null
     route: null

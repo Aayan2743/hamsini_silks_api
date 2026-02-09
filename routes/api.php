@@ -17,6 +17,7 @@ use App\Http\Controllers\ProductVariantController;
 use App\Http\Controllers\ProductVariationController;
 use App\Http\Controllers\ProductVariationValueController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\StaffUserController;
 use App\Http\Controllers\WhatsappSettingController;
 use App\Http\Controllers\WishlistController;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,8 @@ Route::prefix('auth')->group(function () {
 
     // ================= AUTH =================
     Route::get('sample', [AuthController::class, 'sample']);
+
+    Route::post('super-admin-login', [AuthController::class, 'super_admin_login']);
     Route::post('admin-register', [AuthController::class, 'admin_register']);
     Route::post('admin-login', [AuthController::class, 'admin_login']);
     Route::post('user-register', [AuthController::class, 'register']);
@@ -49,10 +52,19 @@ Route::prefix('auth')->group(function () {
 Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(function () {
 
     // ================= AUTH =================
+    Route::get('/user-details', [AuthController::class, 'user_details']);
     Route::get('/profile', [AuthController::class, 'profile']);
     Route::post('/update-profile', [AuthController::class, 'updateProfile']);
     Route::get('/app-logo-settings', [SettingController::class, 'show']);
     Route::post('/app-logo-settings', [SettingController::class, 'update']);
+
+    //-------------------STAFFF-----------------
+
+    Route::get('/staff', [StaffUserController::class, 'index']);
+    Route::post('/add-staff', [StaffUserController::class, 'store']);
+    Route::get('/staff/{id}', [StaffUserController::class, 'show']);
+    Route::put('/update-staff/{id}', [StaffUserController::class, 'update']);
+    Route::delete('/delete-staff/{id}', [StaffUserController::class, 'destroy']);
 
     //===================== SOCIAL MEDIA SETTINGS =====================
     Route::get('/social-media-settings', [SettingController::class, 'show_social_media']);

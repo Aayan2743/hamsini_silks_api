@@ -68,4 +68,15 @@ public function card()
     return $this->hasOne(DigitalCard::class);
 }
 
+
+public function wishlists()
+{
+    return $this->hasMany(Wishlist::class);
+}
+
+public function orders()
+{
+    return $this->hasMany(Order::class);
+}
+
 }

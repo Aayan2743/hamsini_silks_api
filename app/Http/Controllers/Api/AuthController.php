@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
+/**
+ * @group Admin Dashboard
+ * @authenticated
+ */
 class AuthController extends Controller
 {
 
@@ -24,6 +28,54 @@ class AuthController extends Controller
             'data'    => $samples,
         ]);
     }
+
+    public function user_details(Request $request)
+    {
+        $perPage = $request->get('per_page', 10); // default 10
+        $search  = $request->get('search');
+
+        $query = User::where('role', 'user')
+            ->withCount('wishlists')
+            ->withCount('orders')
+            ->withSum('orders as total_amount', 'total_amount');
+
+        // 🔍 Search by name, email, phone
+        if (! empty($search)) {
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                    ->orWhere('email', 'like', "%{$search}%")
+                    ->orWhere('phone', 'like', "%{$search}%");
+            });
+        }
+
+        $users = $query->paginate($perPage);
+
+        // ✨ Transform data
+        $customers = $users->getCollection()->map(function ($user, $index) use ($users) {
+            return [
+                '#'            => ($users->currentPage() - 1) * $users->perPage() + ($index + 1),
+                'name'         => $user->name,
+                'email'        => $user->email,
+                'phone'        => $user->phone,
+                'wishlist'     => $user->wishlists_count ?? 0,
+                'orders'       => $user->orders_count ?? 0,
+                'total_amount' => '₹ ' . ($user->total_amount ?? 0),
+            ];
+        });
+
+        return response()->json([
+            'success' => true,
+            'data'    => $customers,
+            'meta'    => [
+                'current_page' => $users->currentPage(),
+                'per_page'     => $users->perPage(),
+                'total'        => $users->total(),
+                'last_page'    => $users->lastPage(),
+            ],
+        ]);
+    }
+
+
 
     // User Registration
     public function register(Request $request)
@@ -178,6 +230,63 @@ class AuthController extends Controller
         }
 
         if ($user->role != 'admin') { // 2 = admin
+            return response()->json([
+                'success' => false,
+                'message' => 'Access denied. Admins only.',
+            ], 403);
+        }
+
+        // Password check
+        if (! Hash::check($request->password, $user->password)) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Invalid credentials',
+            ], 401);
+        }
+
+        // Generate JWT token manually
+        $token = JWTAuth::fromUser($user);
+
+        return response()->json([
+            'success'    => true,
+            'token'      => $token,
+            'token_type' => 'Bearer',
+            'user'       => $user,
+
+        ]);
+    }
+
+    public function super_admin_login(Request $request)
+    {
+
+        $validator = Validator::make($request->all(), [
+            'username' => 'required|string', // email OR phone
+            'password' => 'required|string',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'errors'  => $validator->errors()->first(),
+            ], 422);
+        }
+
+        $loginField = filter_var($request->username, FILTER_VALIDATE_EMAIL)
+            ? 'email'
+            : 'phone';
+
+        // Fetch user manually
+        $user = User::where($loginField, $request->username)->first();
+
+        // User not found
+        if (! $user) {
+            return response()->json([
+                'success' => false,
+                'message' => 'User not found',
+            ], 404);
+        }
+
+        if ($user->role != 'superadmin') { // 2 = admin
             return response()->json([
                 'success' => false,
                 'message' => 'Access denied. Admins only.',

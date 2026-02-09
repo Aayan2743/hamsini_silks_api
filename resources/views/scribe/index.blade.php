@@ -66,6 +66,49 @@
                     <a href="#authenticating-requests">Authenticating requests</a>
                 </li>
                             </ul>
+                    <ul id="tocify-header-admin-dashboard" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="admin-dashboard">
+                    <a href="#admin-dashboard">Admin Dashboard</a>
+                </li>
+                                    <ul id="tocify-subheader-admin-dashboard" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="admin-dashboard-GETapi-auth-sample">
+                                <a href="#admin-dashboard-GETapi-auth-sample">GET api/auth/sample</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="admin-dashboard-POSTapi-auth-super-admin-login">
+                                <a href="#admin-dashboard-POSTapi-auth-super-admin-login">POST api/auth/super-admin-login</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="admin-dashboard-POSTapi-auth-admin-register">
+                                <a href="#admin-dashboard-POSTapi-auth-admin-register">POST api/auth/admin-register</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="admin-dashboard-POSTapi-auth-admin-login">
+                                <a href="#admin-dashboard-POSTapi-auth-admin-login">POST api/auth/admin-login</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="admin-dashboard-POSTapi-auth-user-register">
+                                <a href="#admin-dashboard-POSTapi-auth-user-register">POST api/auth/user-register</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="admin-dashboard-POSTapi-auth-user-login">
+                                <a href="#admin-dashboard-POSTapi-auth-user-login">POST api/auth/user-login</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="admin-dashboard-POSTapi-auth-forgot-password">
+                                <a href="#admin-dashboard-POSTapi-auth-forgot-password">POST api/auth/forgot-password</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="admin-dashboard-POSTapi-auth-verify-otp">
+                                <a href="#admin-dashboard-POSTapi-auth-verify-otp">POST api/auth/verify-otp</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="admin-dashboard-POSTapi-auth-reset-password">
+                                <a href="#admin-dashboard-POSTapi-auth-reset-password">POST api/auth/reset-password</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="admin-dashboard-GETapi-admin-dashboard-user-details">
+                                <a href="#admin-dashboard-GETapi-admin-dashboard-user-details">GET api/admin-dashboard/user-details</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="admin-dashboard-GETapi-admin-dashboard-profile">
+                                <a href="#admin-dashboard-GETapi-admin-dashboard-profile">GET api/admin-dashboard/profile</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="admin-dashboard-POSTapi-user-dashboard-update-profile">
+                                <a href="#admin-dashboard-POSTapi-user-dashboard-update-profile">POST api/user-dashboard/update-profile</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
                     <ul id="tocify-header-endpoints" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="endpoints">
                     <a href="#endpoints">Endpoints</a>
@@ -77,38 +120,8 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-oauth2-callback">
                                 <a href="#endpoints-GETapi-oauth2-callback">Handles the OAuth2 callback and retrieves the required file for the redirect.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-auth-sample">
-                                <a href="#endpoints-GETapi-auth-sample">GET api/auth/sample</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-auth-admin-register">
-                                <a href="#endpoints-POSTapi-auth-admin-register">POST api/auth/admin-register</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-auth-admin-login">
-                                <a href="#endpoints-POSTapi-auth-admin-login">POST api/auth/admin-login</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-auth-user-register">
-                                <a href="#endpoints-POSTapi-auth-user-register">POST api/auth/user-register</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-auth-user-login">
-                                <a href="#endpoints-POSTapi-auth-user-login">POST api/auth/user-login</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-auth-forgot-password">
-                                <a href="#endpoints-POSTapi-auth-forgot-password">POST api/auth/forgot-password</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-auth-verify-otp">
-                                <a href="#endpoints-POSTapi-auth-verify-otp">POST api/auth/verify-otp</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-auth-reset-password">
-                                <a href="#endpoints-POSTapi-auth-reset-password">POST api/auth/reset-password</a>
-                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-auth-app-logo-settings">
                                 <a href="#endpoints-GETapi-auth-app-logo-settings">GET api/auth/app-logo-settings</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-dashboard-profile">
-                                <a href="#endpoints-GETapi-admin-dashboard-profile">GET api/admin-dashboard/profile</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-admin-dashboard-update-profile">
-                                <a href="#endpoints-POSTapi-admin-dashboard-update-profile">POST api/admin-dashboard/update-profile</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-dashboard-app-logo-settings">
                                 <a href="#endpoints-GETapi-admin-dashboard-app-logo-settings">GET api/admin-dashboard/app-logo-settings</a>
@@ -251,6 +264,15 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-admin-dashboard-publish-product--id-">
                                 <a href="#endpoints-POSTapi-admin-dashboard-publish-product--id-">POST api/admin-dashboard/publish-product/{id}</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-dashboard-orders">
+                                <a href="#endpoints-GETapi-admin-dashboard-orders">GET api/admin-dashboard/orders</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-dashboard-orders-details--id-">
+                                <a href="#endpoints-GETapi-admin-dashboard-orders-details--id-">GET api/admin-dashboard/orders-details/{id}</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-admin-dashboard-orders--id--status">
+                                <a href="#endpoints-POSTapi-admin-dashboard-orders--id--status">POST api/admin-dashboard/orders/{id}/status</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-ecom-menu">
                                 <a href="#endpoints-GETapi-ecom-menu">GET api/ecom/menu</a>
                             </li>
@@ -305,14 +327,20 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-user-dashboard-orders">
                                 <a href="#endpoints-POSTapi-user-dashboard-orders">POST api/user-dashboard/orders</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-user-dashboard-orders">
-                                <a href="#endpoints-GETapi-user-dashboard-orders">GET api/user-dashboard/orders</a>
-                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-user-dashboard-orders--id-">
                                 <a href="#endpoints-GETapi-user-dashboard-orders--id-">GET api/user-dashboard/orders/{id}</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-user-dashboard-get-my-orders--id-">
+                                <a href="#endpoints-GETapi-user-dashboard-get-my-orders--id-">GET api/user-dashboard/get-my-orders/{id}</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-user-dashboard-orders--id-">
                                 <a href="#endpoints-DELETEapi-user-dashboard-orders--id-">DELETE api/user-dashboard/orders/{id}</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-user-dashboard-get-wishlist">
+                                <a href="#endpoints-GETapi-user-dashboard-get-wishlist">GET api/user-dashboard/get-wishlist</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-user-dashboard-wishlist-toggle">
+                                <a href="#endpoints-POSTapi-user-dashboard-wishlist-toggle">POST api/user-dashboard/wishlist-toggle</a>
                             </li>
                                                                         </ul>
                             </ul>
@@ -325,7 +353,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: February 6, 2026</li>
+        <li>Last updated: February 9, 2026</li>
     </ul>
 </div>
 
@@ -342,273 +370,18 @@
 You can switch the language used with the tabs at the top right (or from the nav menu at the top left on mobile).&lt;/aside&gt;</code></pre>
 
         <h1 id="authenticating-requests">Authenticating requests</h1>
-<p>This API is not authenticated.</p>
+<p>To authenticate requests, include a <strong><code>Authorization</code></strong> header with the value <strong><code>"Bearer {YOUR_TOKEN}"</code></strong>.</p>
+<p>All authenticated endpoints are marked with a <code>requires authentication</code> badge in the documentation below.</p>
+<p>Use the token received from the login API.</p>
 
-        <h1 id="endpoints">Endpoints</h1>
+        <h1 id="admin-dashboard">Admin Dashboard</h1>
 
     
 
-                                <h2 id="endpoints-GETapi-documentation">Handles the API request and renders the Swagger documentation view.</h2>
+                                <h2 id="admin-dashboard-GETapi-auth-sample">GET api/auth/sample</h2>
 
 <p>
-</p>
-
-
-
-<span id="example-requests-GETapi-documentation">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/documentation" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/documentation"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-documentation">
-            <blockquote>
-            <p>Example response (500):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;success&quot;: false,
-    &quot;error&quot;: &quot;SERVER_ERROR&quot;,
-    &quot;message&quot;: &quot;Route [l5-swagger.default.docs] not defined.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-documentation" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-documentation"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-documentation"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-documentation" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-documentation">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-documentation" data-method="GET"
-      data-path="api/documentation"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-documentation', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-documentation"
-                    onclick="tryItOut('GETapi-documentation');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-documentation"
-                    onclick="cancelTryOut('GETapi-documentation');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-documentation"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/documentation</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-documentation"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-documentation"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="endpoints-GETapi-oauth2-callback">Handles the OAuth2 callback and retrieves the required file for the redirect.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-oauth2-callback">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/oauth2-callback" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/oauth2-callback"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-oauth2-callback">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">content-type: text/html; charset=utf-8
-cache-control: no-cache, private
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">&lt;!doctype html&gt;
-&lt;html lang=&quot;en-US&quot;&gt;
-&lt;body&gt;
-&lt;script src=&quot;oauth2-redirect.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-oauth2-callback" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-oauth2-callback"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-oauth2-callback"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-oauth2-callback" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-oauth2-callback">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-oauth2-callback" data-method="GET"
-      data-path="api/oauth2-callback"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-oauth2-callback', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-oauth2-callback"
-                    onclick="tryItOut('GETapi-oauth2-callback');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-oauth2-callback"
-                    onclick="cancelTryOut('GETapi-oauth2-callback');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-oauth2-callback"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/oauth2-callback</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-oauth2-callback"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-oauth2-callback"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="endpoints-GETapi-auth-sample">GET api/auth/sample</h2>
-
-<p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -620,6 +393,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/auth/sample" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -630,6 +404,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -678,7 +453,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-auth-sample" data-method="GET"
       data-path="api/auth/sample"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -709,6 +484,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-auth-sample"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -734,9 +521,171 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-POSTapi-auth-admin-register">POST api/auth/admin-register</h2>
+                    <h2 id="admin-dashboard-POSTapi-auth-super-admin-login">POST api/auth/super-admin-login</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-auth-super-admin-login">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/auth/super-admin-login" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"username\": \"consequatur\",
+    \"password\": \"O[2UZ5ij-e\\/dl4m{o,\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/auth/super-admin-login"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "username": "consequatur",
+    "password": "O[2UZ5ij-e\/dl4m{o,"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-auth-super-admin-login">
+</span>
+<span id="execution-results-POSTapi-auth-super-admin-login" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-auth-super-admin-login"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-auth-super-admin-login"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-auth-super-admin-login" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-auth-super-admin-login">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-auth-super-admin-login" data-method="POST"
+      data-path="api/auth/super-admin-login"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-auth-super-admin-login', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-auth-super-admin-login"
+                    onclick="tryItOut('POSTapi-auth-super-admin-login');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-auth-super-admin-login"
+                    onclick="cancelTryOut('POSTapi-auth-super-admin-login');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-auth-super-admin-login"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/auth/super-admin-login</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-auth-super-admin-login"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-auth-super-admin-login"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-auth-super-admin-login"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>username</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="username"                data-endpoint="POSTapi-auth-super-admin-login"
+               value="consequatur"
+               data-component="body">
+    <br>
+<p>Example: <code>consequatur</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="password"                data-endpoint="POSTapi-auth-super-admin-login"
+               value="O[2UZ5ij-e/dl4m{o,"
+               data-component="body">
+    <br>
+<p>email OR phone. Example: <code>O[2UZ5ij-e/dl4m{o,</code></p>
+        </div>
+        </form>
+
+                    <h2 id="admin-dashboard-POSTapi-auth-admin-register">POST api/auth/admin-register</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -748,6 +697,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/auth/admin-register" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -765,6 +715,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -803,7 +754,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-auth-admin-register" data-method="POST"
       data-path="api/auth/admin-register"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -833,6 +784,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/auth/admin-register</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-auth-admin-register"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -908,9 +871,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-POSTapi-auth-admin-login">POST api/auth/admin-login</h2>
+                    <h2 id="admin-dashboard-POSTapi-auth-admin-login">POST api/auth/admin-login</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -922,6 +886,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/auth/admin-login" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -937,6 +902,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -973,7 +939,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-auth-admin-login" data-method="POST"
       data-path="api/auth/admin-login"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -1003,6 +969,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/auth/admin-login</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-auth-admin-login"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -1054,9 +1032,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-POSTapi-auth-user-register">POST api/auth/user-register</h2>
+                    <h2 id="admin-dashboard-POSTapi-auth-user-register">POST api/auth/user-register</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -1068,6 +1047,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/auth/user-register" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -1085,6 +1065,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1123,7 +1104,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-auth-user-register" data-method="POST"
       data-path="api/auth/user-register"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -1153,6 +1134,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/auth/user-register</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-auth-user-register"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -1228,9 +1221,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-POSTapi-auth-user-login">POST api/auth/user-login</h2>
+                    <h2 id="admin-dashboard-POSTapi-auth-user-login">POST api/auth/user-login</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -1242,6 +1236,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/auth/user-login" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -1257,6 +1252,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1293,7 +1289,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-auth-user-login" data-method="POST"
       data-path="api/auth/user-login"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -1323,6 +1319,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/auth/user-login</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-auth-user-login"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -1374,9 +1382,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-POSTapi-auth-forgot-password">POST api/auth/forgot-password</h2>
+                    <h2 id="admin-dashboard-POSTapi-auth-forgot-password">POST api/auth/forgot-password</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -1388,6 +1397,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/auth/forgot-password" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -1402,6 +1412,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1437,7 +1448,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-auth-forgot-password" data-method="POST"
       data-path="api/auth/forgot-password"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -1467,6 +1478,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/auth/forgot-password</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-auth-forgot-password"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -1506,9 +1529,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-POSTapi-auth-verify-otp">POST api/auth/verify-otp</h2>
+                    <h2 id="admin-dashboard-POSTapi-auth-verify-otp">POST api/auth/verify-otp</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -1520,6 +1544,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/auth/verify-otp" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -1535,6 +1560,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1571,7 +1597,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-auth-verify-otp" data-method="POST"
       data-path="api/auth/verify-otp"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -1601,6 +1627,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/auth/verify-otp</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-auth-verify-otp"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -1652,9 +1690,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-POSTapi-auth-reset-password">POST api/auth/reset-password</h2>
+                    <h2 id="admin-dashboard-POSTapi-auth-reset-password">POST api/auth/reset-password</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -1666,6 +1705,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/auth/reset-password" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -1682,6 +1722,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1719,7 +1760,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-auth-reset-password" data-method="POST"
       data-path="api/auth/reset-password"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -1749,6 +1790,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/auth/reset-password</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-auth-reset-password"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -1812,30 +1865,33 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-auth-app-logo-settings">GET api/auth/app-logo-settings</h2>
+                    <h2 id="admin-dashboard-GETapi-admin-dashboard-user-details">GET api/admin-dashboard/user-details</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
 
-<span id="example-requests-GETapi-auth-app-logo-settings">
+<span id="example-requests-GETapi-admin-dashboard-user-details">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/auth/app-logo-settings" \
+    --get "http://localhost/api/admin-dashboard/user-details" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/auth/app-logo-settings"
+    "http://localhost/api/admin-dashboard/user-details"
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1847,9 +1903,9 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-auth-app-logo-settings">
+<span id="example-responses-GETapi-admin-dashboard-user-details">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (401):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -1861,57 +1917,49 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;success&quot;: true,
-    &quot;data&quot;: {
-        &quot;id&quot;: 1,
-        &quot;app_name&quot;: &quot;Hamsini-Silk123&quot;,
-        &quot;app_logo&quot;: &quot;settings/cdca641d-490b-46cc-9178-84ff435171e3.webp&quot;,
-        &quot;app_favicon&quot;: &quot;settings/139b24ac-2532-4321-82f5-4f810c0ee53d.webp&quot;,
-        &quot;created_at&quot;: &quot;2026-02-03T07:03:27.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-02-03T11:03:18.000000Z&quot;,
-        &quot;app_logo_url&quot;: &quot;http://localhost/storage/settings/cdca641d-490b-46cc-9178-84ff435171e3.webp&quot;,
-        &quot;app_favicon_url&quot;: &quot;http://localhost/storage/settings/139b24ac-2532-4321-82f5-4f810c0ee53d.webp&quot;
-    }
+    &quot;success&quot;: false,
+    &quot;error&quot;: &quot;HTTP_ERROR&quot;,
+    &quot;message&quot;: &quot;Token not provided&quot;
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-auth-app-logo-settings" hidden>
+<span id="execution-results-GETapi-admin-dashboard-user-details" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-auth-app-logo-settings"></span>:
+                id="execution-response-status-GETapi-admin-dashboard-user-details"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-auth-app-logo-settings"
+    <pre class="json"><code id="execution-response-content-GETapi-admin-dashboard-user-details"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-auth-app-logo-settings" hidden>
+<span id="execution-error-GETapi-admin-dashboard-user-details" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-auth-app-logo-settings">
+    <pre><code id="execution-error-message-GETapi-admin-dashboard-user-details">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-GETapi-auth-app-logo-settings" data-method="GET"
-      data-path="api/auth/app-logo-settings"
-      data-authed="0"
+<form id="form-GETapi-admin-dashboard-user-details" data-method="GET"
+      data-path="api/admin-dashboard/user-details"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-auth-app-logo-settings', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-dashboard-user-details', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-auth-app-logo-settings"
-                    onclick="tryItOut('GETapi-auth-app-logo-settings');">Try it out ⚡
+                    id="btn-tryout-GETapi-admin-dashboard-user-details"
+                    onclick="tryItOut('GETapi-admin-dashboard-user-details');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-auth-app-logo-settings"
-                    onclick="cancelTryOut('GETapi-auth-app-logo-settings');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-admin-dashboard-user-details"
+                    onclick="cancelTryOut('GETapi-admin-dashboard-user-details');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-auth-app-logo-settings"
+                    id="btn-executetryout-GETapi-admin-dashboard-user-details"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -1919,16 +1967,28 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/auth/app-logo-settings</code></b>
+            <b><code>api/admin-dashboard/user-details</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-user-details"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-auth-app-logo-settings"
+                              name="Content-Type"                data-endpoint="GETapi-admin-dashboard-user-details"
                value="application/json"
                data-component="header">
     <br>
@@ -1940,7 +2000,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-auth-app-logo-settings"
+                              name="Accept"                data-endpoint="GETapi-admin-dashboard-user-details"
                value="application/json"
                data-component="header">
     <br>
@@ -1948,9 +2008,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-GETapi-admin-dashboard-profile">GET api/admin-dashboard/profile</h2>
+                    <h2 id="admin-dashboard-GETapi-admin-dashboard-profile">GET api/admin-dashboard/profile</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -1962,6 +2023,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/profile" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -1972,6 +2034,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2020,7 +2083,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-profile" data-method="GET"
       data-path="api/admin-dashboard/profile"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -2051,6 +2114,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-profile"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -2076,41 +2151,42 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-POSTapi-admin-dashboard-update-profile">POST api/admin-dashboard/update-profile</h2>
+                    <h2 id="admin-dashboard-POSTapi-user-dashboard-update-profile">POST api/user-dashboard/update-profile</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
 
-<span id="example-requests-POSTapi-admin-dashboard-update-profile">
+<span id="example-requests-POSTapi-user-dashboard-update-profile">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/admin-dashboard/update-profile" \
+    "http://localhost/api/user-dashboard/update-profile" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=vmqeopfuudtdsufvyvddq"\
-    --form "password=OP&gt;@;4"\
-    --form "avatar=@C:\Users\skasi\AppData\Local\Temp\php5056.tmp" </code></pre></div>
+    --form "profile_image=@C:\Users\skasi\AppData\Local\Temp\phpA25B.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/admin-dashboard/update-profile"
+    "http://localhost/api/user-dashboard/update-profile"
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
 
 const body = new FormData();
 body.append('name', 'vmqeopfuudtdsufvyvddq');
-body.append('password', 'OP&gt;@;4');
-body.append('avatar', document.querySelector('input[name="avatar"]').files[0]);
+body.append('profile_image', document.querySelector('input[name="profile_image"]').files[0]);
 
 fetch(url, {
     method: "POST",
@@ -2120,45 +2196,45 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-POSTapi-admin-dashboard-update-profile">
+<span id="example-responses-POSTapi-user-dashboard-update-profile">
 </span>
-<span id="execution-results-POSTapi-admin-dashboard-update-profile" hidden>
+<span id="execution-results-POSTapi-user-dashboard-update-profile" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-POSTapi-admin-dashboard-update-profile"></span>:
+                id="execution-response-status-POSTapi-user-dashboard-update-profile"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-admin-dashboard-update-profile"
+    <pre class="json"><code id="execution-response-content-POSTapi-user-dashboard-update-profile"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-POSTapi-admin-dashboard-update-profile" hidden>
+<span id="execution-error-POSTapi-user-dashboard-update-profile" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-admin-dashboard-update-profile">
+    <pre><code id="execution-error-message-POSTapi-user-dashboard-update-profile">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-POSTapi-admin-dashboard-update-profile" data-method="POST"
-      data-path="api/admin-dashboard/update-profile"
-      data-authed="0"
+<form id="form-POSTapi-user-dashboard-update-profile" data-method="POST"
+      data-path="api/user-dashboard/update-profile"
+      data-authed="1"
       data-hasfiles="1"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-admin-dashboard-update-profile', this);">
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-user-dashboard-update-profile', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-admin-dashboard-update-profile"
-                    onclick="tryItOut('POSTapi-admin-dashboard-update-profile');">Try it out ⚡
+                    id="btn-tryout-POSTapi-user-dashboard-update-profile"
+                    onclick="tryItOut('POSTapi-user-dashboard-update-profile');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-admin-dashboard-update-profile"
-                    onclick="cancelTryOut('POSTapi-admin-dashboard-update-profile');" hidden>Cancel 🛑
+                    id="btn-canceltryout-POSTapi-user-dashboard-update-profile"
+                    onclick="cancelTryOut('POSTapi-user-dashboard-update-profile');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-admin-dashboard-update-profile"
+                    id="btn-executetryout-POSTapi-user-dashboard-update-profile"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -2166,16 +2242,28 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-black">POST</small>
-            <b><code>api/admin-dashboard/update-profile</code></b>
+            <b><code>api/user-dashboard/update-profile</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-user-dashboard-update-profile"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-admin-dashboard-update-profile"
+                              name="Content-Type"                data-endpoint="POSTapi-user-dashboard-update-profile"
                value="multipart/form-data"
                data-component="header">
     <br>
@@ -2187,7 +2275,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-admin-dashboard-update-profile"
+                              name="Accept"                data-endpoint="POSTapi-user-dashboard-update-profile"
                value="application/json"
                data-component="header">
     <br>
@@ -2200,11 +2288,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="name"                data-endpoint="POSTapi-admin-dashboard-update-profile"
+                              name="name"                data-endpoint="POSTapi-user-dashboard-update-profile"
                value="vmqeopfuudtdsufvyvddq"
                data-component="body">
     <br>
-<p>Must not be greater than  255 characters. Example: <code>vmqeopfuudtdsufvyvddq</code></p>
+<p>Must not be greater than 255 characters. Example: <code>vmqeopfuudtdsufvyvddq</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -2212,54 +2300,473 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="email"                data-endpoint="POSTapi-admin-dashboard-update-profile"
-               value=""
-               data-component="body">
-    <br>
-<p>'email'    =&gt; 'required | email | unique: users, email, ' . $user-&gt;id,
-'phone'    =&gt; 'nullable | digits: 10 | unique: users, phone, ' . $user-&gt;id,'email' =&gt; 'required|email|unique:users,email,' . $user-&gt;id,.</p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="phone"                data-endpoint="POSTapi-admin-dashboard-update-profile"
+                              name="email"                data-endpoint="POSTapi-user-dashboard-update-profile"
                value=""
                data-component="body">
     <br>
 
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="password"                data-endpoint="POSTapi-admin-dashboard-update-profile"
-               value="OP>@;4"
-               data-component="body">
-    <br>
-<p>Must be at least  6 characters. Example: <code>OP&gt;@;4</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>avatar</code></b>&nbsp;&nbsp;
+            <b style="line-height: 2;"><code>profile_image</code></b>&nbsp;&nbsp;
 <small>file</small>&nbsp;
 <i>optional</i> &nbsp;
  &nbsp;
                 <input type="file" style="display: none"
-                              name="avatar"                data-endpoint="POSTapi-admin-dashboard-update-profile"
+                              name="profile_image"                data-endpoint="POSTapi-user-dashboard-update-profile"
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Must not be greater than  4048 kilobytes. Example: <code>C:\Users\skasi\AppData\Local\Temp\php5056.tmp</code></p>
+<p>Must be an image. Must not be greater than 4096 kilobytes. Example: <code>C:\Users\skasi\AppData\Local\Temp\phpA25B.tmp</code></p>
         </div>
         </form>
+
+                <h1 id="endpoints">Endpoints</h1>
+
+    
+
+                                <h2 id="endpoints-GETapi-documentation">Handles the API request and renders the Swagger documentation view.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-documentation">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/documentation" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/documentation"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-documentation">
+            <blockquote>
+            <p>Example response (500):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;success&quot;: false,
+    &quot;error&quot;: &quot;SERVER_ERROR&quot;,
+    &quot;message&quot;: &quot;Route [l5-swagger.default.docs] not defined.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-documentation" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-documentation"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-documentation"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-documentation" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-documentation">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-documentation" data-method="GET"
+      data-path="api/documentation"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-documentation', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-documentation"
+                    onclick="tryItOut('GETapi-documentation');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-documentation"
+                    onclick="cancelTryOut('GETapi-documentation');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-documentation"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/documentation</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-documentation"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-documentation"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-documentation"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-oauth2-callback">Handles the OAuth2 callback and retrieves the required file for the redirect.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-oauth2-callback">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/oauth2-callback" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/oauth2-callback"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-oauth2-callback">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">content-type: text/html; charset=utf-8
+cache-control: no-cache, private
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">&lt;!doctype html&gt;
+&lt;html lang=&quot;en-US&quot;&gt;
+&lt;body&gt;
+&lt;script src=&quot;oauth2-redirect.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-oauth2-callback" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-oauth2-callback"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-oauth2-callback"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-oauth2-callback" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-oauth2-callback">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-oauth2-callback" data-method="GET"
+      data-path="api/oauth2-callback"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-oauth2-callback', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-oauth2-callback"
+                    onclick="tryItOut('GETapi-oauth2-callback');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-oauth2-callback"
+                    onclick="cancelTryOut('GETapi-oauth2-callback');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-oauth2-callback"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/oauth2-callback</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-oauth2-callback"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-oauth2-callback"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-oauth2-callback"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-auth-app-logo-settings">GET api/auth/app-logo-settings</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-auth-app-logo-settings">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/auth/app-logo-settings" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/auth/app-logo-settings"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-auth-app-logo-settings">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;success&quot;: true,
+    &quot;data&quot;: {
+        &quot;id&quot;: 1,
+        &quot;app_name&quot;: &quot;Hamsini-Silks&quot;,
+        &quot;app_logo&quot;: &quot;settings/c79651c9-a33b-4e7c-b1f1-30893ee1f11e.webp&quot;,
+        &quot;app_favicon&quot;: &quot;settings/6f432dfb-f718-4a89-b00e-bcd255216a1a.webp&quot;,
+        &quot;created_at&quot;: &quot;2026-02-03T07:03:27.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-02-07T12:07:50.000000Z&quot;,
+        &quot;app_logo_url&quot;: &quot;http://localhost/storage/settings/c79651c9-a33b-4e7c-b1f1-30893ee1f11e.webp&quot;,
+        &quot;app_favicon_url&quot;: &quot;http://localhost/storage/settings/6f432dfb-f718-4a89-b00e-bcd255216a1a.webp&quot;
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-auth-app-logo-settings" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-auth-app-logo-settings"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-auth-app-logo-settings"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-auth-app-logo-settings" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-auth-app-logo-settings">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-auth-app-logo-settings" data-method="GET"
+      data-path="api/auth/app-logo-settings"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-auth-app-logo-settings', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-auth-app-logo-settings"
+                    onclick="tryItOut('GETapi-auth-app-logo-settings');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-auth-app-logo-settings"
+                    onclick="cancelTryOut('GETapi-auth-app-logo-settings');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-auth-app-logo-settings"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/auth/app-logo-settings</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-auth-app-logo-settings"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-auth-app-logo-settings"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-auth-app-logo-settings"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
 
                     <h2 id="endpoints-GETapi-admin-dashboard-app-logo-settings">GET api/admin-dashboard/app-logo-settings</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -2271,6 +2778,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/app-logo-settings" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2281,6 +2789,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2329,7 +2838,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-app-logo-settings" data-method="GET"
       data-path="api/admin-dashboard/app-logo-settings"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -2360,6 +2869,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-app-logo-settings"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -2388,6 +2909,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-app-logo-settings">POST api/admin-dashboard/app-logo-settings</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -2399,11 +2921,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/app-logo-settings" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "app_name=vmqeopfuudtdsufvyvddq"\
-    --form "app_logo=@C:\Users\skasi\AppData\Local\Temp\php5076.tmp" \
-    --form "app_favicon=@C:\Users\skasi\AppData\Local\Temp\php5077.tmp" </code></pre></div>
+    --form "app_logo=@C:\Users\skasi\AppData\Local\Temp\php86B8.tmp" \
+    --form "app_favicon=@C:\Users\skasi\AppData\Local\Temp\php86B9.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -2412,6 +2935,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -2448,7 +2972,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-app-logo-settings" data-method="POST"
       data-path="api/admin-dashboard/app-logo-settings"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="1"
       data-isarraybody="0"
       autocomplete="off"
@@ -2478,6 +3002,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/app-logo-settings</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-app-logo-settings"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -2525,7 +3061,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\skasi\AppData\Local\Temp\php5076.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\skasi\AppData\Local\Temp\php86B8.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>app_favicon</code></b>&nbsp;&nbsp;
@@ -2537,13 +3073,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\skasi\AppData\Local\Temp\php5077.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\skasi\AppData\Local\Temp\php86B9.tmp</code></p>
         </div>
         </form>
 
                     <h2 id="endpoints-GETapi-admin-dashboard-social-media-settings">GET api/admin-dashboard/social-media-settings</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -2555,6 +3092,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/social-media-settings" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2565,6 +3103,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2613,7 +3152,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-social-media-settings" data-method="GET"
       data-path="api/admin-dashboard/social-media-settings"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -2644,6 +3183,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-social-media-settings"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -2672,6 +3223,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-social-media-settings">Create or Update Social Media Settings (single row)</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -2683,6 +3235,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/social-media-settings" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -2701,6 +3254,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2740,7 +3294,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-social-media-settings" data-method="POST"
       data-path="api/admin-dashboard/social-media-settings"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -2770,6 +3324,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/social-media-settings</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-social-media-settings"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -2860,6 +3426,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-admin-dashboard-payment-gateways">GET api/admin-dashboard/payment-gateways</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -2871,6 +3438,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/payment-gateways" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2881,6 +3449,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2929,7 +3498,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-payment-gateways" data-method="GET"
       data-path="api/admin-dashboard/payment-gateways"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -2960,6 +3529,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-payment-gateways"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -2988,6 +3569,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-payment-gateways">CREATE or UPDATE (single row)</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -2999,12 +3581,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/payment-gateways" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"razorpay_key\": \"consequatur\",
     \"razorpay_secret\": \"consequatur\",
-    \"razorpay_enabled\": false,
+    \"razorpay_enabled\": true,
     \"cashfree_app_id\": \"consequatur\",
     \"cashfree_secret\": \"consequatur\",
     \"cashfree_enabled\": false,
@@ -3022,6 +3605,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -3029,7 +3613,7 @@ const headers = {
 let body = {
     "razorpay_key": "consequatur",
     "razorpay_secret": "consequatur",
-    "razorpay_enabled": false,
+    "razorpay_enabled": true,
     "cashfree_app_id": "consequatur",
     "cashfree_secret": "consequatur",
     "cashfree_enabled": false,
@@ -3066,7 +3650,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-payment-gateways" data-method="POST"
       data-path="api/admin-dashboard/payment-gateways"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -3096,6 +3680,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/payment-gateways</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-payment-gateways"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -3165,7 +3761,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>cashfree_app_id</code></b>&nbsp;&nbsp;
@@ -3286,6 +3882,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-DELETEapi-admin-dashboard-payment-gateways">DELETE settings (optional)</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -3297,6 +3894,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost/api/admin-dashboard/payment-gateways" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -3307,6 +3905,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -3337,7 +3936,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-DELETEapi-admin-dashboard-payment-gateways" data-method="DELETE"
       data-path="api/admin-dashboard/payment-gateways"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -3368,6 +3967,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-admin-dashboard-payment-gateways"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -3396,6 +4007,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-admin-dashboard-get-variations">GET api/admin-dashboard/get-variations</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -3407,6 +4019,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/get-variations" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -3417,6 +4030,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -3465,7 +4079,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-get-variations" data-method="GET"
       data-path="api/admin-dashboard/get-variations"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -3496,6 +4110,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-get-variations"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -3524,6 +4150,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-add-variation">POST api/admin-dashboard/add-variation</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -3535,11 +4162,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/add-variation" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"name\": \"vmqeopfuudtdsufvyvddq\",
-    \"type\": \"text\"
+    \"type\": \"color\"
 }"
 </code></pre></div>
 
@@ -3550,13 +4178,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
     "name": "vmqeopfuudtdsufvyvddq",
-    "type": "text"
+    "type": "color"
 };
 
 fetch(url, {
@@ -3586,7 +4215,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-add-variation" data-method="POST"
       data-path="api/admin-dashboard/add-variation"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -3616,6 +4245,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/add-variation</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-add-variation"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -3660,10 +4301,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-admin-dashboard-add-variation"
-               value="text"
+               value="color"
                data-component="body">
     <br>
-<p>Example: <code>text</code></p>
+<p>Example: <code>color</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>text</code></li> <li><code>color</code></li></ul>
         </div>
@@ -3672,6 +4313,7 @@ Must be one of:
                     <h2 id="endpoints-PUTapi-admin-dashboard-update-variations--id-">PUT api/admin-dashboard/update-variations/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -3683,11 +4325,12 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost/api/admin-dashboard/update-variations/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"name\": \"vmqeopfuudtdsufvyvddq\",
-    \"type\": \"color\"
+    \"type\": \"text\"
 }"
 </code></pre></div>
 
@@ -3698,13 +4341,14 @@ Must be one of:
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
     "name": "vmqeopfuudtdsufvyvddq",
-    "type": "color"
+    "type": "text"
 };
 
 fetch(url, {
@@ -3734,7 +4378,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-PUTapi-admin-dashboard-update-variations--id-" data-method="PUT"
       data-path="api/admin-dashboard/update-variations/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -3764,6 +4408,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/update-variations/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="PUTapi-admin-dashboard-update-variations--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -3821,10 +4477,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="PUTapi-admin-dashboard-update-variations--id-"
-               value="color"
+               value="text"
                data-component="body">
     <br>
-<p>Example: <code>color</code></p>
+<p>Example: <code>text</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>text</code></li> <li><code>color</code></li></ul>
         </div>
@@ -3833,6 +4489,7 @@ Must be one of:
                     <h2 id="endpoints-DELETEapi-admin-dashboard-delete-variations--id-">DELETE api/admin-dashboard/delete-variations/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -3844,6 +4501,7 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost/api/admin-dashboard/delete-variations/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -3854,6 +4512,7 @@ Must be one of:
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -3884,7 +4543,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-DELETEapi-admin-dashboard-delete-variations--id-" data-method="DELETE"
       data-path="api/admin-dashboard/delete-variations/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -3914,6 +4573,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/delete-variations/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-admin-dashboard-delete-variations--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -3956,6 +4627,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-add-variation-value--variationId-">POST api/admin-dashboard/add-variation-value/{variationId}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -3967,6 +4639,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/add-variation-value/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -3982,6 +4655,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4018,7 +4692,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-add-variation-value--variationId-" data-method="POST"
       data-path="api/admin-dashboard/add-variation-value/{variationId}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -4048,6 +4722,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/add-variation-value/{variationId}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-add-variation-value--variationId-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -4115,6 +4801,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-PUTapi-admin-dashboard-update-variation-value--id-">PUT api/admin-dashboard/update-variation-value/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -4126,6 +4813,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost/api/admin-dashboard/update-variation-value/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -4141,6 +4829,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4177,7 +4866,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-PUTapi-admin-dashboard-update-variation-value--id-" data-method="PUT"
       data-path="api/admin-dashboard/update-variation-value/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -4207,6 +4896,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/update-variation-value/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="PUTapi-admin-dashboard-update-variation-value--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -4274,6 +4975,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-DELETEapi-admin-dashboard-delete-variation-value--id-">DELETE api/admin-dashboard/delete-variation-value/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -4285,6 +4987,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost/api/admin-dashboard/delete-variation-value/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -4295,6 +4998,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4325,7 +5029,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-DELETEapi-admin-dashboard-delete-variation-value--id-" data-method="DELETE"
       data-path="api/admin-dashboard/delete-variation-value/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -4355,6 +5059,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/delete-variation-value/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-admin-dashboard-delete-variation-value--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -4397,6 +5113,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-admin-dashboard-whatsapp-settings">GET api/admin-dashboard/whatsapp-settings</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -4408,6 +5125,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/whatsapp-settings" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -4418,6 +5136,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4466,7 +5185,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-whatsapp-settings" data-method="GET"
       data-path="api/admin-dashboard/whatsapp-settings"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -4497,6 +5216,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-whatsapp-settings"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -4525,6 +5256,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-whatsapp-settings">SAVE (create or update)</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -4536,6 +5268,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/whatsapp-settings" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -4550,6 +5283,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4585,7 +5319,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-whatsapp-settings" data-method="POST"
       data-path="api/admin-dashboard/whatsapp-settings"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -4615,6 +5349,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/whatsapp-settings</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-whatsapp-settings"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -4657,6 +5403,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-admin-dashboard-cart-list-coupon">GET api/admin-dashboard/cart/list-coupon</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -4668,6 +5415,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/cart/list-coupon" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -4678,6 +5426,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4726,7 +5475,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-cart-list-coupon" data-method="GET"
       data-path="api/admin-dashboard/cart/list-coupon"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -4757,6 +5506,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-cart-list-coupon"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -4785,6 +5546,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-cart-create-coupon">POST api/admin-dashboard/cart/create-coupon</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -4796,6 +5558,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/cart/create-coupon" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -4804,8 +5567,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"value\": 1,
     \"min_order\": 45,
     \"max_discount\": 46,
-    \"expiry_date\": \"2026-02-06T06:50:05\",
-    \"is_active\": true
+    \"expiry_date\": \"2026-02-09T13:23:43\",
+    \"is_active\": false
 }"
 </code></pre></div>
 
@@ -4816,6 +5579,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -4826,8 +5590,8 @@ let body = {
     "value": 1,
     "min_order": 45,
     "max_discount": 46,
-    "expiry_date": "2026-02-06T06:50:05",
-    "is_active": true
+    "expiry_date": "2026-02-09T13:23:43",
+    "is_active": false
 };
 
 fetch(url, {
@@ -4857,7 +5621,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-cart-create-coupon" data-method="POST"
       data-path="api/admin-dashboard/cart/create-coupon"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -4887,6 +5651,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/cart/create-coupon</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-cart-create-coupon"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -4981,10 +5757,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="expiry_date"                data-endpoint="POSTapi-admin-dashboard-cart-create-coupon"
-               value="2026-02-06T06:50:05"
+               value="2026-02-09T13:23:43"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-02-06T06:50:05</code></p>
+<p>Must be a valid date. Example: <code>2026-02-09T13:23:43</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>is_active</code></b>&nbsp;&nbsp;
@@ -5006,13 +5782,14 @@ Must be one of:
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
         </form>
 
                     <h2 id="endpoints-PUTapi-admin-dashboard-cart-update-coupon--id-">PUT api/admin-dashboard/cart/update-coupon/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -5024,14 +5801,15 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost/api/admin-dashboard/cart/update-coupon/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"flat\",
+    \"type\": \"percent\",
     \"value\": 73,
     \"min_order\": 45,
     \"max_discount\": 56,
-    \"expiry_date\": \"2026-02-06T06:50:05\",
+    \"expiry_date\": \"2026-02-09T13:23:43\",
     \"is_active\": true
 }"
 </code></pre></div>
@@ -5043,16 +5821,17 @@ Must be one of:
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
-    "type": "flat",
+    "type": "percent",
     "value": 73,
     "min_order": 45,
     "max_discount": 56,
-    "expiry_date": "2026-02-06T06:50:05",
+    "expiry_date": "2026-02-09T13:23:43",
     "is_active": true
 };
 
@@ -5083,7 +5862,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-PUTapi-admin-dashboard-cart-update-coupon--id-" data-method="PUT"
       data-path="api/admin-dashboard/cart/update-coupon/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -5113,6 +5892,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/cart/update-coupon/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="PUTapi-admin-dashboard-cart-update-coupon--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -5170,10 +5961,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="PUTapi-admin-dashboard-cart-update-coupon--id-"
-               value="flat"
+               value="percent"
                data-component="body">
     <br>
-<p>Example: <code>flat</code></p>
+<p>Example: <code>percent</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>percent</code></li> <li><code>flat</code></li></ul>
         </div>
@@ -5220,10 +6011,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="expiry_date"                data-endpoint="PUTapi-admin-dashboard-cart-update-coupon--id-"
-               value="2026-02-06T06:50:05"
+               value="2026-02-09T13:23:43"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2026-02-06T06:50:05</code></p>
+<p>Must be a valid date. Example: <code>2026-02-09T13:23:43</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>is_active</code></b>&nbsp;&nbsp;
@@ -5252,6 +6043,7 @@ Must be one of:
                     <h2 id="endpoints-DELETEapi-admin-dashboard-cart-delete-coupon--id-">DELETE api/admin-dashboard/cart/delete-coupon/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -5263,6 +6055,7 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost/api/admin-dashboard/cart/delete-coupon/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -5273,6 +6066,7 @@ Must be one of:
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -5303,7 +6097,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-DELETEapi-admin-dashboard-cart-delete-coupon--id-" data-method="DELETE"
       data-path="api/admin-dashboard/cart/delete-coupon/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -5333,6 +6127,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/cart/delete-coupon/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-admin-dashboard-cart-delete-coupon--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -5375,6 +6181,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-admin-dashboard-list-category">GET api/admin-dashboard/list-category</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -5386,6 +6193,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/list-category" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -5396,6 +6204,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -5444,7 +6253,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-list-category" data-method="GET"
       data-path="api/admin-dashboard/list-category"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -5475,6 +6284,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-list-category"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -5503,6 +6324,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-admin-dashboard-list-category-all">GET api/admin-dashboard/list-category-all</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -5514,6 +6336,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/list-category-all" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -5524,6 +6347,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -5572,7 +6396,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-list-category-all" data-method="GET"
       data-path="api/admin-dashboard/list-category-all"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -5603,6 +6427,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-list-category-all"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -5631,6 +6467,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-add-category">POST api/admin-dashboard/add-category</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -5642,10 +6479,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/add-category" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=vmqeopfuudtdsufvyvddq"\
-    --form "image=@C:\Users\skasi\AppData\Local\Temp\php51A1.tmp" </code></pre></div>
+    --form "image=@C:\Users\skasi\AppData\Local\Temp\php8DA0.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -5654,6 +6492,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -5689,7 +6528,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-add-category" data-method="POST"
       data-path="api/admin-dashboard/add-category"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="1"
       data-isarraybody="0"
       autocomplete="off"
@@ -5719,6 +6558,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/add-category</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-add-category"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -5778,13 +6629,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\skasi\AppData\Local\Temp\php51A1.tmp</code></p>
+<p>Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\skasi\AppData\Local\Temp\php8DA0.tmp</code></p>
         </div>
         </form>
 
                     <h2 id="endpoints-POSTapi-admin-dashboard-update-category--id-">POST api/admin-dashboard/update-category/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -5796,10 +6648,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/update-category/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=vmqeopfuudtdsufvyvddq"\
-    --form "image=@C:\Users\skasi\AppData\Local\Temp\php51B1.tmp" </code></pre></div>
+    --form "image=@C:\Users\skasi\AppData\Local\Temp\php8E1E.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -5808,6 +6661,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -5843,7 +6697,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-update-category--id-" data-method="POST"
       data-path="api/admin-dashboard/update-category/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="1"
       data-isarraybody="0"
       autocomplete="off"
@@ -5873,6 +6727,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/update-category/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-update-category--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -5945,13 +6811,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\skasi\AppData\Local\Temp\php51B1.tmp</code></p>
+<p>Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\skasi\AppData\Local\Temp\php8E1E.tmp</code></p>
         </div>
         </form>
 
                     <h2 id="endpoints-DELETEapi-admin-dashboard-delete-category--id-">DELETE api/admin-dashboard/delete-category/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -5963,6 +6830,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost/api/admin-dashboard/delete-category/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -5973,6 +6841,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6003,7 +6872,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-DELETEapi-admin-dashboard-delete-category--id-" data-method="DELETE"
       data-path="api/admin-dashboard/delete-category/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -6033,6 +6902,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/delete-category/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-admin-dashboard-delete-category--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -6075,6 +6956,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-admin-dashboard-list-brand">GET api/admin-dashboard/list-brand</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -6086,6 +6968,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/list-brand" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -6096,6 +6979,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6144,7 +7028,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-list-brand" data-method="GET"
       data-path="api/admin-dashboard/list-brand"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -6175,6 +7059,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-list-brand"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -6203,6 +7099,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-add-brand">POST api/admin-dashboard/add-brand</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -6214,11 +7111,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/add-brand" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=vmqeopfuudtdsufvyvddq"\
     --form "status=active"\
-    --form "image=@C:\Users\skasi\AppData\Local\Temp\php51E1.tmp" </code></pre></div>
+    --form "image=@C:\Users\skasi\AppData\Local\Temp\php8F09.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -6227,6 +7125,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -6263,7 +7162,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-add-brand" data-method="POST"
       data-path="api/admin-dashboard/add-brand"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="1"
       data-isarraybody="0"
       autocomplete="off"
@@ -6293,6 +7192,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/add-brand</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-add-brand"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -6340,7 +7251,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\skasi\AppData\Local\Temp\php51E1.tmp</code></p>
+<p>Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\skasi\AppData\Local\Temp\php8F09.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -6361,6 +7272,7 @@ Must be one of:
                     <h2 id="endpoints-POSTapi-admin-dashboard-update-brand--id-">POST api/admin-dashboard/update-brand/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -6372,11 +7284,12 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/update-brand/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=vmqeopfuudtdsufvyvddq"\
     --form "status=active"\
-    --form "image=@C:\Users\skasi\AppData\Local\Temp\php51F2.tmp" </code></pre></div>
+    --form "image=@C:\Users\skasi\AppData\Local\Temp\php8F59.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -6385,6 +7298,7 @@ Must be one of:
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -6421,7 +7335,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-update-brand--id-" data-method="POST"
       data-path="api/admin-dashboard/update-brand/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="1"
       data-isarraybody="0"
       autocomplete="off"
@@ -6451,6 +7365,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/update-brand/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-update-brand--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -6511,7 +7437,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\skasi\AppData\Local\Temp\php51F2.tmp</code></p>
+<p>Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\skasi\AppData\Local\Temp\php8F59.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -6532,6 +7458,7 @@ Must be one of:
                     <h2 id="endpoints-DELETEapi-admin-dashboard-delete-brand--id-">DELETE api/admin-dashboard/delete-brand/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -6543,6 +7470,7 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost/api/admin-dashboard/delete-brand/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -6553,6 +7481,7 @@ Must be one of:
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6583,7 +7512,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-DELETEapi-admin-dashboard-delete-brand--id-" data-method="DELETE"
       data-path="api/admin-dashboard/delete-brand/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -6613,6 +7542,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/delete-brand/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-admin-dashboard-delete-brand--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -6655,6 +7596,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-admin-dashboard-products">GET api/admin-dashboard/products</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -6666,6 +7608,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/products" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -6676,6 +7619,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6724,7 +7668,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-products" data-method="GET"
       data-path="api/admin-dashboard/products"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -6755,6 +7699,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-products"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -6783,6 +7739,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-admin-dashboard-product-fetch-products-by-id--id-">GET api/admin-dashboard/product/fetch-products-by-id/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -6794,6 +7751,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/admin-dashboard/product/fetch-products-by-id/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -6804,6 +7762,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6852,7 +7811,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-admin-dashboard-product-fetch-products-by-id--id-" data-method="GET"
       data-path="api/admin-dashboard/product/fetch-products-by-id/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -6882,6 +7841,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product/fetch-products-by-id/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-product-fetch-products-by-id--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -6924,6 +7895,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-create-product">POST api/admin-dashboard/create-product</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -6935,6 +7907,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/create-product" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -6944,7 +7917,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"purchase_price\": 12,
     \"base_price\": 66,
     \"discount\": 13,
-    \"status\": \"inactive\"
+    \"status\": \"draft\"
 }"
 </code></pre></div>
 
@@ -6955,6 +7928,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6966,7 +7940,7 @@ let body = {
     "purchase_price": 12,
     "base_price": 66,
     "discount": 13,
-    "status": "inactive"
+    "status": "draft"
 };
 
 fetch(url, {
@@ -6996,7 +7970,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-create-product" data-method="POST"
       data-path="api/admin-dashboard/create-product"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -7026,6 +8000,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/create-product</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-create-product"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -7142,10 +8128,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-admin-dashboard-create-product"
-               value="inactive"
+               value="draft"
                data-component="body">
     <br>
-<p>Example: <code>inactive</code></p>
+<p>Example: <code>draft</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>draft</code></li> <li><code>active</code></li> <li><code>inactive</code></li></ul>
         </div>
@@ -7154,6 +8140,7 @@ Must be one of:
                     <h2 id="endpoints-POSTapi-admin-dashboard-update-product--id-">POST api/admin-dashboard/update-product/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -7165,6 +8152,7 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/update-product/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -7185,6 +8173,7 @@ Must be one of:
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -7226,7 +8215,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-update-product--id-" data-method="POST"
       data-path="api/admin-dashboard/update-product/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -7256,6 +8245,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/update-product/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-update-product--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -7397,6 +8398,7 @@ Must be one of:
                     <h2 id="endpoints-DELETEapi-admin-dashboard-delete-product--id-">DELETE api/admin-dashboard/delete-product/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -7408,6 +8410,7 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost/api/admin-dashboard/delete-product/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -7418,6 +8421,7 @@ Must be one of:
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -7448,7 +8452,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-DELETEapi-admin-dashboard-delete-product--id-" data-method="DELETE"
       data-path="api/admin-dashboard/delete-product/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -7478,6 +8482,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/delete-product/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-admin-dashboard-delete-product--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -7520,6 +8536,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-product-bulk-upload">POST api/admin-dashboard/product/bulk-upload</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -7531,9 +8548,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/product/bulk-upload" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "file=@C:\Users\skasi\AppData\Local\Temp\php5251.tmp" </code></pre></div>
+    --form "file=@C:\Users\skasi\AppData\Local\Temp\php918C.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -7542,6 +8560,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -7576,7 +8595,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-product-bulk-upload" data-method="POST"
       data-path="api/admin-dashboard/product/bulk-upload"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="1"
       data-isarraybody="0"
       autocomplete="off"
@@ -7606,6 +8625,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product/bulk-upload</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-product-bulk-upload"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -7641,13 +8672,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be a file. Example: <code>C:\Users\skasi\AppData\Local\Temp\php5251.tmp</code></p>
+<p>Must be a file. Example: <code>C:\Users\skasi\AppData\Local\Temp\php918C.tmp</code></p>
         </div>
         </form>
 
                     <h2 id="endpoints-POSTapi-admin-dashboard-product--product_id--gallery">POST api/admin-dashboard/product/{product_id}/gallery</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -7659,11 +8691,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/product/13/gallery" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "main_index=73"\
     --form "video_urls[]=https://www.mueller.com/laborum-eius-est-dolor-dolores-minus-voluptatem"\
-    --form "images[]=@C:\Users\skasi\AppData\Local\Temp\php5271.tmp" </code></pre></div>
+    --form "images[]=@C:\Users\skasi\AppData\Local\Temp\php91EC.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -7672,6 +8705,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -7708,7 +8742,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-product--product_id--gallery" data-method="POST"
       data-path="api/admin-dashboard/product/{product_id}/gallery"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="1"
       data-isarraybody="0"
       autocomplete="off"
@@ -7738,6 +8772,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product/{product_id}/gallery</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-product--product_id--gallery"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -7821,6 +8867,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-product--product_id--images">POST api/admin-dashboard/product/{product_id}/images</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -7832,9 +8879,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/product/13/images" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "images[]=@C:\Users\skasi\AppData\Local\Temp\php5272.tmp" </code></pre></div>
+    --form "images[]=@C:\Users\skasi\AppData\Local\Temp\php923B.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -7843,6 +8891,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -7877,7 +8926,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-product--product_id--images" data-method="POST"
       data-path="api/admin-dashboard/product/{product_id}/images"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="1"
       data-isarraybody="0"
       autocomplete="off"
@@ -7907,6 +8956,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product/{product_id}/images</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-product--product_id--images"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -7964,6 +9025,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-DELETEapi-admin-dashboard-product-image--image_id-">DELETE api/admin-dashboard/product/image/{image_id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -7975,6 +9037,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost/api/admin-dashboard/product/image/13" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -7985,6 +9048,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -8015,7 +9079,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-DELETEapi-admin-dashboard-product-image--image_id-" data-method="DELETE"
       data-path="api/admin-dashboard/product/image/{image_id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -8045,6 +9109,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product/image/{image_id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-admin-dashboard-product-image--image_id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -8087,6 +9163,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-product--product_id--set-main-image">POST api/admin-dashboard/product/{product_id}/set-main-image</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -8098,6 +9175,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/product/13/set-main-image" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -8112,6 +9190,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -8147,7 +9226,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-product--product_id--set-main-image" data-method="POST"
       data-path="api/admin-dashboard/product/{product_id}/set-main-image"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -8177,6 +9256,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product/{product_id}/set-main-image</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-product--product_id--set-main-image"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -8232,6 +9323,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-product--product_id--videos">POST api/admin-dashboard/product/{product_id}/videos</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -8243,6 +9335,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/product/13/videos" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -8259,6 +9352,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -8296,7 +9390,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-product--product_id--videos" data-method="POST"
       data-path="api/admin-dashboard/product/{product_id}/videos"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -8326,6 +9420,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product/{product_id}/videos</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-product--product_id--videos"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -8383,6 +9489,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-product-create-variation--product_id-">POST api/admin-dashboard/product/create-variation/{product_id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -8394,6 +9501,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/product/create-variation/13" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "variants[][sku]=vmqeopfuudtdsufvyvddq"\
@@ -8401,7 +9509,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --form "variants[][extra_price]=45"\
     --form "variants[][quantity]=46"\
     --form "variants[][low_quantity]=28"\
-    --form "variant_images[][]=@C:\Users\skasi\AppData\Local\Temp\php52B1.tmp" </code></pre></div>
+    --form "variant_images[][]=@C:\Users\skasi\AppData\Local\Temp\php9365.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -8410,6 +9518,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -8449,7 +9558,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-product-create-variation--product_id-" data-method="POST"
       data-path="api/admin-dashboard/product/create-variation/{product_id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="1"
       data-isarraybody="0"
       autocomplete="off"
@@ -8479,6 +9588,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product/create-variation/{product_id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-product-create-variation--product_id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -8620,6 +9741,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-product-update-variation--product_id-">POST api/admin-dashboard/product/update-variation/{product_id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -8631,6 +9753,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/product/update-variation/13" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "variants[][id]=17"\
@@ -8641,7 +9764,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --form "variants[][quantity]=28"\
     --form "variants[][low_quantity]=30"\
     --form "variants[][keep_image_ids][]=17"\
-    --form "variants[][images][]=@C:\Users\skasi\AppData\Local\Temp\php52B2.tmp" </code></pre></div>
+    --form "variants[][images][]=@C:\Users\skasi\AppData\Local\Temp\php9385.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -8650,6 +9773,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -8692,7 +9816,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-product-update-variation--product_id-" data-method="POST"
       data-path="api/admin-dashboard/product/update-variation/{product_id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="1"
       data-isarraybody="0"
       autocomplete="off"
@@ -8722,6 +9846,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product/update-variation/{product_id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-product-update-variation--product_id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -8901,6 +10037,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-product-seo-meta--product_id-">POST api/admin-dashboard/product-seo-meta/{product_id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -8912,6 +10049,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/product-seo-meta/13" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -8928,6 +10066,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -8965,7 +10104,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-product-seo-meta--product_id-" data-method="POST"
       data-path="api/admin-dashboard/product-seo-meta/{product_id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -8995,6 +10134,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product-seo-meta/{product_id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-product-seo-meta--product_id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -9074,6 +10225,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-product-seo-meta-update-meta--product-">POST api/admin-dashboard/product-seo-meta/update-meta/{product}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -9085,6 +10237,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/product-seo-meta/update-meta/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -9101,6 +10254,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -9138,7 +10292,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-product-seo-meta-update-meta--product-" data-method="POST"
       data-path="api/admin-dashboard/product-seo-meta/update-meta/{product}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -9168,6 +10322,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product-seo-meta/update-meta/{product}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-product-seo-meta-update-meta--product-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -9247,6 +10413,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-admin-dashboard-product-tax-affinity--product_id-">POST api/admin-dashboard/product-tax-affinity/{product_id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -9258,13 +10425,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/product-tax-affinity/13" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"gst_enabled\": false,
+    \"gst_enabled\": true,
     \"gst_type\": \"exclusive\",
     \"gst_percent\": 21,
-    \"affinity_enabled\": false,
+    \"affinity_enabled\": true,
     \"affinity_percent\": 13
 }"
 </code></pre></div>
@@ -9276,15 +10444,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
-    "gst_enabled": false,
+    "gst_enabled": true,
     "gst_type": "exclusive",
     "gst_percent": 21,
-    "affinity_enabled": false,
+    "affinity_enabled": true,
     "affinity_percent": 13
 };
 
@@ -9315,7 +10484,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-product-tax-affinity--product_id-" data-method="POST"
       data-path="api/admin-dashboard/product-tax-affinity/{product_id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -9345,6 +10514,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product-tax-affinity/{product_id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-product-tax-affinity--product_id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -9403,7 +10584,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gst_type</code></b>&nbsp;&nbsp;
@@ -9451,7 +10632,7 @@ Must be one of:
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>affinity_percent</code></b>&nbsp;&nbsp;
@@ -9470,6 +10651,7 @@ Must be one of:
                     <h2 id="endpoints-POSTapi-admin-dashboard-product-tax-affinity-update-tax--product-">POST api/admin-dashboard/product-tax-affinity/update-tax/{product}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -9481,15 +10663,16 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/product-tax-affinity/update-tax/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"gst_enabled\": true,
-    \"gst_type\": \"inclusive\",
+    \"gst_type\": \"exclusive\",
     \"gst_percent\": 21,
-    \"affinity_enabled\": true,
+    \"affinity_enabled\": false,
     \"affinity_percent\": 13,
-    \"status\": \"draft\"
+    \"status\": \"Published\"
 }"
 </code></pre></div>
 
@@ -9500,17 +10683,18 @@ Must be one of:
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
     "gst_enabled": true,
-    "gst_type": "inclusive",
+    "gst_type": "exclusive",
     "gst_percent": 21,
-    "affinity_enabled": true,
+    "affinity_enabled": false,
     "affinity_percent": 13,
-    "status": "draft"
+    "status": "Published"
 };
 
 fetch(url, {
@@ -9540,7 +10724,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-product-tax-affinity-update-tax--product-" data-method="POST"
       data-path="api/admin-dashboard/product-tax-affinity/update-tax/{product}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -9570,6 +10754,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/product-tax-affinity/update-tax/{product}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-product-tax-affinity-update-tax--product-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -9637,10 +10833,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gst_type"                data-endpoint="POSTapi-admin-dashboard-product-tax-affinity-update-tax--product-"
-               value="inclusive"
+               value="exclusive"
                data-component="body">
     <br>
-<p>This field is required when <code>gst_enabled</code> is <code>true</code>. Example: <code>inclusive</code></p>
+<p>This field is required when <code>gst_enabled</code> is <code>true</code>. Example: <code>exclusive</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>inclusive</code></li> <li><code>exclusive</code></li></ul>
         </div>
@@ -9676,7 +10872,7 @@ Must be one of:
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>affinity_percent</code></b>&nbsp;&nbsp;
@@ -9697,18 +10893,19 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-admin-dashboard-product-tax-affinity-update-tax--product-"
-               value="draft"
+               value="Published"
                data-component="body">
     <br>
-<p>Example: <code>draft</code></p>
+<p>Example: <code>Published</code></p>
 Must be one of:
-<ul style="list-style-type: square;"><li><code>published</code></li> <li><code>draft</code></li></ul>
+<ul style="list-style-type: square;"><li><code>Published</code></li> <li><code>draft</code></li></ul>
         </div>
         </form>
 
                     <h2 id="endpoints-POSTapi-admin-dashboard-publish-product--id-">POST api/admin-dashboard/publish-product/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -9720,6 +10917,7 @@ Must be one of:
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/admin-dashboard/publish-product/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -9730,6 +10928,7 @@ Must be one of:
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -9760,7 +10959,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-admin-dashboard-publish-product--id-" data-method="POST"
       data-path="api/admin-dashboard/publish-product/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -9790,6 +10989,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/admin-dashboard/publish-product/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-publish-product--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -9829,9 +11040,483 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
+                    <h2 id="endpoints-GETapi-admin-dashboard-orders">GET api/admin-dashboard/orders</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-dashboard-orders">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/admin-dashboard/orders" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/admin-dashboard/orders"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-dashboard-orders">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;success&quot;: false,
+    &quot;error&quot;: &quot;HTTP_ERROR&quot;,
+    &quot;message&quot;: &quot;Token not provided&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-dashboard-orders" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-dashboard-orders"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-dashboard-orders"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-dashboard-orders" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-dashboard-orders">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-dashboard-orders" data-method="GET"
+      data-path="api/admin-dashboard/orders"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-dashboard-orders', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-dashboard-orders"
+                    onclick="tryItOut('GETapi-admin-dashboard-orders');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-dashboard-orders"
+                    onclick="cancelTryOut('GETapi-admin-dashboard-orders');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-dashboard-orders"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin-dashboard/orders</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-orders"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-dashboard-orders"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-dashboard-orders"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-dashboard-orders-details--id-">GET api/admin-dashboard/orders-details/{id}</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-dashboard-orders-details--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/admin-dashboard/orders-details/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/admin-dashboard/orders-details/consequatur"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-dashboard-orders-details--id-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;success&quot;: false,
+    &quot;error&quot;: &quot;HTTP_ERROR&quot;,
+    &quot;message&quot;: &quot;Token not provided&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-dashboard-orders-details--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-dashboard-orders-details--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-dashboard-orders-details--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-dashboard-orders-details--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-dashboard-orders-details--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-dashboard-orders-details--id-" data-method="GET"
+      data-path="api/admin-dashboard/orders-details/{id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-dashboard-orders-details--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-dashboard-orders-details--id-"
+                    onclick="tryItOut('GETapi-admin-dashboard-orders-details--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-dashboard-orders-details--id-"
+                    onclick="cancelTryOut('GETapi-admin-dashboard-orders-details--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-dashboard-orders-details--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin-dashboard/orders-details/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-admin-dashboard-orders-details--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-dashboard-orders-details--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-dashboard-orders-details--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="id"                data-endpoint="GETapi-admin-dashboard-orders-details--id-"
+               value="consequatur"
+               data-component="url">
+    <br>
+<p>The ID of the orders detail. Example: <code>consequatur</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-POSTapi-admin-dashboard-orders--id--status">POST api/admin-dashboard/orders/{id}/status</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-admin-dashboard-orders--id--status">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/admin-dashboard/orders/consequatur/status" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"status\": \"consequatur\",
+    \"tracking_id\": \"consequatur\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/admin-dashboard/orders/consequatur/status"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "status": "consequatur",
+    "tracking_id": "consequatur"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-admin-dashboard-orders--id--status">
+</span>
+<span id="execution-results-POSTapi-admin-dashboard-orders--id--status" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-admin-dashboard-orders--id--status"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-admin-dashboard-orders--id--status"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-admin-dashboard-orders--id--status" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-admin-dashboard-orders--id--status">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-admin-dashboard-orders--id--status" data-method="POST"
+      data-path="api/admin-dashboard/orders/{id}/status"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-admin-dashboard-orders--id--status', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-admin-dashboard-orders--id--status"
+                    onclick="tryItOut('POSTapi-admin-dashboard-orders--id--status');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-admin-dashboard-orders--id--status"
+                    onclick="cancelTryOut('POSTapi-admin-dashboard-orders--id--status');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-admin-dashboard-orders--id--status"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/admin-dashboard/orders/{id}/status</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-admin-dashboard-orders--id--status"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-admin-dashboard-orders--id--status"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-admin-dashboard-orders--id--status"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="id"                data-endpoint="POSTapi-admin-dashboard-orders--id--status"
+               value="consequatur"
+               data-component="url">
+    <br>
+<p>The ID of the order. Example: <code>consequatur</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="status"                data-endpoint="POSTapi-admin-dashboard-orders--id--status"
+               value="consequatur"
+               data-component="body">
+    <br>
+<p>Example: <code>consequatur</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>tracking_id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="tracking_id"                data-endpoint="POSTapi-admin-dashboard-orders--id--status"
+               value="consequatur"
+               data-component="body">
+    <br>
+<p>Example: <code>consequatur</code></p>
+        </div>
+        </form>
+
                     <h2 id="endpoints-GETapi-ecom-menu">GET api/ecom/menu</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -9843,6 +11528,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/ecom/menu" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -9853,6 +11539,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -9930,6 +11617,18 @@ access-control-allow-origin: *
             &quot;Dress Materials&quot;,
             &quot;Running Materials&quot;
         ]
+    },
+    {
+        &quot;key&quot;: &quot;rrrrrr&quot;,
+        &quot;label&quot;: &quot;rrrrrr&quot;,
+        &quot;items&quot;: []
+    },
+    {
+        &quot;key&quot;: &quot;dell&quot;,
+        &quot;label&quot;: &quot;dell&quot;,
+        &quot;items&quot;: [
+            &quot;deel1&quot;
+        ]
     }
 ]</code>
  </pre>
@@ -9951,7 +11650,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-ecom-menu" data-method="GET"
       data-path="api/ecom/menu"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -9982,6 +11681,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-ecom-menu"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -10010,6 +11721,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-ecom-products">GET api/ecom/products</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -10021,6 +11733,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/ecom/products" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -10031,6 +11744,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -10070,7 +11784,7 @@ access-control-allow-origin: *
                 &quot;purchase_price&quot;: null,
                 &quot;base_price&quot;: null,
                 &quot;discount&quot;: &quot;0.00&quot;,
-                &quot;status&quot;: &quot;active&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
                 &quot;created_at&quot;: &quot;2026-02-04T09:46:09.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-04T10:07:43.000000Z&quot;,
                 &quot;category&quot;: {
@@ -10083,8 +11797,8 @@ access-control-allow-origin: *
                     {
                         &quot;id&quot;: 13,
                         &quot;product_id&quot;: 13,
-                        &quot;image_path&quot;: &quot;products/images/ed6c6e97-970f-47a8-98be-bf8f0910dd69.webp&quot;,
-                        &quot;is_primary&quot;: true
+                        &quot;is_primary&quot;: true,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/ed6c6e97-970f-47a8-98be-bf8f0910dd69.webp&quot;
                     }
                 ],
                 &quot;videos&quot;: [
@@ -10106,6 +11820,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T09:47:35.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T09:47:35.000000Z&quot;,
+                        &quot;amount&quot;: 4400,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 4,
@@ -10113,7 +11828,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Red&quot;,
                                 &quot;color_code&quot;: &quot;#eb0f0f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:41.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 11,
                                     &quot;variation_value_id&quot;: 4
@@ -10137,7 +11852,7 @@ access-control-allow-origin: *
                 &quot;purchase_price&quot;: &quot;0.00&quot;,
                 &quot;base_price&quot;: null,
                 &quot;discount&quot;: &quot;0.00&quot;,
-                &quot;status&quot;: &quot;active&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
                 &quot;created_at&quot;: &quot;2026-02-04T10:02:38.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-04T10:03:19.000000Z&quot;,
                 &quot;category&quot;: {
@@ -10150,8 +11865,8 @@ access-control-allow-origin: *
                     {
                         &quot;id&quot;: 14,
                         &quot;product_id&quot;: 14,
-                        &quot;image_path&quot;: &quot;products/images/b2ef2354-cda9-4e2a-90e4-d73567e1b123.webp&quot;,
-                        &quot;is_primary&quot;: true
+                        &quot;is_primary&quot;: true,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/b2ef2354-cda9-4e2a-90e4-d73567e1b123.webp&quot;
                     }
                 ],
                 &quot;videos&quot;: [],
@@ -10167,6 +11882,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T10:03:05.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T10:03:05.000000Z&quot;,
+                        &quot;amount&quot;: 6950,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 5,
@@ -10174,7 +11890,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Green&quot;,
                                 &quot;color_code&quot;: &quot;#44d70f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:42.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 12,
                                     &quot;variation_value_id&quot;: 5
@@ -10198,7 +11914,7 @@ access-control-allow-origin: *
                 &quot;purchase_price&quot;: &quot;0.00&quot;,
                 &quot;base_price&quot;: null,
                 &quot;discount&quot;: &quot;0.00&quot;,
-                &quot;status&quot;: &quot;active&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
                 &quot;created_at&quot;: &quot;2026-02-04T10:40:32.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-04T10:41:56.000000Z&quot;,
                 &quot;category&quot;: {
@@ -10211,8 +11927,8 @@ access-control-allow-origin: *
                     {
                         &quot;id&quot;: 15,
                         &quot;product_id&quot;: 15,
-                        &quot;image_path&quot;: &quot;products/images/553f28e5-7b4d-44c0-9ba7-ccba237f5431.webp&quot;,
-                        &quot;is_primary&quot;: true
+                        &quot;is_primary&quot;: true,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/553f28e5-7b4d-44c0-9ba7-ccba237f5431.webp&quot;
                     }
                 ],
                 &quot;videos&quot;: [
@@ -10234,6 +11950,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T10:41:35.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T10:41:35.000000Z&quot;,
+                        &quot;amount&quot;: 1590,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 5,
@@ -10241,7 +11958,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Green&quot;,
                                 &quot;color_code&quot;: &quot;#44d70f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:42.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 13,
                                     &quot;variation_value_id&quot;: 5
@@ -10264,6 +11981,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T10:41:37.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T10:41:37.000000Z&quot;,
+                        &quot;amount&quot;: 1700,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 6,
@@ -10271,7 +11989,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Blue&quot;,
                                 &quot;color_code&quot;: &quot;#3460e5&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:43.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 14,
                                     &quot;variation_value_id&quot;: 6
@@ -10295,7 +12013,7 @@ access-control-allow-origin: *
                 &quot;purchase_price&quot;: &quot;0.00&quot;,
                 &quot;base_price&quot;: null,
                 &quot;discount&quot;: &quot;0.00&quot;,
-                &quot;status&quot;: &quot;active&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
                 &quot;created_at&quot;: &quot;2026-02-04T10:43:00.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-04T10:43:41.000000Z&quot;,
                 &quot;category&quot;: {
@@ -10308,8 +12026,8 @@ access-control-allow-origin: *
                     {
                         &quot;id&quot;: 16,
                         &quot;product_id&quot;: 16,
-                        &quot;image_path&quot;: &quot;products/images/89aa9a2f-5abe-44a2-bc93-bc99e7e30604.webp&quot;,
-                        &quot;is_primary&quot;: true
+                        &quot;is_primary&quot;: true,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/89aa9a2f-5abe-44a2-bc93-bc99e7e30604.webp&quot;
                     }
                 ],
                 &quot;videos&quot;: [],
@@ -10325,6 +12043,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T10:43:25.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T10:43:25.000000Z&quot;,
+                        &quot;amount&quot;: 1850,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 5,
@@ -10332,7 +12051,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Green&quot;,
                                 &quot;color_code&quot;: &quot;#44d70f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:42.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 15,
                                     &quot;variation_value_id&quot;: 5
@@ -10356,7 +12075,7 @@ access-control-allow-origin: *
                 &quot;purchase_price&quot;: &quot;0.00&quot;,
                 &quot;base_price&quot;: null,
                 &quot;discount&quot;: &quot;0.00&quot;,
-                &quot;status&quot;: &quot;active&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
                 &quot;created_at&quot;: &quot;2026-02-04T11:41:37.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-04T11:42:32.000000Z&quot;,
                 &quot;category&quot;: {
@@ -10369,8 +12088,8 @@ access-control-allow-origin: *
                     {
                         &quot;id&quot;: 17,
                         &quot;product_id&quot;: 17,
-                        &quot;image_path&quot;: &quot;products/images/1776779a-005d-4ca6-a4f7-587771250a7a.webp&quot;,
-                        &quot;is_primary&quot;: true
+                        &quot;is_primary&quot;: true,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/1776779a-005d-4ca6-a4f7-587771250a7a.webp&quot;
                     }
                 ],
                 &quot;videos&quot;: [],
@@ -10386,6 +12105,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
+                        &quot;amount&quot;: 1300,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 4,
@@ -10393,7 +12113,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Red&quot;,
                                 &quot;color_code&quot;: &quot;#eb0f0f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:41.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 16,
                                     &quot;variation_value_id&quot;: 4
@@ -10416,6 +12136,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
+                        &quot;amount&quot;: 1400,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 1,
@@ -10423,7 +12144,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Black&quot;,
                                 &quot;color_code&quot;: &quot;#000000&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-03T09:46:07.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:40.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 17,
                                     &quot;variation_value_id&quot;: 1
@@ -10446,6 +12167,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
+                        &quot;amount&quot;: 1500,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 5,
@@ -10453,10 +12175,282 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Green&quot;,
                                 &quot;color_code&quot;: &quot;#44d70f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:42.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 18,
                                     &quot;variation_value_id&quot;: 5
+                                },
+                                &quot;variation&quot;: {
+                                    &quot;id&quot;: 1,
+                                    &quot;name&quot;: &quot;Color&quot;
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 18,
+                &quot;name&quot;: &quot;Sample&quot;,
+                &quot;slug&quot;: &quot;sample&quot;,
+                &quot;category_id&quot;: 27,
+                &quot;brand_id&quot;: null,
+                &quot;description&quot;: &quot;Cotton saree&quot;,
+                &quot;purchase_price&quot;: &quot;0.00&quot;,
+                &quot;base_price&quot;: null,
+                &quot;discount&quot;: &quot;0.00&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
+                &quot;created_at&quot;: &quot;2026-02-07T06:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-07T06:30:21.000000Z&quot;,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 27,
+                    &quot;name&quot;: &quot;Bengal Cotton&quot;,
+                    &quot;slug&quot;: &quot;bengal-cotton&quot;,
+                    &quot;parent_id&quot;: 13
+                },
+                &quot;images&quot;: [
+                    {
+                        &quot;id&quot;: 18,
+                        &quot;product_id&quot;: 18,
+                        &quot;is_primary&quot;: true,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/b234ff16-d349-4bf3-a7d1-06bbb957bc23.webp&quot;
+                    }
+                ],
+                &quot;videos&quot;: [
+                    {
+                        &quot;id&quot;: 19,
+                        &quot;product_id&quot;: 18,
+                        &quot;video_url&quot;: &quot;http://localhost:5174/products&quot;
+                    }
+                ],
+                &quot;variant_combinations&quot;: [
+                    {
+                        &quot;id&quot;: 19,
+                        &quot;product_id&quot;: 18,
+                        &quot;sku&quot;: &quot;sku&quot;,
+                        &quot;purchase_price&quot;: &quot;1300.00&quot;,
+                        &quot;extra_price&quot;: &quot;1400.00&quot;,
+                        &quot;discount&quot;: &quot;0.00&quot;,
+                        &quot;quantity&quot;: 123,
+                        &quot;low_quantity&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-07T06:26:36.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-07T06:26:36.000000Z&quot;,
+                        &quot;amount&quot;: 1400,
+                        &quot;values&quot;: [
+                            {
+                                &quot;id&quot;: 1,
+                                &quot;variation_id&quot;: 1,
+                                &quot;value&quot;: &quot;Black&quot;,
+                                &quot;color_code&quot;: &quot;#000000&quot;,
+                                &quot;created_at&quot;: &quot;2026-02-03T09:46:07.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:40.000000Z&quot;,
+                                &quot;pivot&quot;: {
+                                    &quot;variant_combination_id&quot;: 19,
+                                    &quot;variation_value_id&quot;: 1
+                                },
+                                &quot;variation&quot;: {
+                                    &quot;id&quot;: 1,
+                                    &quot;name&quot;: &quot;Color&quot;
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        &quot;id&quot;: 20,
+                        &quot;product_id&quot;: 18,
+                        &quot;sku&quot;: &quot;sku&quot;,
+                        &quot;purchase_price&quot;: &quot;1200.00&quot;,
+                        &quot;extra_price&quot;: &quot;1500.00&quot;,
+                        &quot;discount&quot;: &quot;0.00&quot;,
+                        &quot;quantity&quot;: 122,
+                        &quot;low_quantity&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-07T06:26:39.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-07T06:26:39.000000Z&quot;,
+                        &quot;amount&quot;: 1500,
+                        &quot;values&quot;: [
+                            {
+                                &quot;id&quot;: 4,
+                                &quot;variation_id&quot;: 1,
+                                &quot;value&quot;: &quot;Red&quot;,
+                                &quot;color_code&quot;: &quot;#eb0f0f&quot;,
+                                &quot;created_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:41.000000Z&quot;,
+                                &quot;pivot&quot;: {
+                                    &quot;variant_combination_id&quot;: 20,
+                                    &quot;variation_value_id&quot;: 4
+                                },
+                                &quot;variation&quot;: {
+                                    &quot;id&quot;: 1,
+                                    &quot;name&quot;: &quot;Color&quot;
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 19,
+                &quot;name&quot;: &quot;sadasd&quot;,
+                &quot;slug&quot;: &quot;sadasd&quot;,
+                &quot;category_id&quot;: 27,
+                &quot;brand_id&quot;: null,
+                &quot;description&quot;: &quot;asdasd&quot;,
+                &quot;purchase_price&quot;: &quot;0.00&quot;,
+                &quot;base_price&quot;: null,
+                &quot;discount&quot;: &quot;0.00&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
+                &quot;created_at&quot;: &quot;2026-02-07T11:17:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-07T11:18:28.000000Z&quot;,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 27,
+                    &quot;name&quot;: &quot;Bengal Cotton&quot;,
+                    &quot;slug&quot;: &quot;bengal-cotton&quot;,
+                    &quot;parent_id&quot;: 13
+                },
+                &quot;images&quot;: [
+                    {
+                        &quot;id&quot;: 19,
+                        &quot;product_id&quot;: 19,
+                        &quot;is_primary&quot;: true,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/a3817ea5-e400-4745-b7f4-9d7edf84c1f7.webp&quot;
+                    }
+                ],
+                &quot;videos&quot;: [
+                    {
+                        &quot;id&quot;: 20,
+                        &quot;product_id&quot;: 19,
+                        &quot;video_url&quot;: &quot;http://localhost:5175/products&quot;
+                    }
+                ],
+                &quot;variant_combinations&quot;: [
+                    {
+                        &quot;id&quot;: 21,
+                        &quot;product_id&quot;: 19,
+                        &quot;sku&quot;: &quot;1&quot;,
+                        &quot;purchase_price&quot;: &quot;111.00&quot;,
+                        &quot;extra_price&quot;: &quot;11.00&quot;,
+                        &quot;discount&quot;: &quot;1.00&quot;,
+                        &quot;quantity&quot;: 1,
+                        &quot;low_quantity&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-07T11:18:18.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-07T11:18:18.000000Z&quot;,
+                        &quot;amount&quot;: 10,
+                        &quot;values&quot;: [
+                            {
+                                &quot;id&quot;: 4,
+                                &quot;variation_id&quot;: 1,
+                                &quot;value&quot;: &quot;Red&quot;,
+                                &quot;color_code&quot;: &quot;#eb0f0f&quot;,
+                                &quot;created_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:41.000000Z&quot;,
+                                &quot;pivot&quot;: {
+                                    &quot;variant_combination_id&quot;: 21,
+                                    &quot;variation_value_id&quot;: 4
+                                },
+                                &quot;variation&quot;: {
+                                    &quot;id&quot;: 1,
+                                    &quot;name&quot;: &quot;Color&quot;
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 20,
+                &quot;name&quot;: &quot;Sareee123&quot;,
+                &quot;slug&quot;: &quot;sareee123&quot;,
+                &quot;category_id&quot;: 15,
+                &quot;brand_id&quot;: null,
+                &quot;description&quot;: &quot;Descritopm&quot;,
+                &quot;purchase_price&quot;: &quot;0.00&quot;,
+                &quot;base_price&quot;: null,
+                &quot;discount&quot;: &quot;0.00&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
+                &quot;created_at&quot;: &quot;2026-02-07T11:58:31.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-07T12:05:02.000000Z&quot;,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 15,
+                    &quot;name&quot;: &quot;Soft Silks&quot;,
+                    &quot;slug&quot;: &quot;soft-silks&quot;,
+                    &quot;parent_id&quot;: 9
+                },
+                &quot;images&quot;: [
+                    {
+                        &quot;id&quot;: 20,
+                        &quot;product_id&quot;: 20,
+                        &quot;is_primary&quot;: false,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/417369e7-e306-4587-9fb8-ee0d2fc407a4.webp&quot;
+                    },
+                    {
+                        &quot;id&quot;: 21,
+                        &quot;product_id&quot;: 20,
+                        &quot;is_primary&quot;: false,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/4f314af9-fcb6-4af2-897b-c93b90d84b0f.webp&quot;
+                    }
+                ],
+                &quot;videos&quot;: [
+                    {
+                        &quot;id&quot;: 21,
+                        &quot;product_id&quot;: 20,
+                        &quot;video_url&quot;: &quot;http://localhost:5176/products&quot;
+                    }
+                ],
+                &quot;variant_combinations&quot;: [
+                    {
+                        &quot;id&quot;: 22,
+                        &quot;product_id&quot;: 20,
+                        &quot;sku&quot;: &quot;sku&quot;,
+                        &quot;purchase_price&quot;: &quot;1500.00&quot;,
+                        &quot;extra_price&quot;: &quot;1800.00&quot;,
+                        &quot;discount&quot;: &quot;10.00&quot;,
+                        &quot;quantity&quot;: 120,
+                        &quot;low_quantity&quot;: 10,
+                        &quot;created_at&quot;: &quot;2026-02-07T12:03:43.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-07T12:03:43.000000Z&quot;,
+                        &quot;amount&quot;: 1790,
+                        &quot;values&quot;: [
+                            {
+                                &quot;id&quot;: 1,
+                                &quot;variation_id&quot;: 1,
+                                &quot;value&quot;: &quot;Black&quot;,
+                                &quot;color_code&quot;: &quot;#000000&quot;,
+                                &quot;created_at&quot;: &quot;2026-02-03T09:46:07.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:40.000000Z&quot;,
+                                &quot;pivot&quot;: {
+                                    &quot;variant_combination_id&quot;: 22,
+                                    &quot;variation_value_id&quot;: 1
+                                },
+                                &quot;variation&quot;: {
+                                    &quot;id&quot;: 1,
+                                    &quot;name&quot;: &quot;Color&quot;
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        &quot;id&quot;: 23,
+                        &quot;product_id&quot;: 20,
+                        &quot;sku&quot;: &quot;dddd&quot;,
+                        &quot;purchase_price&quot;: &quot;1800.00&quot;,
+                        &quot;extra_price&quot;: &quot;2000.00&quot;,
+                        &quot;discount&quot;: &quot;10.00&quot;,
+                        &quot;quantity&quot;: 120,
+                        &quot;low_quantity&quot;: 11,
+                        &quot;created_at&quot;: &quot;2026-02-07T12:03:43.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-07T12:03:43.000000Z&quot;,
+                        &quot;amount&quot;: 1990,
+                        &quot;values&quot;: [
+                            {
+                                &quot;id&quot;: 4,
+                                &quot;variation_id&quot;: 1,
+                                &quot;value&quot;: &quot;Red&quot;,
+                                &quot;color_code&quot;: &quot;#eb0f0f&quot;,
+                                &quot;created_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:41.000000Z&quot;,
+                                &quot;pivot&quot;: {
+                                    &quot;variant_combination_id&quot;: 23,
+                                    &quot;variation_value_id&quot;: 4
                                 },
                                 &quot;variation&quot;: {
                                     &quot;id&quot;: 1,
@@ -10496,8 +12490,8 @@ access-control-allow-origin: *
         &quot;path&quot;: &quot;http://localhost/api/ecom/products&quot;,
         &quot;per_page&quot;: 12,
         &quot;prev_page_url&quot;: null,
-        &quot;to&quot;: 5,
-        &quot;total&quot;: 5
+        &quot;to&quot;: 8,
+        &quot;total&quot;: 8
     }
 }</code>
  </pre>
@@ -10519,7 +12513,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-ecom-products" data-method="GET"
       data-path="api/ecom/products"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -10550,6 +12544,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-ecom-products"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -10578,6 +12584,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-ecom-products-main">GET api/ecom/products-main</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -10589,6 +12596,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/ecom/products-main" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -10599,6 +12607,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -10638,7 +12647,7 @@ access-control-allow-origin: *
                 &quot;purchase_price&quot;: null,
                 &quot;base_price&quot;: null,
                 &quot;discount&quot;: &quot;0.00&quot;,
-                &quot;status&quot;: &quot;active&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
                 &quot;created_at&quot;: &quot;2026-02-04T09:46:09.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-04T10:07:43.000000Z&quot;,
                 &quot;min_variant_price&quot;: &quot;4410.00&quot;,
@@ -10652,7 +12661,6 @@ access-control-allow-origin: *
                     {
                         &quot;id&quot;: 13,
                         &quot;product_id&quot;: 13,
-                        &quot;image_path&quot;: &quot;products/images/ed6c6e97-970f-47a8-98be-bf8f0910dd69.webp&quot;,
                         &quot;is_primary&quot;: true,
                         &quot;image_url&quot;: &quot;http://localhost/storage/products/images/ed6c6e97-970f-47a8-98be-bf8f0910dd69.webp&quot;
                     }
@@ -10676,6 +12684,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T09:47:35.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T09:47:35.000000Z&quot;,
+                        &quot;amount&quot;: 4400,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 4,
@@ -10683,7 +12692,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Red&quot;,
                                 &quot;color_code&quot;: &quot;#eb0f0f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:41.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 11,
                                     &quot;variation_value_id&quot;: 4
@@ -10707,7 +12716,7 @@ access-control-allow-origin: *
                 &quot;purchase_price&quot;: &quot;0.00&quot;,
                 &quot;base_price&quot;: null,
                 &quot;discount&quot;: &quot;0.00&quot;,
-                &quot;status&quot;: &quot;active&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
                 &quot;created_at&quot;: &quot;2026-02-04T10:02:38.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-04T10:03:19.000000Z&quot;,
                 &quot;min_variant_price&quot;: &quot;6960.00&quot;,
@@ -10721,7 +12730,6 @@ access-control-allow-origin: *
                     {
                         &quot;id&quot;: 14,
                         &quot;product_id&quot;: 14,
-                        &quot;image_path&quot;: &quot;products/images/b2ef2354-cda9-4e2a-90e4-d73567e1b123.webp&quot;,
                         &quot;is_primary&quot;: true,
                         &quot;image_url&quot;: &quot;http://localhost/storage/products/images/b2ef2354-cda9-4e2a-90e4-d73567e1b123.webp&quot;
                     }
@@ -10739,6 +12747,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T10:03:05.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T10:03:05.000000Z&quot;,
+                        &quot;amount&quot;: 6950,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 5,
@@ -10746,7 +12755,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Green&quot;,
                                 &quot;color_code&quot;: &quot;#44d70f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:42.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 12,
                                     &quot;variation_value_id&quot;: 5
@@ -10770,7 +12779,7 @@ access-control-allow-origin: *
                 &quot;purchase_price&quot;: &quot;0.00&quot;,
                 &quot;base_price&quot;: null,
                 &quot;discount&quot;: &quot;0.00&quot;,
-                &quot;status&quot;: &quot;active&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
                 &quot;created_at&quot;: &quot;2026-02-04T10:40:32.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-04T10:41:56.000000Z&quot;,
                 &quot;min_variant_price&quot;: &quot;1600.00&quot;,
@@ -10784,7 +12793,6 @@ access-control-allow-origin: *
                     {
                         &quot;id&quot;: 15,
                         &quot;product_id&quot;: 15,
-                        &quot;image_path&quot;: &quot;products/images/553f28e5-7b4d-44c0-9ba7-ccba237f5431.webp&quot;,
                         &quot;is_primary&quot;: true,
                         &quot;image_url&quot;: &quot;http://localhost/storage/products/images/553f28e5-7b4d-44c0-9ba7-ccba237f5431.webp&quot;
                     }
@@ -10808,6 +12816,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T10:41:35.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T10:41:35.000000Z&quot;,
+                        &quot;amount&quot;: 1590,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 5,
@@ -10815,7 +12824,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Green&quot;,
                                 &quot;color_code&quot;: &quot;#44d70f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:42.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 13,
                                     &quot;variation_value_id&quot;: 5
@@ -10838,6 +12847,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T10:41:37.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T10:41:37.000000Z&quot;,
+                        &quot;amount&quot;: 1700,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 6,
@@ -10845,7 +12855,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Blue&quot;,
                                 &quot;color_code&quot;: &quot;#3460e5&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:43.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 14,
                                     &quot;variation_value_id&quot;: 6
@@ -10869,7 +12879,7 @@ access-control-allow-origin: *
                 &quot;purchase_price&quot;: &quot;0.00&quot;,
                 &quot;base_price&quot;: null,
                 &quot;discount&quot;: &quot;0.00&quot;,
-                &quot;status&quot;: &quot;active&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
                 &quot;created_at&quot;: &quot;2026-02-04T10:43:00.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-04T10:43:41.000000Z&quot;,
                 &quot;min_variant_price&quot;: &quot;1850.00&quot;,
@@ -10883,7 +12893,6 @@ access-control-allow-origin: *
                     {
                         &quot;id&quot;: 16,
                         &quot;product_id&quot;: 16,
-                        &quot;image_path&quot;: &quot;products/images/89aa9a2f-5abe-44a2-bc93-bc99e7e30604.webp&quot;,
                         &quot;is_primary&quot;: true,
                         &quot;image_url&quot;: &quot;http://localhost/storage/products/images/89aa9a2f-5abe-44a2-bc93-bc99e7e30604.webp&quot;
                     }
@@ -10901,6 +12910,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T10:43:25.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T10:43:25.000000Z&quot;,
+                        &quot;amount&quot;: 1850,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 5,
@@ -10908,7 +12918,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Green&quot;,
                                 &quot;color_code&quot;: &quot;#44d70f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:42.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 15,
                                     &quot;variation_value_id&quot;: 5
@@ -10932,7 +12942,7 @@ access-control-allow-origin: *
                 &quot;purchase_price&quot;: &quot;0.00&quot;,
                 &quot;base_price&quot;: null,
                 &quot;discount&quot;: &quot;0.00&quot;,
-                &quot;status&quot;: &quot;active&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
                 &quot;created_at&quot;: &quot;2026-02-04T11:41:37.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2026-02-04T11:42:32.000000Z&quot;,
                 &quot;min_variant_price&quot;: &quot;1300.00&quot;,
@@ -10946,7 +12956,6 @@ access-control-allow-origin: *
                     {
                         &quot;id&quot;: 17,
                         &quot;product_id&quot;: 17,
-                        &quot;image_path&quot;: &quot;products/images/1776779a-005d-4ca6-a4f7-587771250a7a.webp&quot;,
                         &quot;is_primary&quot;: true,
                         &quot;image_url&quot;: &quot;http://localhost/storage/products/images/1776779a-005d-4ca6-a4f7-587771250a7a.webp&quot;
                     }
@@ -10964,6 +12973,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
+                        &quot;amount&quot;: 1300,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 4,
@@ -10971,7 +12981,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Red&quot;,
                                 &quot;color_code&quot;: &quot;#eb0f0f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:41.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 16,
                                     &quot;variation_value_id&quot;: 4
@@ -10994,6 +13004,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
+                        &quot;amount&quot;: 1400,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 1,
@@ -11001,7 +13012,7 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Black&quot;,
                                 &quot;color_code&quot;: &quot;#000000&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-03T09:46:07.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:40.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 17,
                                     &quot;variation_value_id&quot;: 1
@@ -11024,6 +13035,7 @@ access-control-allow-origin: *
                         &quot;low_quantity&quot;: 1,
                         &quot;created_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
                         &quot;updated_at&quot;: &quot;2026-02-04T11:42:18.000000Z&quot;,
+                        &quot;amount&quot;: 1500,
                         &quot;values&quot;: [
                             {
                                 &quot;id&quot;: 5,
@@ -11031,10 +13043,285 @@ access-control-allow-origin: *
                                 &quot;value&quot;: &quot;Green&quot;,
                                 &quot;color_code&quot;: &quot;#44d70f&quot;,
                                 &quot;created_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
-                                &quot;updated_at&quot;: &quot;2026-02-04T06:56:12.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:42.000000Z&quot;,
                                 &quot;pivot&quot;: {
                                     &quot;variant_combination_id&quot;: 18,
                                     &quot;variation_value_id&quot;: 5
+                                },
+                                &quot;variation&quot;: {
+                                    &quot;id&quot;: 1,
+                                    &quot;name&quot;: &quot;Color&quot;
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 18,
+                &quot;name&quot;: &quot;Sample&quot;,
+                &quot;slug&quot;: &quot;sample&quot;,
+                &quot;category_id&quot;: 27,
+                &quot;brand_id&quot;: null,
+                &quot;description&quot;: &quot;Cotton saree&quot;,
+                &quot;purchase_price&quot;: &quot;0.00&quot;,
+                &quot;base_price&quot;: null,
+                &quot;discount&quot;: &quot;0.00&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
+                &quot;created_at&quot;: &quot;2026-02-07T06:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-07T06:30:21.000000Z&quot;,
+                &quot;min_variant_price&quot;: &quot;1400.00&quot;,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 27,
+                    &quot;name&quot;: &quot;Bengal Cotton&quot;,
+                    &quot;slug&quot;: &quot;bengal-cotton&quot;,
+                    &quot;parent_id&quot;: 13
+                },
+                &quot;images&quot;: [
+                    {
+                        &quot;id&quot;: 18,
+                        &quot;product_id&quot;: 18,
+                        &quot;is_primary&quot;: true,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/b234ff16-d349-4bf3-a7d1-06bbb957bc23.webp&quot;
+                    }
+                ],
+                &quot;videos&quot;: [
+                    {
+                        &quot;id&quot;: 19,
+                        &quot;product_id&quot;: 18,
+                        &quot;video_url&quot;: &quot;http://localhost:5174/products&quot;
+                    }
+                ],
+                &quot;variant_combinations&quot;: [
+                    {
+                        &quot;id&quot;: 19,
+                        &quot;product_id&quot;: 18,
+                        &quot;sku&quot;: &quot;sku&quot;,
+                        &quot;purchase_price&quot;: &quot;1300.00&quot;,
+                        &quot;extra_price&quot;: &quot;1400.00&quot;,
+                        &quot;discount&quot;: &quot;0.00&quot;,
+                        &quot;quantity&quot;: 123,
+                        &quot;low_quantity&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-07T06:26:36.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-07T06:26:36.000000Z&quot;,
+                        &quot;amount&quot;: 1400,
+                        &quot;values&quot;: [
+                            {
+                                &quot;id&quot;: 1,
+                                &quot;variation_id&quot;: 1,
+                                &quot;value&quot;: &quot;Black&quot;,
+                                &quot;color_code&quot;: &quot;#000000&quot;,
+                                &quot;created_at&quot;: &quot;2026-02-03T09:46:07.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:40.000000Z&quot;,
+                                &quot;pivot&quot;: {
+                                    &quot;variant_combination_id&quot;: 19,
+                                    &quot;variation_value_id&quot;: 1
+                                },
+                                &quot;variation&quot;: {
+                                    &quot;id&quot;: 1,
+                                    &quot;name&quot;: &quot;Color&quot;
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        &quot;id&quot;: 20,
+                        &quot;product_id&quot;: 18,
+                        &quot;sku&quot;: &quot;sku&quot;,
+                        &quot;purchase_price&quot;: &quot;1200.00&quot;,
+                        &quot;extra_price&quot;: &quot;1500.00&quot;,
+                        &quot;discount&quot;: &quot;0.00&quot;,
+                        &quot;quantity&quot;: 122,
+                        &quot;low_quantity&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-07T06:26:39.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-07T06:26:39.000000Z&quot;,
+                        &quot;amount&quot;: 1500,
+                        &quot;values&quot;: [
+                            {
+                                &quot;id&quot;: 4,
+                                &quot;variation_id&quot;: 1,
+                                &quot;value&quot;: &quot;Red&quot;,
+                                &quot;color_code&quot;: &quot;#eb0f0f&quot;,
+                                &quot;created_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:41.000000Z&quot;,
+                                &quot;pivot&quot;: {
+                                    &quot;variant_combination_id&quot;: 20,
+                                    &quot;variation_value_id&quot;: 4
+                                },
+                                &quot;variation&quot;: {
+                                    &quot;id&quot;: 1,
+                                    &quot;name&quot;: &quot;Color&quot;
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 19,
+                &quot;name&quot;: &quot;sadasd&quot;,
+                &quot;slug&quot;: &quot;sadasd&quot;,
+                &quot;category_id&quot;: 27,
+                &quot;brand_id&quot;: null,
+                &quot;description&quot;: &quot;asdasd&quot;,
+                &quot;purchase_price&quot;: &quot;0.00&quot;,
+                &quot;base_price&quot;: null,
+                &quot;discount&quot;: &quot;0.00&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
+                &quot;created_at&quot;: &quot;2026-02-07T11:17:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-07T11:18:28.000000Z&quot;,
+                &quot;min_variant_price&quot;: &quot;11.00&quot;,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 27,
+                    &quot;name&quot;: &quot;Bengal Cotton&quot;,
+                    &quot;slug&quot;: &quot;bengal-cotton&quot;,
+                    &quot;parent_id&quot;: 13
+                },
+                &quot;images&quot;: [
+                    {
+                        &quot;id&quot;: 19,
+                        &quot;product_id&quot;: 19,
+                        &quot;is_primary&quot;: true,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/a3817ea5-e400-4745-b7f4-9d7edf84c1f7.webp&quot;
+                    }
+                ],
+                &quot;videos&quot;: [
+                    {
+                        &quot;id&quot;: 20,
+                        &quot;product_id&quot;: 19,
+                        &quot;video_url&quot;: &quot;http://localhost:5175/products&quot;
+                    }
+                ],
+                &quot;variant_combinations&quot;: [
+                    {
+                        &quot;id&quot;: 21,
+                        &quot;product_id&quot;: 19,
+                        &quot;sku&quot;: &quot;1&quot;,
+                        &quot;purchase_price&quot;: &quot;111.00&quot;,
+                        &quot;extra_price&quot;: &quot;11.00&quot;,
+                        &quot;discount&quot;: &quot;1.00&quot;,
+                        &quot;quantity&quot;: 1,
+                        &quot;low_quantity&quot;: 1,
+                        &quot;created_at&quot;: &quot;2026-02-07T11:18:18.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-07T11:18:18.000000Z&quot;,
+                        &quot;amount&quot;: 10,
+                        &quot;values&quot;: [
+                            {
+                                &quot;id&quot;: 4,
+                                &quot;variation_id&quot;: 1,
+                                &quot;value&quot;: &quot;Red&quot;,
+                                &quot;color_code&quot;: &quot;#eb0f0f&quot;,
+                                &quot;created_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:41.000000Z&quot;,
+                                &quot;pivot&quot;: {
+                                    &quot;variant_combination_id&quot;: 21,
+                                    &quot;variation_value_id&quot;: 4
+                                },
+                                &quot;variation&quot;: {
+                                    &quot;id&quot;: 1,
+                                    &quot;name&quot;: &quot;Color&quot;
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 20,
+                &quot;name&quot;: &quot;Sareee123&quot;,
+                &quot;slug&quot;: &quot;sareee123&quot;,
+                &quot;category_id&quot;: 15,
+                &quot;brand_id&quot;: null,
+                &quot;description&quot;: &quot;Descritopm&quot;,
+                &quot;purchase_price&quot;: &quot;0.00&quot;,
+                &quot;base_price&quot;: null,
+                &quot;discount&quot;: &quot;0.00&quot;,
+                &quot;status&quot;: &quot;Published&quot;,
+                &quot;created_at&quot;: &quot;2026-02-07T11:58:31.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2026-02-07T12:05:02.000000Z&quot;,
+                &quot;min_variant_price&quot;: &quot;1800.00&quot;,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 15,
+                    &quot;name&quot;: &quot;Soft Silks&quot;,
+                    &quot;slug&quot;: &quot;soft-silks&quot;,
+                    &quot;parent_id&quot;: 9
+                },
+                &quot;images&quot;: [
+                    {
+                        &quot;id&quot;: 20,
+                        &quot;product_id&quot;: 20,
+                        &quot;is_primary&quot;: false,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/417369e7-e306-4587-9fb8-ee0d2fc407a4.webp&quot;
+                    },
+                    {
+                        &quot;id&quot;: 21,
+                        &quot;product_id&quot;: 20,
+                        &quot;is_primary&quot;: false,
+                        &quot;image_url&quot;: &quot;http://localhost/storage/products/images/4f314af9-fcb6-4af2-897b-c93b90d84b0f.webp&quot;
+                    }
+                ],
+                &quot;videos&quot;: [
+                    {
+                        &quot;id&quot;: 21,
+                        &quot;product_id&quot;: 20,
+                        &quot;video_url&quot;: &quot;http://localhost:5176/products&quot;
+                    }
+                ],
+                &quot;variant_combinations&quot;: [
+                    {
+                        &quot;id&quot;: 22,
+                        &quot;product_id&quot;: 20,
+                        &quot;sku&quot;: &quot;sku&quot;,
+                        &quot;purchase_price&quot;: &quot;1500.00&quot;,
+                        &quot;extra_price&quot;: &quot;1800.00&quot;,
+                        &quot;discount&quot;: &quot;10.00&quot;,
+                        &quot;quantity&quot;: 120,
+                        &quot;low_quantity&quot;: 10,
+                        &quot;created_at&quot;: &quot;2026-02-07T12:03:43.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-07T12:03:43.000000Z&quot;,
+                        &quot;amount&quot;: 1790,
+                        &quot;values&quot;: [
+                            {
+                                &quot;id&quot;: 1,
+                                &quot;variation_id&quot;: 1,
+                                &quot;value&quot;: &quot;Black&quot;,
+                                &quot;color_code&quot;: &quot;#000000&quot;,
+                                &quot;created_at&quot;: &quot;2026-02-03T09:46:07.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:40.000000Z&quot;,
+                                &quot;pivot&quot;: {
+                                    &quot;variant_combination_id&quot;: 22,
+                                    &quot;variation_value_id&quot;: 1
+                                },
+                                &quot;variation&quot;: {
+                                    &quot;id&quot;: 1,
+                                    &quot;name&quot;: &quot;Color&quot;
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        &quot;id&quot;: 23,
+                        &quot;product_id&quot;: 20,
+                        &quot;sku&quot;: &quot;dddd&quot;,
+                        &quot;purchase_price&quot;: &quot;1800.00&quot;,
+                        &quot;extra_price&quot;: &quot;2000.00&quot;,
+                        &quot;discount&quot;: &quot;10.00&quot;,
+                        &quot;quantity&quot;: 120,
+                        &quot;low_quantity&quot;: 11,
+                        &quot;created_at&quot;: &quot;2026-02-07T12:03:43.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2026-02-07T12:03:43.000000Z&quot;,
+                        &quot;amount&quot;: 1990,
+                        &quot;values&quot;: [
+                            {
+                                &quot;id&quot;: 4,
+                                &quot;variation_id&quot;: 1,
+                                &quot;value&quot;: &quot;Red&quot;,
+                                &quot;color_code&quot;: &quot;#eb0f0f&quot;,
+                                &quot;created_at&quot;: &quot;2026-02-04T06:56:11.000000Z&quot;,
+                                &quot;updated_at&quot;: &quot;2026-02-07T12:08:41.000000Z&quot;,
+                                &quot;pivot&quot;: {
+                                    &quot;variant_combination_id&quot;: 23,
+                                    &quot;variation_value_id&quot;: 4
                                 },
                                 &quot;variation&quot;: {
                                     &quot;id&quot;: 1,
@@ -11074,8 +13361,8 @@ access-control-allow-origin: *
         &quot;path&quot;: &quot;http://localhost/api/ecom/products-main&quot;,
         &quot;per_page&quot;: 12,
         &quot;prev_page_url&quot;: null,
-        &quot;to&quot;: 5,
-        &quot;total&quot;: 5
+        &quot;to&quot;: 8,
+        &quot;total&quot;: 8
     }
 }</code>
  </pre>
@@ -11097,7 +13384,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-ecom-products-main" data-method="GET"
       data-path="api/ecom/products-main"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -11128,6 +13415,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-ecom-products-main"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -11156,6 +13455,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-ecom-app-logo-settings">GET api/ecom/app-logo-settings</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -11167,6 +13467,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/ecom/app-logo-settings" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -11177,6 +13478,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -11205,13 +13507,13 @@ access-control-allow-origin: *
     &quot;success&quot;: true,
     &quot;data&quot;: {
         &quot;id&quot;: 1,
-        &quot;app_name&quot;: &quot;Hamsini-Silk123&quot;,
-        &quot;app_logo&quot;: &quot;settings/cdca641d-490b-46cc-9178-84ff435171e3.webp&quot;,
-        &quot;app_favicon&quot;: &quot;settings/139b24ac-2532-4321-82f5-4f810c0ee53d.webp&quot;,
+        &quot;app_name&quot;: &quot;Hamsini-Silks&quot;,
+        &quot;app_logo&quot;: &quot;settings/c79651c9-a33b-4e7c-b1f1-30893ee1f11e.webp&quot;,
+        &quot;app_favicon&quot;: &quot;settings/6f432dfb-f718-4a89-b00e-bcd255216a1a.webp&quot;,
         &quot;created_at&quot;: &quot;2026-02-03T07:03:27.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-02-03T11:03:18.000000Z&quot;,
-        &quot;app_logo_url&quot;: &quot;http://localhost/storage/settings/cdca641d-490b-46cc-9178-84ff435171e3.webp&quot;,
-        &quot;app_favicon_url&quot;: &quot;http://localhost/storage/settings/139b24ac-2532-4321-82f5-4f810c0ee53d.webp&quot;
+        &quot;updated_at&quot;: &quot;2026-02-07T12:07:50.000000Z&quot;,
+        &quot;app_logo_url&quot;: &quot;http://localhost/storage/settings/c79651c9-a33b-4e7c-b1f1-30893ee1f11e.webp&quot;,
+        &quot;app_favicon_url&quot;: &quot;http://localhost/storage/settings/6f432dfb-f718-4a89-b00e-bcd255216a1a.webp&quot;
     }
 }</code>
  </pre>
@@ -11233,7 +13535,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-ecom-app-logo-settings" data-method="GET"
       data-path="api/ecom/app-logo-settings"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -11264,6 +13566,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-ecom-app-logo-settings"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -11292,6 +13606,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-ecom-list-brand">GET api/ecom/list-brand</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -11303,6 +13618,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/ecom/list-brand" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -11313,6 +13629,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -11359,7 +13676,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-ecom-list-brand" data-method="GET"
       data-path="api/ecom/list-brand"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -11390,6 +13707,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-ecom-list-brand"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -11418,6 +13747,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-user-dashboard-cart-sync">POST api/user-dashboard/cart/sync</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -11429,6 +13759,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/user-dashboard/cart/sync" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -11439,6 +13770,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -11469,7 +13801,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-user-dashboard-cart-sync" data-method="POST"
       data-path="api/user-dashboard/cart/sync"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -11500,6 +13832,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-user-dashboard-cart-sync"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -11528,6 +13872,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-user-dashboard-cart">GET api/user-dashboard/cart</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -11539,6 +13884,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/user-dashboard/cart" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -11549,6 +13895,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -11597,7 +13944,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-user-dashboard-cart" data-method="GET"
       data-path="api/user-dashboard/cart"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -11628,6 +13975,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-user-dashboard-cart"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -11656,6 +14015,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-DELETEapi-user-dashboard-cart-clear">DELETE api/user-dashboard/cart/clear</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -11667,6 +14027,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost/api/user-dashboard/cart/clear" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -11677,6 +14038,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -11707,7 +14069,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-DELETEapi-user-dashboard-cart-clear" data-method="DELETE"
       data-path="api/user-dashboard/cart/clear"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -11738,6 +14100,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-user-dashboard-cart-clear"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -11766,6 +14140,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-GETapi-user-dashboard-cart-get-address">GET api/user-dashboard/cart/get-address</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -11777,6 +14152,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/user-dashboard/cart/get-address" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -11787,6 +14163,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -11835,7 +14212,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-user-dashboard-cart-get-address" data-method="GET"
       data-path="api/user-dashboard/cart/get-address"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -11866,6 +14243,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-user-dashboard-cart-get-address"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -11894,6 +14283,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-user-dashboard-cart-add-address">POST api/user-dashboard/cart/add-address</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -11905,6 +14295,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/user-dashboard/cart/add-address" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -11925,6 +14316,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -11966,7 +14358,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-user-dashboard-cart-add-address" data-method="POST"
       data-path="api/user-dashboard/cart/add-address"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -11996,6 +14388,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/user-dashboard/cart/add-address</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-user-dashboard-cart-add-address"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -12110,6 +14514,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-user-dashboard-cart-update-address--id-">POST api/user-dashboard/cart/update-address/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -12121,6 +14526,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/user-dashboard/cart/update-address/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -12141,6 +14547,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -12182,7 +14589,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-user-dashboard-cart-update-address--id-" data-method="POST"
       data-path="api/user-dashboard/cart/update-address/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -12212,6 +14619,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/user-dashboard/cart/update-address/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-user-dashboard-cart-update-address--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -12339,6 +14758,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-DELETEapi-user-dashboard-cart-delete-address--id-">DELETE api/user-dashboard/cart/delete-address/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -12350,6 +14770,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost/api/user-dashboard/cart/delete-address/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -12360,6 +14781,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -12390,7 +14812,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-DELETEapi-user-dashboard-cart-delete-address--id-" data-method="DELETE"
       data-path="api/user-dashboard/cart/delete-address/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -12420,6 +14842,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/user-dashboard/cart/delete-address/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-user-dashboard-cart-delete-address--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -12462,6 +14896,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-user-dashboard-cart-set-default-address--id-">POST api/user-dashboard/cart/set-default-address/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -12473,6 +14908,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/user-dashboard/cart/set-default-address/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -12483,6 +14919,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -12513,7 +14950,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-user-dashboard-cart-set-default-address--id-" data-method="POST"
       data-path="api/user-dashboard/cart/set-default-address/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -12543,6 +14980,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/user-dashboard/cart/set-default-address/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-user-dashboard-cart-set-default-address--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -12585,6 +15034,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-user-dashboard-cart-create-order">POST api/user-dashboard/cart/create-order</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -12596,6 +15046,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/user-dashboard/cart/create-order" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -12610,6 +15061,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -12645,7 +15097,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-user-dashboard-cart-create-order" data-method="POST"
       data-path="api/user-dashboard/cart/create-order"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -12675,6 +15127,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/user-dashboard/cart/create-order</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-user-dashboard-cart-create-order"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -12717,6 +15181,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-user-dashboard-cart-verify-payment">POST api/user-dashboard/cart/verify-payment</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -12728,6 +15193,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/user-dashboard/cart/verify-payment" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -12744,6 +15210,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -12781,7 +15248,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-user-dashboard-cart-verify-payment" data-method="POST"
       data-path="api/user-dashboard/cart/verify-payment"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -12811,6 +15278,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/user-dashboard/cart/verify-payment</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-user-dashboard-cart-verify-payment"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -12877,6 +15356,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-user-dashboard-cart-save-order">POST api/user-dashboard/cart/save-order</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -12888,6 +15368,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/user-dashboard/cart/save-order" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -12907,6 +15388,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -12947,7 +15429,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-user-dashboard-cart-save-order" data-method="POST"
       data-path="api/user-dashboard/cart/save-order"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -12977,6 +15459,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/user-dashboard/cart/save-order</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-user-dashboard-cart-save-order"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -13079,6 +15573,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-user-dashboard-cart-apply-coupon">POST api/user-dashboard/cart/apply-coupon</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -13090,6 +15585,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/user-dashboard/cart/apply-coupon" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -13105,6 +15601,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -13141,7 +15638,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-user-dashboard-cart-apply-coupon" data-method="POST"
       data-path="api/user-dashboard/cart/apply-coupon"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -13171,6 +15668,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/user-dashboard/cart/apply-coupon</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-user-dashboard-cart-apply-coupon"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -13225,6 +15734,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                     <h2 id="endpoints-POSTapi-user-dashboard-orders">POST api/user-dashboard/orders</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -13236,10 +15746,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/user-dashboard/orders" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"user_id\": \"consequatur\",
     \"address_id\": \"consequatur\",
     \"payment\": {
         \"method\": \"consequatur\",
@@ -13271,12 +15781,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
-    "user_id": "consequatur",
     "address_id": "consequatur",
     "payment": {
         "method": "consequatur",
@@ -13327,7 +15837,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-POSTapi-user-dashboard-orders" data-method="POST"
       data-path="api/user-dashboard/orders"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -13358,6 +15868,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-user-dashboard-orders"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
@@ -13383,18 +15905,6 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                                 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="user_id"                data-endpoint="POSTapi-user-dashboard-orders"
-               value="consequatur"
-               data-component="body">
-    <br>
-<p>The <code>id</code> of an existing record in the users table. Example: <code>consequatur</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address_id</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
  &nbsp;
@@ -13404,7 +15914,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="consequatur"
                data-component="body">
     <br>
-<p>The <code>id</code> of an existing record in the addresses table. Example: <code>consequatur</code></p>
+<p>'user_id'                     =&gt; 'required|exists:users,id',. The <code>id</code> of an existing record in the addresses table. Example: <code>consequatur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -13588,137 +16098,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-user-dashboard-orders">GET api/user-dashboard/orders</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-user-dashboard-orders">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/user-dashboard/orders" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/user-dashboard/orders"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-user-dashboard-orders">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;success&quot;: false,
-    &quot;error&quot;: &quot;HTTP_ERROR&quot;,
-    &quot;message&quot;: &quot;Token not provided&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-user-dashboard-orders" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-user-dashboard-orders"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-user-dashboard-orders"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-user-dashboard-orders" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-user-dashboard-orders">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-user-dashboard-orders" data-method="GET"
-      data-path="api/user-dashboard/orders"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-user-dashboard-orders', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-user-dashboard-orders"
-                    onclick="tryItOut('GETapi-user-dashboard-orders');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-user-dashboard-orders"
-                    onclick="cancelTryOut('GETapi-user-dashboard-orders');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-user-dashboard-orders"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/user-dashboard/orders</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-user-dashboard-orders"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-user-dashboard-orders"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
                     <h2 id="endpoints-GETapi-user-dashboard-orders--id-">GET api/user-dashboard/orders/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -13730,6 +16113,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/user-dashboard/orders/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -13740,6 +16124,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -13788,7 +16173,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-GETapi-user-dashboard-orders--id-" data-method="GET"
       data-path="api/user-dashboard/orders/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -13818,6 +16203,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/user-dashboard/orders/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-user-dashboard-orders--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -13857,9 +16254,166 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
+                    <h2 id="endpoints-GETapi-user-dashboard-get-my-orders--id-">GET api/user-dashboard/get-my-orders/{id}</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-user-dashboard-get-my-orders--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/user-dashboard/get-my-orders/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/user-dashboard/get-my-orders/consequatur"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-user-dashboard-get-my-orders--id-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;success&quot;: false,
+    &quot;error&quot;: &quot;HTTP_ERROR&quot;,
+    &quot;message&quot;: &quot;Token not provided&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-user-dashboard-get-my-orders--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-user-dashboard-get-my-orders--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-user-dashboard-get-my-orders--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-user-dashboard-get-my-orders--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-user-dashboard-get-my-orders--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-user-dashboard-get-my-orders--id-" data-method="GET"
+      data-path="api/user-dashboard/get-my-orders/{id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-user-dashboard-get-my-orders--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-user-dashboard-get-my-orders--id-"
+                    onclick="tryItOut('GETapi-user-dashboard-get-my-orders--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-user-dashboard-get-my-orders--id-"
+                    onclick="cancelTryOut('GETapi-user-dashboard-get-my-orders--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-user-dashboard-get-my-orders--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/user-dashboard/get-my-orders/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-user-dashboard-get-my-orders--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-user-dashboard-get-my-orders--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-user-dashboard-get-my-orders--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="id"                data-endpoint="GETapi-user-dashboard-get-my-orders--id-"
+               value="consequatur"
+               data-component="url">
+    <br>
+<p>The ID of the get my order. Example: <code>consequatur</code></p>
+            </div>
+                    </form>
+
                     <h2 id="endpoints-DELETEapi-user-dashboard-orders--id-">DELETE api/user-dashboard/orders/{id}</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
@@ -13871,6 +16425,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
     "http://localhost/api/user-dashboard/orders/consequatur" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -13881,6 +16436,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -13911,7 +16467,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 </span>
 <form id="form-DELETEapi-user-dashboard-orders--id-" data-method="DELETE"
       data-path="api/user-dashboard/orders/{id}"
-      data-authed="0"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
@@ -13941,6 +16497,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/user-dashboard/orders/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-user-dashboard-orders--id-"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -13979,6 +16547,296 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <p>The ID of the order. Example: <code>consequatur</code></p>
             </div>
                     </form>
+
+                    <h2 id="endpoints-GETapi-user-dashboard-get-wishlist">GET api/user-dashboard/get-wishlist</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-user-dashboard-get-wishlist">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/user-dashboard/get-wishlist" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/user-dashboard/get-wishlist"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-user-dashboard-get-wishlist">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;success&quot;: false,
+    &quot;error&quot;: &quot;HTTP_ERROR&quot;,
+    &quot;message&quot;: &quot;Token not provided&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-user-dashboard-get-wishlist" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-user-dashboard-get-wishlist"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-user-dashboard-get-wishlist"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-user-dashboard-get-wishlist" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-user-dashboard-get-wishlist">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-user-dashboard-get-wishlist" data-method="GET"
+      data-path="api/user-dashboard/get-wishlist"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-user-dashboard-get-wishlist', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-user-dashboard-get-wishlist"
+                    onclick="tryItOut('GETapi-user-dashboard-get-wishlist');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-user-dashboard-get-wishlist"
+                    onclick="cancelTryOut('GETapi-user-dashboard-get-wishlist');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-user-dashboard-get-wishlist"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/user-dashboard/get-wishlist</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-user-dashboard-get-wishlist"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-user-dashboard-get-wishlist"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-user-dashboard-get-wishlist"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-POSTapi-user-dashboard-wishlist-toggle">POST api/user-dashboard/wishlist-toggle</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-user-dashboard-wishlist-toggle">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/user-dashboard/wishlist-toggle" \
+    --header "Authorization: Bearer {YOUR_TOKEN}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"product_id\": \"consequatur\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/user-dashboard/wishlist-toggle"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_TOKEN}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "product_id": "consequatur"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-user-dashboard-wishlist-toggle">
+</span>
+<span id="execution-results-POSTapi-user-dashboard-wishlist-toggle" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-user-dashboard-wishlist-toggle"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-user-dashboard-wishlist-toggle"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-user-dashboard-wishlist-toggle" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-user-dashboard-wishlist-toggle">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-user-dashboard-wishlist-toggle" data-method="POST"
+      data-path="api/user-dashboard/wishlist-toggle"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-user-dashboard-wishlist-toggle', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-user-dashboard-wishlist-toggle"
+                    onclick="tryItOut('POSTapi-user-dashboard-wishlist-toggle');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-user-dashboard-wishlist-toggle"
+                    onclick="cancelTryOut('POSTapi-user-dashboard-wishlist-toggle');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-user-dashboard-wishlist-toggle"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/user-dashboard/wishlist-toggle</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-user-dashboard-wishlist-toggle"
+               value="Bearer {YOUR_TOKEN}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_TOKEN}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-user-dashboard-wishlist-toggle"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-user-dashboard-wishlist-toggle"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>product_id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="product_id"                data-endpoint="POSTapi-user-dashboard-wishlist-toggle"
+               value="consequatur"
+               data-component="body">
+    <br>
+<p>The <code>id</code> of an existing record in the products table. Example: <code>consequatur</code></p>
+        </div>
+        </form>
 
             
 
