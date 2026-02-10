@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -19,7 +18,7 @@ class User extends Authenticatable implements JWTSubject
      * @var list<string>
      */
     protected $guarded = [
-       
+
     ];
 
     public function getJWTIdentifier()
@@ -51,32 +50,33 @@ class User extends Authenticatable implements JWTSubject
     {
         return [
             'email_verified_at' => 'datetime',
-            'password' => 'hashed',
+            'password'          => 'hashed',
         ];
     }
 
-
     public function organization()
-{
-    return $this->belongsTo(Organization::class);
-}
+    {
+        return $this->belongsTo(Organization::class);
+    }
 
+    public function card()
+    {
+        return $this->hasOne(DigitalCard::class);
+    }
 
+    public function wishlists()
+    {
+        return $this->hasMany(Wishlist::class);
+    }
 
-public function card()
-{
-    return $this->hasOne(DigitalCard::class);
-}
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
 
-
-public function wishlists()
-{
-    return $this->hasMany(Wishlist::class);
-}
-
-public function orders()
-{
-    return $this->hasMany(Order::class);
-}
+    public function attendances()
+    {
+        return $this->hasMany(Attendance::class);
+    }
 
 }

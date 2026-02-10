@@ -17,6 +17,8 @@ use App\Http\Controllers\ProductVariantController;
 use App\Http\Controllers\ProductVariationController;
 use App\Http\Controllers\ProductVariationValueController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\ShiprocketController;
+use App\Http\Controllers\StaffAttendanceController;
 use App\Http\Controllers\StaffUserController;
 use App\Http\Controllers\WhatsappSettingController;
 use App\Http\Controllers\WishlistController;
@@ -46,6 +48,8 @@ Route::prefix('auth')->group(function () {
         '/razorpay-key',
         [CartController::class, 'razorpayKey']
     );
+
+    Route::get('/message', [OrderController::class, 'sendWhatsappTest']);
 
 });
 
@@ -104,6 +108,10 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
     Route::post('/add-category', [CategoryController::class, 'store']);
     Route::post('/update-category/{id}', [CategoryController::class, 'update']);
     Route::delete('/delete-category/{id}', [CategoryController::class, 'destroy']);
+    Route::post(
+        '/add-sub-category',
+        [CategoryController::class, 'addSubCategory']
+    );
 
     // Brand Management
     Route::get('list-brand', [BrandController::class, 'index']);
@@ -150,6 +158,17 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
     Route::get('/orders', [OrderController::class, 'allorders']);
     Route::get('/orders-details/{id}', [OrderController::class, 'allorders_show']);
     Route::post('/orders/{id}/status', [OrderController::class, 'updateStatus']);
+
+    // Attendance
+
+    Route::get('/attendance', [StaffAttendanceController::class, 'getAttendance']);
+    Route::post('/attendance', [StaffAttendanceController::class, 'saveAttendance']);
+
+    // shiprocket integration not using
+    Route::post(
+        '/shiprocket/create/{order}',
+        [ShiprocketController::class, 'createShipment']
+    );
 
 });
 

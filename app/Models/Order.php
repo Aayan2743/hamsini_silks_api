@@ -17,6 +17,10 @@ class Order extends Model
         'total_amount',
         'status',
         'tracking_id',
+        'shiprocket_order_id',
+        'awb_code',
+        'courier_name',
+        'shipment_status',
     ];
 
     public function items()
@@ -27,5 +31,9 @@ class Order extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+    public function address()
+    {
+        return $this->belongsTo(Address::class, 'address_id');
     }
 }

@@ -201,5 +201,40 @@ class CategoryController extends Controller
             'message' => 'Category deleted successfully',
         ]);
     }
+    /* ================= SUB  CATEGORY ADDING ================= */
+    public function addSubCategory(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'parent_id'       => 'required|exists:categories,id',
+            'subcategories'   => 'required|array|min:1',
+            'subcategories.*' => 'required|string|max:255',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'message' => $validator->errors()->first(),
+            ], 422);
+        }
+
+        $insertData = [];
+
+        foreach ($request->subcategories as $name) {
+            $insertData[] = [
+                'name'       => $name,
+                'slug'       => Str::slug($name),
+                'parent_id'  => $request->parent_id,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+        }
+
+        Category::insert($insertData);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Sub categories added successfully',
+        ]);
+    }
 
 }
