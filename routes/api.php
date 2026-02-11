@@ -13,6 +13,7 @@ use App\Http\Controllers\menuController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\OtpAuthController;
 use App\Http\Controllers\PaymentGatewayController;
+use App\Http\Controllers\phonepaycontroller;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductImageController;
 use App\Http\Controllers\ProductSeoMetaController;
@@ -27,6 +28,11 @@ use App\Http\Controllers\StaffUserController;
 use App\Http\Controllers\WhatsappSettingController;
 use App\Http\Controllers\WishlistController;
 use Illuminate\Support\Facades\Route;
+
+Route::post('/payment/create', [phonepaycontroller::class, 'create']);
+
+Route::get('/payment/status/{transactionId}',
+    [phonepaycontroller::class, 'status']);
 
 Route::prefix('auth')->group(function () {
 
