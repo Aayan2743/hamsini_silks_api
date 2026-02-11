@@ -5,9 +5,13 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ContactSettingController;
 use App\Http\Controllers\CouponController;
+use App\Http\Controllers\CustomerCareController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\menuController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\OtpAuthController;
 use App\Http\Controllers\PaymentGatewayController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductImageController;
@@ -27,7 +31,13 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('auth')->group(function () {
 
     // ================= AUTH =================
-    Route::get('sample', [AuthController::class, 'sample']);
+    // Route::get('sample', [AuthController::class, 'sample']);
+
+    // Route::get('/stats', [DashboardController::class, 'stats']);
+
+    // Login with OTP / Register
+    Route::post('/send-otp', [OtpAuthController::class, 'sendOtp']);
+    Route::post('/verify-login-otp', [OtpAuthController::class, 'verifyOtp']);
 
     Route::post('super-admin-login', [AuthController::class, 'super_admin_login']);
     Route::post('admin-register', [AuthController::class, 'admin_register']);
@@ -164,6 +174,18 @@ Route::prefix('admin-dashboard')->middleware(['api', 'jwt.auth'])->group(functio
     Route::get('/attendance', [StaffAttendanceController::class, 'getAttendance']);
     Route::post('/attendance', [StaffAttendanceController::class, 'saveAttendance']);
 
+    // contact page setting
+    Route::post('contact-setting', [ContactSettingController::class, 'save']);
+    Route::get('contact-setting', [ContactSettingController::class, 'show']);
+
+    // landing page contact detiails
+    Route::post('customer-care', [CustomerCareController::class, 'save']);
+    Route::get('customer-care', [CustomerCareController::class, 'show']);
+
+    // statics
+
+    Route::get('/stats', [DashboardController::class, 'stats']);
+
     // shiprocket integration not using
     Route::post(
         '/shiprocket/create/{order}',
@@ -180,6 +202,17 @@ Route::prefix('ecom')->group(function () {
     // app settion globel
     Route::get('/app-logo-settings', [SettingController::class, 'show']);
     Route::get('/list-brand', [BrandController::class, 'index_no_pagination']);
+
+    // customer care details
+    Route::post('customer-care', [CustomerCareController::class, 'save']);
+    Route::get('customer-care', [CustomerCareController::class, 'show']);
+
+    // contact  details
+
+    Route::get('contact-setting', [ContactSettingController::class, 'show']);
+
+    // social media
+    Route::get('/social-media-settings', [SettingController::class, 'show_social_media']);
 
 });
 
@@ -221,5 +254,7 @@ Route::prefix('user-dashboard')->middleware(['api', 'jwt.auth'])->group(function
 
     Route::get('/get-wishlist', [WishlistController::class, 'index']);
     Route::post('/wishlist-toggle', [WishlistController::class, 'toggle']);
+
+    // social media
 
 });
